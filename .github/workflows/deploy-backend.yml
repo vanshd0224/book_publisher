@@ -72,6 +72,10 @@ jobs:
             --platform=managed \
             --allow-unauthenticated \
             --port=8080 \
+<<<<<<< HEAD
             --min-instances=0 \
+=======
+            --min-instances=1 \
+>>>>>>> e3ff1259 (ci: set Cloud Run min-instances to 1 and add GitHub Actions deployment workflows)
             --max-instances=10 \
             --concurrency=80

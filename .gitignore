@@ -1,11 +1,23 @@
 # Dependencies
 node_modules/
+<<<<<<< HEAD
 
 # Build & Output directories
 dist/
 .next/
 out/
 build/
+=======
+**/node_modules/
+
+# Build & Output directories
+dist/
+**/dist/
+.next/
+out/
+build/
+**/build/
+>>>>>>> e3ff1259 (ci: set Cloud Run min-instances to 1 and add GitHub Actions deployment workflows)
 
 # Environment Variables
 .env
