@@ -45,11 +45,19 @@ jobs:
       - name: Configure GCP Project
         run: gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
 
-      - name: Build Container Image via GCP Cloud Build
+      - name: Build Docker Container Image
         run: |
           IMAGE_URI="gcr.io/${{ secrets.GCP_PROJECT_ID }}/book-publisher-backend:${{ github.sha }}"
-          gcloud builds submit --tag $IMAGE_URI ./backend
+          cd backend
+          docker build -t $IMAGE_URI .
           echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
+
+      - name: Configure Docker for Google Container Registry (gcr.io)
+        run: gcloud auth configure-docker gcr.io --quiet
+
+      - name: Push Container Image to gcr.io
+        run: |
+          docker push ${{ env.IMAGE_URI }}
 
       - name: Deploy Container to Cloud Run
         run: |
