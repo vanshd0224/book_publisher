@@ -5,12 +5,14 @@ import { CartService } from '../cart/cart.service';
 import { StorageService } from '../storage/storage.service';
 import { CreateIndividualOrderDto, CreateInstitutionalOrderDto, UpdateOrderStatusDto } from './dto/order.dto';
 import { OrderStatus, OrderType, PaymentMethod } from '@prisma/client';
-import Razorpay from 'razorpay';
+// Require Razorpay to support CommonJS export in compiled Node.js runtime
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const Razorpay = require('razorpay');
 
 @Injectable()
 export class OrdersService {
   private readonly logger = new Logger(OrdersService.name);
-  private razorpay: Razorpay;
+  private razorpay: any;
 
   constructor(
     private prisma: PrismaService,
@@ -20,10 +22,14 @@ export class OrdersService {
   ) {
     const keyId = this.configService.get<string>('RAZORPAY_KEY_ID') || 'rzp_test_dummy';
     const keySecret = this.configService.get<string>('RAZORPAY_KEY_SECRET') || 'dummy_secret';
-    this.razorpay = new Razorpay({
-      key_id: keyId,
-      key_secret: keySecret,
-    });
+    try {
+      this.razorpay = new Razorpay({
+        key_id: keyId,
+        key_secret: keySecret,
+      });
+    } catch (e) {
+      this.logger.warn(`Razorpay client init deferred: ${e.message}`);
+    }
   }
 
   async createIndividualOrder(userId: string, dto: CreateIndividualOrderDto) {
@@ -97,7 +103,7 @@ export class OrdersService {
     // Create Razorpay Order
     let razorpayOrderId = `order_mock_${Date.now()}`;
     try {
-      if (this.configService.get('RAZORPAY_KEY_ID') && !this.configService.get('RAZORPAY_KEY_ID').includes('test_xxxxxx')) {
+      if (this.razorpay && this.configService.get('RAZORPAY_KEY_ID') && !this.configService.get('RAZORPAY_KEY_ID').includes('test_xxxxxx')) {
         const rzpOrder = await this.razorpay.orders.create({
           amount: Math.round(total * 100), // In paise
           currency: 'INR',
@@ -175,7 +181,7 @@ export class OrdersService {
           create: itemDetails.map((i) => ({
             productId: i.productId,
             quantity: i.quantity,
- unitPrice: i.unitPrice,
+            unitPrice: i.unitPrice,
           })),
         },
       },
