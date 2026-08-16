@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Essentials of Medical Device Clinical Research &mdash; Information Booklet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--cream:#FAF6EE;--cream-dk:#F2EBD9;--espresso:#1A1208;--gold:#B8882A;--gold-lt:#D4A843;--gold-pale:#EDD89A;--ink:#2C1F0A;--muted:#6B5839;--rule:rgba(184,136,42,0.28);}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Lato',sans-serif;background:#666;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .page{width:210mm;min-height:297mm;margin:0 auto 12mm;position:relative;overflow:hidden;page-break-after:always;}
+    /* COVER */
+    .pg-cover{background:#0A0705;color:#fff;display:flex;flex-direction:column;justify-content:space-between;}
+    .cover-top-band{background:linear-gradient(135deg,#B8882A,#8B5E1A);padding:7mm 14mm;display:flex;align-items:center;}
+    .cover-top-band-title{font-family:'Cormorant Garamond',serif;font-size:9pt;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#fff;}
+    .cover-body{flex:1;padding:10mm 14mm 6mm;display:flex;flex-direction:column;align-items:center;}
+    .cover-series-label{font-family:'Cormorant Garamond',serif;font-size:8pt;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:3mm;}
+    .cover-main-title{font-family:'Cormorant Garamond',serif;font-size:36pt;font-weight:700;line-height:1.05;color:#fff;text-align:center;margin-bottom:1.5mm;}
+    .cover-subtitle{font-family:'Cormorant Garamond',serif;font-size:14pt;font-style:italic;color:var(--gold-pale);text-align:center;margin-bottom:6mm;}
+    .cover-author{font-family:'Lato',sans-serif;font-size:10pt;font-weight:300;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75);text-align:center;margin-bottom:7mm;}
+    .cover-author strong{color:var(--gold-lt);font-weight:700;}
+    .cover-books-row{display:flex;justify-content:center;align-items:flex-end;gap:3mm;width:100%;margin-bottom:7mm;}
+    .cover-vol-img{height:82mm;width:auto;object-fit:contain;filter:drop-shadow(0 6mm 12mm rgba(0,0,0,.75));}
+    .cover-rule{width:40mm;height:.3mm;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:3mm auto 4mm;}
+    .cover-tagline{font-family:'Cormorant Garamond',serif;font-size:11pt;font-style:italic;color:rgba(255,255,255,.65);text-align:center;max-width:140mm;line-height:1.5;}
+    .cover-bottom{background:linear-gradient(to top,rgba(0,0,0,.85),transparent);padding:5mm 14mm 7mm;display:flex;justify-content:space-between;align-items:flex-end;}
+    .cover-url{font-family:'Lato',sans-serif;font-size:7.5pt;color:var(--gold-lt);letter-spacing:.08em;}
+    .cover-vol-badges{display:flex;gap:1.5mm;}
+    .c-vol-badge{width:7mm;height:7mm;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:5pt;font-weight:900;color:#fff;}
+    /* INNER PAGES */
+    .page-inner{background:var(--cream);display:flex;flex-direction:column;}
+    .pg-header{background:var(--espresso);padding:2.5mm 14mm;display:flex;justify-content:space-between;align-items:center;}
+    .pg-header-brand{font-family:'Cormorant Garamond',serif;font-size:7pt;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-lt);}
+    .pg-header-title{font-family:'Lato',sans-serif;font-size:6.5pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);}
+    .section-band{height:1.2mm;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-lt) 60%,transparent 100%);}
+    .pg-content{flex:1;padding:9mm 14mm 6mm;}
+    .eyebrow{font-family:'Lato',sans-serif;font-size:6.5pt;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2mm;}
+    .sec-heading{font-family:'Cormorant Garamond',serif;font-size:21pt;font-weight:700;line-height:1.1;color:var(--espresso);margin-bottom:1.5mm;}
+    .gold-rule{height:.4mm;width:20mm;background:var(--gold);margin-bottom:5mm;}
+    .body-text{font-family:'Lato',sans-serif;font-size:8.5pt;line-height:1.68;color:var(--ink);margin-bottom:4mm;}
+    .body-text strong{color:var(--espresso);font-weight:700;}
+    .pull-quote{border-left:2.5mm solid var(--gold);padding:3.5mm 5mm;background:var(--cream-dk);margin:4mm 0;}
+    .pull-quote p{font-family:'Cormorant Garamond',serif;font-size:11pt;font-style:italic;color:var(--espresso);line-height:1.5;}
+    .bullet-list{list-style:none;padding:0;margin:0 0 4mm 0;}
+    .bullet-list li{font-family:'Lato',sans-serif;font-size:8pt;color:var(--ink);line-height:1.6;padding-left:5mm;position:relative;margin-bottom:1.5mm;}
+    .bullet-list li::before{content:'&mdash;';position:absolute;left:0;color:var(--gold);font-weight:700;}
+    .preface-opener{font-family:'Cormorant Garamond',serif;font-size:13pt;font-style:italic;font-weight:600;color:var(--espresso);line-height:1.5;margin-bottom:5mm;}
+    /* AUTHOR */
+    .author-hero{background:linear-gradient(135deg,#1A1208,#2C1F0A);border-radius:2.5mm;padding:7mm 8mm;margin-bottom:5mm;display:flex;gap:7mm;align-items:flex-start;}
+    .author-monogram{width:30mm;height:30mm;border-radius:50%;border:.8mm solid var(--gold);background:linear-gradient(135deg,#2C1F0A,#1A1208);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .author-monogram span{font-family:'Cormorant Garamond',serif;font-size:18pt;font-weight:700;color:var(--gold-lt);}
+    .author-info h2{font-family:'Cormorant Garamond',serif;font-size:18pt;font-weight:700;color:#fff;margin-bottom:1mm;}
+    .author-info .tagline{font-family:'Lato',sans-serif;font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:3mm;}
+    .author-info p{font-family:'Lato',sans-serif;font-size:7.5pt;color:rgba(255,255,255,.75);line-height:1.6;}
+    .cred-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5mm;margin-bottom:5mm;}
+    .cred-card{background:var(--espresso);border-radius:2mm;padding:3mm 4mm;}
+    .cred-card .val{font-family:'Cormorant Garamond',serif;font-size:14pt;font-weight:700;color:var(--gold-lt);line-height:1;}
+    .cred-card .lbl{font-family:'Lato',sans-serif;font-size:6.5pt;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:.8mm;}
+    /* STATS */
+    .stat-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3mm;margin-bottom:5mm;}
+    .stat-box{background:var(--espresso);border-radius:2mm;padding:4mm;text-align:center;}
+    .stat-box .num{font-family:'Cormorant Garamond',serif;font-size:20pt;font-weight:700;color:var(--gold-lt);line-height:1;}
+    .stat-box .unit{font-size:8pt;color:var(--gold-pale);font-weight:700;}
+    .stat-box .lbl{font-family:'Lato',sans-serif;font-size:6pt;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.45);margin-top:1.5mm;line-height:1.4;}
+    /* BOOKS */
+    .four-books-showcase{width:100%;border-radius:2.5mm;margin-bottom:4mm;object-fit:cover;}
+    /* VOL CARDS */
+    .vol-card{display:flex;gap:4.5mm;margin-bottom:5mm;align-items:flex-start;}
+    .vol-cover-img{height:40mm;width:auto;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 2mm 6mm rgba(0,0,0,.3));}
+    .vol-info .vol-label{font-family:'Lato',sans-serif;font-size:6pt;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1mm;}
+    .vol-info h3{font-family:'Cormorant Garamond',serif;font-size:14pt;font-weight:700;color:var(--espresso);margin-bottom:2mm;}
+    .chapter-list{list-style:none;padding:0;}
+    .chapter-list li{font-family:'Lato',sans-serif;font-size:7.5pt;line-height:1.55;padding-left:4mm;position:relative;margin-bottom:1mm;}
+    .chapter-list li::before{content:'&#9658;';position:absolute;left:0;font-size:6pt;top:1mm;}
+    /* VALUE */
+    .value-grid{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-bottom:4mm;}
+    .value-card{background:var(--cream-dk);border-left:2mm solid var(--gold);padding:3.5mm 4mm;border-radius:0 2mm 2mm 0;}
+    .value-card .num{font-family:'Cormorant Garamond',serif;font-size:16pt;font-weight:700;color:var(--gold);line-height:1;margin-bottom:1mm;}
+    .value-card h4{font-family:'Lato',sans-serif;font-size:7pt;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--espresso);margin-bottom:1.5mm;}
+    .value-card p{font-family:'Lato',sans-serif;font-size:7pt;color:var(--muted);line-height:1.55;}
+    /* REC */
+    .rec-card{background:var(--espresso);border-radius:2.5mm;padding:5mm 6mm;margin-bottom:4mm;}
+    .rec-card blockquote{font-family:'Cormorant Garamond',serif;font-size:10.5pt;font-style:italic;color:rgba(255,255,255,.9);line-height:1.6;margin-bottom:3mm;}
+    .rec-card .rec-sig{font-family:'Lato',sans-serif;font-size:7pt;color:var(--gold-lt);font-weight:700;letter-spacing:.06em;}
+    .rec-card .rec-role{font-family:'Lato',sans-serif;font-size:6.5pt;color:rgba(255,255,255,.45);margin-top:.5mm;}
+    /* AUDIENCE */
+    .audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5mm;margin-bottom:4mm;}
+    .aud-card{background:var(--cream-dk);border-radius:2mm;padding:3mm 3.5mm;}
+    .aud-card h4{font-family:'Lato',sans-serif;font-size:7pt;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--espresso);margin-bottom:1mm;}
+    .aud-card p{font-family:'Lato',sans-serif;font-size:7pt;color:var(--muted);line-height:1.5;}
+    /* BACK */
+    .pg-back{background:var(--espresso);color:#fff;display:flex;flex-direction:column;justify-content:space-between;}
+    .back-hero{padding:12mm 14mm 8mm;flex:1;}
+    .back-hero h2{font-family:'Cormorant Garamond',serif;font-size:22pt;font-weight:700;color:#fff;margin-bottom:2mm;line-height:1.15;}
+    .back-hero .sub{font-family:'Lato',sans-serif;font-size:8.5pt;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:7mm;}
+    .how-to-order h3{font-family:'Cormorant Garamond',serif;font-size:13pt;font-weight:700;color:var(--gold-lt);margin-bottom:3mm;}
+    .order-channels{display:grid;grid-template-columns:1fr 1fr;gap:2.5mm;margin-bottom:6mm;}
+    .order-channel{display:flex;align-items:flex-start;gap:2.5mm;}
+    .order-icon{width:7mm;height:7mm;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:7pt;color:#fff;font-weight:900;}
+    .order-detail .lbl{font-family:'Lato',sans-serif;font-size:7pt;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5mm;}
+    .order-detail .val{font-family:'Lato',sans-serif;font-size:7pt;color:var(--gold-pale);}
+    .back-books-row{display:flex;justify-content:center;gap:2mm;padding:4mm 14mm;background:rgba(255,255,255,.04);}
+    .back-vol-img{height:30mm;width:auto;object-fit:contain;filter:drop-shadow(0 1mm 4mm rgba(0,0,0,.6));}
+    .back-footer{background:var(--gold);padding:4mm 14mm;display:flex;justify-content:space-between;align-items:center;}
+    .back-footer-quote{font-family:'Cormorant Garamond',serif;font-size:9pt;font-style:italic;color:var(--espresso);flex:1;}
+    .back-footer-url{font-family:'Lato',sans-serif;font-size:7.5pt;font-weight:700;color:var(--espresso);white-space:nowrap;margin-left:8mm;}
+    .pg-footer{padding:2mm 14mm;border-top:.3mm solid var(--rule);display:flex;justify-content:space-between;align-items:center;}
+    .pg-footer span{font-family:'Lato',sans-serif;font-size:6pt;color:var(--muted);letter-spacing:.06em;}
+    @media print{body{background:none;}.page{margin:0;}@page{size:A4 portrait;margin:0;}}
+  </style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER -->
+<div class="page pg-cover">
+  <div class="cover-top-band">
+    <div class="cover-top-band-title">Information Booklet &nbsp;&middot;&nbsp; Premium Medical Reference Publication</div>
+  </div>
+  <div class="cover-body">
+    <div class="cover-series-label">A Four-Volume Masterwork</div>
+    <div class="cover-main-title">Essentials of Medical<br>Device Clinical Research</div>
+    <div class="cover-subtitle">The Definitive End-to-End Reference for MedTech Professionals</div>
+    <div class="cover-author">Authored by &nbsp;<strong>Dr. Ashish Indani</strong>&nbsp; &middot; Physician &middot; Regulatory Expert &middot; TEDx Speaker</div>
+    <div class="cover-books-row">
+      <img src="v1_nobg.png" alt="Volume I" class="cover-vol-img"/>
+      <img src="v2_nobg.png" alt="Volume II" class="cover-vol-img"/>
+      <img src="v3_nobg.png" alt="Volume III" class="cover-vol-img"/>
+      <img src="v4_nobg.png" alt="Volume IV" class="cover-vol-img"/>
+    </div>
+    <div class="cover-rule"></div>
+    <div class="cover-tagline">&ldquo;Bridging clinical evidence, regulatory science, and innovation<br>to advance safer medical technologies.&rdquo;</div>
+  </div>
+  <div class="cover-bottom">
+    <div class="cover-url">www.booksbyashishindani.com</div>
+    <div class="cover-vol-badges">
+      <div class="c-vol-badge" style="background:#C0392B">I</div>
+      <div class="c-vol-badge" style="background:#1A3A6B">II</div>
+      <div class="c-vol-badge" style="background:#B36A1A">III</div>
+      <div class="c-vol-badge" style="background:#1A6B30">IV</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2: PREFACE -->
+<div class="page page-inner">
+  <div class="pg-header"><span class="pg-header-brand">Essentials of Medical Device Clinical Research</span><span class="pg-header-title">Preface</span></div>
+  <div class="section-band"></div>
+  <div class="pg-content">
+    <div class="eyebrow">Preface &amp; Purpose</div>
+    <h1 class="sec-heading">Why This Book<br>Was Written</h1>
+    <div class="gold-rule"></div>
+    <p class="preface-opener">Medical devices do not simply move from an engineering concept to a patient&rsquo;s bedside. Between innovation and adoption lies a demanding journey of scientific evaluation, clinical investigation, ethical oversight, regulatory scrutiny, risk assessment, and continuous post-market learning.</p>
+    <p class="body-text">The medical-device industry is entering a defining phase globally. MedTech has emerged as a sunrise sector, driven by advances in medical devices, diagnostics, digital health, artificial intelligence, robotics, and connected technologies. Yet one of the most pressing challenges facing the sector has been the chronic scarcity of specialised, device-specific clinical research knowledge.</p>
+    <p class="body-text">For decades, medical device clinical studies were forced to depend on <strong>conventional retrofitting from drug-oriented systems and methods</strong>. The drug and device differ in clinical science from various aspects &mdash; not only operational, but also scientific and pragmatic. Missing regulatory harmonisation and the wide-spread diversity of devices added to this complexity. While there were efforts from some authors, regulatory bodies, and universal standards forums such as CDISC and ISO, an <strong>end-to-end compilation of all that is needed in medical device clinical research was grossly missing</strong> before this book.</p>
+    <div class="pull-quote"><p>&ldquo;This book is a unique compilation of all that is needed for a clinical research professional in Medical Devices. In this book, the overall clinical research requirements for medical devices are compiled from end-to-end.&rdquo;</p></div>
+    <p class="body-text"><em>Essentials of Medical Device Clinical Research</em>, authored by Dr. Ashish Indani, is written for professionals who navigate this journey. It is a comprehensive, multi-volume work that brings together the principles, processes, people, and practical realities involved in generating credible clinical evidence for medical devices.</p>
+    <p class="body-text">The book recognises that medical-device research is not a shortened version of pharmaceutical research &mdash; it is a specialised field shaped by device classification, intended use, design evolution, human factors, technological change, and the relationship between performance, safety, and patient benefit.</p>
+  </div>
+  <div class="pg-footer"><span>Dr. Ashish Indani &nbsp;&middot;&nbsp; booksbyashishindani.com</span><span>2</span></div>
+</div>
+
+<!-- PAGE 3: AUTHOR -->
+<div class="page page-inner">
+  <div class="pg-header"><span class="pg-header-brand">Essentials of Medical Device Clinical Research</span><span class="pg-header-title">About the Author</span></div>
+  <div class="section-band"></div>
+  <div class="pg-content">
+    <div class="eyebrow">About the Author</div>
+    <div class="author-hero">
+      <div class="author-monogram"><span>AI</span></div>
+      <div class="author-info">
+        <h2>Dr. Ashish Indani</h2>
+        <div class="tagline">General Manager &ndash; Zydus MedTech &nbsp;&middot;&nbsp; Regd. Independent Director &nbsp;&middot;&nbsp; TEDx Speaker &amp; Author</div>
+        <p>Physician, medical-device clinical and regulatory expert, researcher, author, and innovation leader with more than <strong>two decades of experience</strong> across the global life-sciences industry. His career brings together clinical affairs, regulatory strategy, research and innovation, patient safety, and the responsible adoption of emerging healthcare technologies.</p>
+      </div>
+    </div>
+    <div class="cred-grid">
+      <div class="cred-card"><div class="val">25+</div><div class="lbl">Years of Global Industry Experience</div></div>
+      <div class="cred-card"><div class="val">1700%</div><div class="lbl">Dept. Growth Achieved at Stryker</div></div>
+      <div class="cred-card"><div class="val">4 Vol.</div><div class="lbl">Landmark Masterwork Publication</div></div>
+      <div class="cred-card"><div class="val">~30%</div><div class="lbl">Revenue Savings &amp; Efficiency Gains</div></div>
+    </div>
+    <p class="body-text">He has held leadership and advisory responsibilities with prominent organisations including <strong>Stryker, Tata Consultancy Services (TCS), Meril Life Sciences, Biosensors International,</strong> and <strong>Advanced MedTech Solutions.</strong> His portfolio spans clinical investigation planning and execution, clinical evaluation, post-market surveillance, materiovigilance, pharmacovigilance, medical writing, risk management, and regulatory engagement across <strong>US FDA, EU MDR, IMDRF, ICH-GCP, ISO 13485, ISO 14971,</strong> and <strong>ISO 14155.</strong></p>
+    <p class="body-text">Dr. Indani&rsquo;s academic foundation is complemented by a strong innovation portfolio extending to <strong>artificial intelligence, machine learning, data science, blockchain, biosensors, nanotechnology,</strong> and <strong>digital health.</strong> He is also a <strong>conference and TEDx speaker</strong>, advancing dialogue on medical-device research, regulatory science, patient safety, and the future of healthcare innovation.</p>
+    <div class="pull-quote"><p>&ldquo;Bridging clinical evidence, regulatory science, and innovation to advance safer medical technologies.&rdquo;</p></div>
+    <p class="body-text"><strong>Career Highlights:</strong> GM &ndash; Zydus MedTech (Dec 2025&ndash;present) &middot; Managing Director, Krishnamugdha Advance ResearchTeck &middot; GM Clinical &amp; Medical Affairs, AMS &middot; Senior Manager Clinical Affairs, Stryker (grew dept. 1700%) &middot; Principal Scientist &amp; Head of Research &amp; Innovation, TCS (5 yrs 7 mos) &middot; Pioneer Researcher Awardee &mdash; BlackBuck Award (Medical Research Summit, Jul 2024).</p>
+  </div>
+  <div class="pg-footer"><span>Dr. Ashish Indani &nbsp;&middot;&nbsp; booksbyashishindani.com</span><span>3</span></div>
+</div>
+
+<!-- PAGE 4: INDUSTRY -->
+<div class="page page-inner">
+  <div class="pg-header"><span class="pg-header-brand">Essentials of Medical Device Clinical Research</span><span class="pg-header-title">Industry Landscape</span></div>
+  <div class="section-band"></div>
+  <div class="pg-content">
+    <div class="eyebrow">The Global MedTech Opportunity</div>
+    <h1 class="sec-heading">A Sector Defined<br>by Evidence</h1>
+    <div class="gold-rule"></div>
+    <div class="stat-row">
+      <div class="stat-box"><div class="num">~$600B</div><div class="lbl">Global Medical Device Market Size (2024)</div></div>
+      <div class="stat-box"><div class="num">~6.5%</div><div class="unit">CAGR</div><div class="lbl">Projected growth through 2030</div></div>
+      <div class="stat-box"><div class="num">$1T+</div><div class="lbl">Projected Market by Early 2030s</div></div>
+    </div>
+    <p class="body-text">The medical-technology industry is entering a defining phase. MedTech has emerged as a <strong>sunrise sector</strong>, driven by advances in medical devices, diagnostics, digital health, artificial intelligence, robotics, connected technologies, and indigenous innovation. India&rsquo;s opportunity is vast &mdash; but realising this potential will require more than technology alone. It will require a strong ecosystem of <strong>clinical evidence, regulatory capability, risk-based decision-making,</strong> and professionally trained human resources.</p>
+    <p class="body-text">One of the most pressing challenges facing the sector is the <strong>scarcity of specialised resources</strong>. Institutions and organisations need professionals who can understand not only device design and engineering, but also clinical investigation, regulatory pathways, quality systems, risk management, medical writing, data interpretation, safety reporting, and post-marketing surveillance.</p>
+    <div class="pull-quote"><p>&ldquo;Industry and policy reports have identified gaps in the availability of skilled personnel across biomedical engineering, quality assurance, clinical research, regulatory affairs, and related technical functions.&rdquo;</p></div>
+    <ul class="bullet-list">
+      <li><strong>Digital Health &amp; AI:</strong> Explosive growth in SaMD, wearables, diagnostic AI &mdash; all demanding new clinical evidence frameworks.</li>
+      <li><strong>Regulatory Convergence:</strong> EU MDR 2017/745, US FDA, IMDRF, and emerging national frameworks demand device-specific expertise.</li>
+      <li><strong>Asia-Pacific Leadership:</strong> India, China, Japan, and South Korea are among the fastest-growing MedTech markets globally.</li>
+      <li><strong>Post-Market Requirements:</strong> PMCF, materiovigilance, and real-world evidence generation are now integral to device lifecycle management.</li>
+      <li><strong>Workforce Gap:</strong> Industry consistently identifies shortage of professionals combining clinical, regulatory, and research skills.</li>
+    </ul>
+    <p class="body-text">Institutions and organisations that develop capable professionals will be <strong>better positioned to contribute to safe innovation, indigenous product development, global regulatory compliance,</strong> and improved patient outcomes.</p>
+  </div>
+  <div class="pg-footer"><span>Dr. Ashish Indani &nbsp;&middot;&nbsp; booksbyashishindani.com</span><span>4</span></div>
+</div>
+
+<!-- PAGE 5: BOOK DESCRIPTION -->
+<div class="page page-inner">
+  <div class="pg-header"><span class="pg-header-brand">Essentials of Medical Device Clinical Research</span><span class="pg-header-title">Book Description</span></div>
+  <div class="section-band"></div>
+  <div class="pg-content">
+    <div class="eyebrow">About the Book</div>
+    <h1 class="sec-heading">A Complete View of<br>the Device Lifecycle</h1>
+    <div class="gold-rule"></div>
+    <img src="exact_master_books_showcase.png" alt="Essentials of Medical Device Clinical Research 4 Volume Set" class="four-books-showcase" style="height:55mm;object-fit:cover;object-position:center;"/>
+    <p class="body-text"><em>Essentials of Medical Device Clinical Research</em> by Dr. Ashish Indani is a <strong>comprehensive, end-to-end reference</strong> for professionals involved in the clinical development, evaluation, regulation, and lifecycle management of medical devices. The work addresses an important gap in healthcare literature by presenting medical-device clinical research as a specialised discipline &mdash; with scientific, operational, regulatory, and practical requirements that <strong>differ significantly from pharmaceutical clinical trials.</strong></p>
+    <p class="body-text">Organised across four interconnected parts, the book begins with the fundamentals of medical devices, their classification, regulatory pathways, and the key similarities and differences between drug and device research. It then progresses to the core scientific and operational elements of clinical research, including medical writing, clinical operations, data management, safety reporting, medical coding, biostatistics, risk management, and the generation of clinical evidence.</p>
+    <p class="body-text">The book also explores contemporary and evolving areas including <strong>software as a medical device, software in a medical device, diagnostic devices, ISO standards, materiovigilance, preclinical studies,</strong> and global marketing authorisation &mdash; making it relevant to professionals working with connected, digital, diagnostic, and technology-enabled medical products.</p>
+    <div class="pull-quote"><p>&ldquo;Medical-device innovation is only as strong as the clinical evidence behind it. From the first clinical question to regulatory submission and post-market follow-up, medical-device research demands specialised knowledge, careful planning, scientific discipline, and close coordination across multiple functions.&rdquo;</p></div>
+  </div>
+  <div class="pg-footer"><span>Dr. Ashish Indani &nbsp;&middot;&nbsp; booksbyashishindani.com</span><span>5</span></div>
+</div>
+
+<!-- PAGE 6: VOL I & II -->
+<div class="page page-inner">
+  <div class="pg-header"><span class="pg-header-brand">Essentials of Medical Device Clinical Research</span><span class="pg-header-title">Volumes I &amp; II &mdash; Topics Covered</span></div>
+  <div class="section-band"></div>
+  <div class="pg-content">
+    <div class="eyebrow">Topics Covered</div>
+    <h1 class="sec-heading">Volumes I &amp; II</h1>
+    <div class="gold-rule"></div>
+    <div class="vol-card">
+      <img src="v1_nobg.png" alt="Volume I" class="vol-cover-img"/>
+      <div class="vol-info">
+        <div class="vol-label" style="color:#C0392B">Volume I &nbsp;&middot;&nbsp; Fundamentals &amp; Regulatory Pathways</div>
+        <h3>Device Fundamentals &amp; Regulatory Science</h3>
+        <ul class="chapter-list">
+          <li style="color:#C0392B">Device classification, intended use and purpose of clinical research</li>
+          <li style="color:#C0392B">US FDA regulatory pathways: 510(k), De Novo, PMA, HDE</li>
+          <li style="color:#C0392B">EU MDR 2017/745 &mdash; framework, classification rules, IVDR</li>
+          <li style="color:#C0392B">IMDRF, ICH-GCP, ISO 13485, ISO 14155 standards overview</li>
+          <li style="color:#C0392B">Divergences between drug and device clinical research</li>
+          <li style="color:#C0392B">Clinical investigation overview and regulatory purpose</li>
+          <li style="color:#C0392B">Global marketing authorisation pathways</li>
+        </ul>
+      </div>
+    </div>
+    <div class="vol-card">
+      <img src="v2_nobg.png" alt="Volume II" class="vol-cover-img"/>
+      <div class="vol-info">
+        <div class="vol-label" style="color:#1A3A6B">Volume II &nbsp;&middot;&nbsp; Scientific &amp; Operational Core</div>
+        <h3>Clinical Investigation &amp; Evidence Generation</h3>
+        <ul class="chapter-list">
+          <li style="color:#1A3A6B">Clinical investigation planning and protocol development</li>
+          <li style="color:#1A3A6B">Clinical evaluation reports (CER) &mdash; ISO 14155 framework</li>
+          <li style="color:#1A3A6B">Good Clinical Practice (GCP) for medical devices</li>
+          <li style="color:#1A3A6B">Medical writing &mdash; clinical study reports, CER, SSCP</li>
+          <li style="color:#1A3A6B">Risk management principles &mdash; ISO 14971</li>
+          <li style="color:#1A3A6B">Clinical operations: site management, monitoring, oversight</li>
+          <li style="color:#1A3A6B">Ethics committees, informed consent, patient protection</li>
+          <li style="color:#1A3A6B">Preclinical studies and benefit-risk analysis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="pg-footer"><span>Dr. Ashish Indani &nbsp;&middot;&nbsp; booksbyashishindani.com</span><span>6</span></div>
+</div>
+
+<!-- PAGE 7: VOL III & IV -->
+<div class="page page-inner">
+  <div class="pg-header"><span class="pg-header-brand">Essentials of Medical Device Clinical Research</span><span class="pg-header-title">Volumes III &amp; IV &mdash; Topics Covered</span></div>
+  <div class="section-band"></div>
+  <div class="pg-content">
+    <div class="eyebrow">Topics Covered</div>
+    <h1 class="sec-heading">Volumes III &amp; IV</h1>
+    <div class="gold-rule"></div>
+    <div class="vol-card">
+      <img src="v3_nobg.png" alt="Volume III" class="vol-cover-img"/>
+      <div class="vol-info">
+        <div class="vol-label" style="color:#B36A1A">Volume III &nbsp;&middot;&nbsp; Data Management &amp; Biostatistics</div>
+        <h3>Evidence Quality &amp; Safety Science</h3>
+        <ul class="chapter-list">
+          <li style="color:#B36A1A">Clinical data management for medical device studies</li>
+          <li style="color:#B36A1A">Medical coding: MedDRA &amp; FDA Medical Device Problem Codes</li>
+          <li style="color:#B36A1A">Patient outcome codes and adverse event classification</li>
+          <li style="color:#B36A1A">Biostatistics: sample size, statistical analysis plan, endpoints</li>
+          <li style="color:#B36A1A">Safety reporting: SUSAR, SAE, periodic safety reports</li>
+          <li style="color:#B36A1A">Materiovigilance &mdash; device-specific safety surveillance</li>
+          <li style="color:#B36A1A">Post-market surveillance and PMCF study design</li>
+          <li style="color:#B36A1A">Real-world evidence generation for devices</li>
+        </ul>
+      </div>
+    </div>
+    <div class="vol-card">
+      <img src="v4_nobg.png" alt="Volume IV" class="vol-cover-img"/>
+      <div class="vol-info">
+        <div class="vol-label" style="color:#1A6B30">Volume IV &nbsp;&middot;&nbsp; Software, AI &amp; Post-Market Evidence</div>
+        <h3>Emerging Technology &amp; Future Frontiers</h3>
+        <ul class="chapter-list">
+          <li style="color:#1A6B30">Software as a Medical Device (SaMD) &mdash; regulatory science</li>
+          <li style="color:#1A6B30">Software in a Medical Device (SiMD)</li>
+          <li style="color:#1A6B30">ISO 63204 / ISO 62304 &mdash; Software Development Life Cycle (SDLC)</li>
+          <li style="color:#1A6B30">Quality Management Systems (QMS) for software in MedTech</li>
+          <li style="color:#1A6B30">Diagnostic devices &mdash; ISO 20916, clinical performance studies</li>
+          <li style="color:#1A6B30">Data science and artificial intelligence applications in devices</li>
+          <li style="color:#1A6B30">Publications: types, authorship standards, and methodology</li>
+          <li style="color:#1A6B30">Post-market clinical follow-up (PMCF) planning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="pg-footer"><span>Dr. Ashish Indani &nbsp;&middot;&nbsp; booksbyashishindani.com</span><span>7</span></div>
+</div>
+
+<!-- PAGE 8: VALUE PROPOSITION -->
+<div class="page page-inner">
+  <div class="pg-header"><span class="pg-header-brand">Essentials of Medical Device Clinical Research</span><span class="pg-header-title">Why This Book</span></div>
+  <div class="section-band"></div>
+  <div class="pg-content">
+    <div class="eyebrow">What Makes This Book Valuable</div>
+    <h1 class="sec-heading">Six Reasons This<br>Reference Stands Apart</h1>
+    <div class="gold-rule"></div>
+    <div class="value-grid">
+      <div class="value-card"><div class="num">01</div><h4>First End-to-End Compilation</h4><p>The first and unique comprehensive end-to-end coverage of clinical research for medical devices. No longer dependent on pharmaceutical drug trial retrofitting.</p></div>
+      <div class="value-card"><div class="num">02</div><h4>Device-Specific Discipline</h4><p>Explains why device research requires approaches fundamentally distinct from pharmaceutical trials &mdash; shaped by device classification, intended use, and human factors.</p></div>
+      <div class="value-card"><div class="num">03</div><h4>Integrated Perspective</h4><p>Rather than treating clinical research, regulation, operations, and technology as isolated subjects, presents them as parts of one interconnected evidence ecosystem.</p></div>
+      <div class="value-card"><div class="num">04</div><h4>Global Regulatory Coverage</h4><p>Covers US FDA, EU MDR, IMDRF, ICH-GCP, ISO 13485, ISO 14971, ISO 14155 and other international frameworks relevant to device clinical research.</p></div>
+      <div class="value-card"><div class="num">05</div><h4>Practitioner-First Design</h4><p>Written in a practical, structured manner intended to serve both as a foundational textbook for newcomers and a working reference for experienced professionals.</p></div>
+      <div class="value-card"><div class="num">06</div><h4>Emerging Technology Ready</h4><p>Covers SaMD, SiMD, AI/ML in diagnostics, digital health, ISO 63204/62304 SDLC standards &mdash; keeping readers current with the fastest-evolving frontier of MedTech.</p></div>
+    </div>
+    <div class="pull-quote"><p>&ldquo;A definitive practical guide to transforming medical-device innovation into reliable clinical evidence, regulatory confidence, and meaningful patient benefit.&rdquo;</p></div>
+    <p class="body-text">At its core, <em>Essentials of Medical Device Clinical Research</em> is about more than compliance. It is about ensuring that innovation is supported by evidence that is <strong>scientifically sound, ethically generated, clinically meaningful,</strong> and relevant to the patients and healthcare systems it is intended to serve.</p>
+  </div>
+  <div class="pg-footer"><span>Dr. Ashish Indani &nbsp;&middot;&nbsp; booksbyashishindani.com</span><span>8</span></div>
+</div>
+
+<!-- PAGE 9: RECOMMENDATIONS & AUDIENCE -->
+<div class="page page-inner">
+  <div class="pg-header"><span class="pg-header-brand">Essentials of Medical Device Clinical Research</span><span class="pg-header-title">Recommendations &amp; Audience</span></div>
+  <div class="section-band"></div>
+  <div class="pg-content">
+    <div class="eyebrow">Official Recommendation</div>
+    <h1 class="sec-heading">Endorsed at the<br>Highest Level</h1>
+    <div class="gold-rule"></div>
+    <div class="rec-card">
+      <blockquote>&ldquo;Dr. Ashish Indani has assembled a vast body of knowledge&hellip; filling a long-standing gap in the industry where medical device clinical research historically depended on retrofitted drug-oriented methodologies. This work is a significant contribution to the field and serves as an invaluable resource for professionals, institutions, and the broader MedTech ecosystem.&rdquo;</blockquote>
+      <div class="rec-sig">Kritika Sharma (IAS)</div>
+      <div class="rec-role">Managing Director &amp; CEO, UP Promote Pharma Council &mdash; Government of Uttar Pradesh, India</div>
+    </div>
+    <div class="eyebrow" style="margin-top:4mm">Who Should Read This Book</div>
+    <div class="gold-rule" style="margin-bottom:4mm"></div>
+    <div class="audience-grid">
+      <div class="aud-card"><h4>Clinical Research &amp; Affairs Professionals</h4><p>Those planning, conducting, or overseeing device clinical investigations, CERs, and regulatory submissions.</p></div>
+      <div class="aud-card"><h4>Regulatory &amp; Quality Teams</h4><p>Regulatory affairs, quality assurance, and compliance professionals navigating global device frameworks.</p></div>
+      <div class="aud-card"><h4>Medical Writers &amp; Data Managers</h4><p>Professionals preparing clinical study reports, CERs, SSCPs, and managing clinical data for device studies.</p></div>
+      <div class="aud-card"><h4>Manufacturers &amp; Innovators</h4><p>MedTech start-ups, manufacturers, and healthcare innovators developing evidence strategies for new devices.</p></div>
+      <div class="aud-card"><h4>Investigators &amp; Clinicians</h4><p>Clinical investigators, research coordinators, ethics committees, and healthcare professionals in device trials.</p></div>
+      <div class="aud-card"><h4>Students &amp; Faculty</h4><p>Postgraduate students and faculty in biomedical, pharmacy, biotechnology, clinical research, and engineering programmes.</p></div>
+    </div>
+    <div class="pull-quote"><p>&ldquo;This book is designed to serve as a practical bridge between academic learning and industry application &mdash; supporting medical-device, biomedical, pharmacy, biotechnology, and clinical-research programmes.&rdquo;</p></div>
+  </div>
+  <div class="pg-footer"><span>Dr. Ashish Indani &nbsp;&middot;&nbsp; booksbyashishindani.com</span><span>9</span></div>
+</div>
+
+<!-- PAGE 10: BACK COVER -->
+<div class="page pg-back">
+  <div class="back-hero">
+    <div class="eyebrow" style="color:#D4A843">How to Order</div>
+    <h2>Invest in Knowledge.<br>Advance Safer Innovation.</h2>
+    <p class="sub">The 4-volume set is available worldwide. A 10% discount is available for direct orders via the official website. Special bulk-purchase arrangements are available for libraries, universities, hospitals, and corporate training programmes.</p>
+    <div class="how-to-order">
+      <h3>Order Channels</h3>
+      <div class="order-channels">
+        <div class="order-channel"><div class="order-icon">W</div><div class="order-detail"><div class="lbl">Official Website (10% Discount)</div><div class="val">www.booksbyashishindani.com</div></div></div>
+        <div class="order-channel"><div class="order-icon">A</div><div class="order-detail"><div class="lbl">Amazon</div><div class="val">Search &ldquo;Essentials Medical Device Clinical Research Ashish Indani&rdquo;</div></div></div>
+        <div class="order-channel"><div class="order-icon">F</div><div class="order-detail"><div class="lbl">Flipkart</div><div class="val">Available for delivery across India</div></div></div>
+        <div class="order-channel"><div class="order-icon">B</div><div class="order-detail"><div class="lbl">Institutional / Bulk Orders</div><div class="val">Contact via booksbyashishindani.com for institutional pricing</div></div></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:12pt;color:#D4A843;margin-bottom:3mm">The Four-Volume Collection</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2mm">
+        <div style="display:flex;align-items:center;gap:2mm"><div style="width:3mm;height:3mm;background:#C0392B;border-radius:50%;flex-shrink:0"></div><span style="font-family:'Lato',sans-serif;font-size:7pt;color:rgba(255,255,255,.75)">Vol. I &mdash; Fundamentals &amp; Regulatory Pathways</span></div>
+        <div style="display:flex;align-items:center;gap:2mm"><div style="width:3mm;height:3mm;background:#1A3A6B;border-radius:50%;flex-shrink:0"></div><span style="font-family:'Lato',sans-serif;font-size:7pt;color:rgba(255,255,255,.75)">Vol. II &mdash; Scientific &amp; Operational Core</span></div>
+        <div style="display:flex;align-items:center;gap:2mm"><div style="width:3mm;height:3mm;background:#B36A1A;border-radius:50%;flex-shrink:0"></div><span style="font-family:'Lato',sans-serif;font-size:7pt;color:rgba(255,255,255,.75)">Vol. III &mdash; Data Management &amp; Biostatistics</span></div>
+        <div style="display:flex;align-items:center;gap:2mm"><div style="width:3mm;height:3mm;background:#1A6B30;border-radius:50%;flex-shrink:0"></div><span style="font-family:'Lato',sans-serif;font-size:7pt;color:rgba(255,255,255,.75)">Vol. IV &mdash; Software, AI &amp; Post-Market Evidence</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="back-books-row">
+    <img src="v1_nobg.png" alt="Volume I" class="back-vol-img"/>
+    <img src="v2_nobg.png" alt="Volume II" class="back-vol-img"/>
+    <img src="v3_nobg.png" alt="Volume III" class="back-vol-img"/>
+    <img src="v4_nobg.png" alt="Volume IV" class="back-vol-img"/>
+  </div>
+  <div class="back-footer">
+    <span class="back-footer-quote">&ldquo;Let us equip the next generation of MedTech professionals with the knowledge required to transform promising innovation into safe, clinically meaningful, and globally acceptable medical technologies.&rdquo;</span>
+    <span class="back-footer-url">booksbyashishindani.com</span>
+  </div>
+</div>
+
+</body>
+</html>

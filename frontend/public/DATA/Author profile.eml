@@ -1,0 +1,368 @@
+Delivered-To: rydhamdangayach@gmail.com
+Received: by 2002:a05:7108:3d8c:b0:57f:b5c2:327d with SMTP id hh12csp790144gdb;
+        Fri, 7 Aug 2026 09:24:12 -0700 (PDT)
+X-Received: by 2002:a05:690c:968b:b0:80e:5236:b944 with SMTP id 00721157ae682-8244134f458mr23898937b3.10.1786119852392;
+        Fri, 07 Aug 2026 09:24:12 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1786119852; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=hocT5H7erwAAk2bTbDNakJwCJvz5sWFgAYDzfcSr0r1hp//48sTUtpsV3o5lZdoVke
+         M4ZKsFsif05ZWaoEBhX/srJABR3dAMJjF4tt1tBbrrnoVGjdPsw3F7f5wrPkMNKlb0av
+         qhpXiv9zVIySyp1ehZ6nuEvg2HyxJGektgimexMpyHeoSC8KjotUfixFB7uLSPniH4oJ
+         Lo38wERbzeen540g6HjeQhpA/XMqgxOSL2sHNWpK0xklL9DUA/tksRzK1OpsrA5VUq5T
+         MRCdx2SCu0mA+dO++L7Jcig/HoKbbmBn9Tp8jGHQhGY5MwIXz84XBnw2nl24w1b7eDe2
+         90vw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=mime-version:msip_labels:content-language:accept-language
+         :message-id:date:thread-index:thread-topic:subject:to:from
+         :dkim-signature;
+        bh=Rh4cBud/qiPnVX4I9XuIh3ZGxcpkh/lkCxco45lUlaY=;
+        fh=kyyht5V+rY3/odivMErrfbouV+bF3uOZ8WwYGvD2+NI=;
+        b=MdBfWP6FruF56K+2eJZX58astuQzcSV6wUxKCjUCVPC0700RrDRHy747tihxWZ4XiG
+         N5qmhDS3TvExDTOMlkqGf8v3fzmzlN8h+O9dwnqP51rmol3JJ0vP/oaxYbkUIdsQGJby
+         k03zp4ZohQ3IVeSdMCNJrPk/0lZoqTvxznisREirccbLkLi8XRYTMwXztHsMGG45sRSw
+         gVxi1jPeZ0Yth3A2CRtEuOg8ZyHohtVzu9NMSQa5Ck7fjl2xDwyUvjRNiS4pyFNiTfPG
+         pszicHQ1v2VTFvatd58/4ZMzvhuQXr/brQdX/kpnuDC2acP7wEzE2OqRjmwaQ5SjvRiS
+         YenQ==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b=izwbSmEc;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of advanceresearch.ashish@hotmail.com designates 2a01:111:f403:d40f::3 as permitted sender) smtp.mailfrom=AdvanceResearch.ashish@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+Return-Path: <AdvanceResearch.ashish@hotmail.com>
+Received: from SEYPR02CU001.outbound.protection.outlook.com (mail-koreacentralazolkn190130003.outbound.protection.outlook.com. [2a01:111:f403:d40f::3])
+        by mx.google.com with ESMTPS id 00721157ae682-823ff3aeb74si35575187b3.231.2026.08.07.09.24.11
+        for <rydhamdangayach@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 07 Aug 2026 09:24:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of advanceresearch.ashish@hotmail.com designates 2a01:111:f403:d40f::3 as permitted sender) client-ip=2a01:111:f403:d40f::3;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b=izwbSmEc;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of advanceresearch.ashish@hotmail.com designates 2a01:111:f403:d40f::3 as permitted sender) smtp.mailfrom=AdvanceResearch.ashish@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=b5gVUknwrOKRMk79JQvSAknRKeM7QQW8m5fLb53umnKEBC39BXjCDZAN5qXOdsuc7wSEmFL/94jCH3oGmZiF+RA2kvMxF6mqesn8QsuVlS/W9egg1TE8So1CTwnSMuxlAxmwMMK0RYiqpdqVjzla89Xyhk/bEIpXsKF08iuvRpeyTGbzKsAtWfA/b9tKdWQlMlIynRS+PWoMVZ19/kCnlpwD9OScGPZnhB2etP48joAFo8n74WAG4z9njM7OctBroWeMWJl3eVm2pIA/CSl8fxDEQd7iuCNDhoNsUojscWB1BAdsZhPXASapYB9FCN28kLs4T8JLM+tkJQ3GIHQfVg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Rh4cBud/qiPnVX4I9XuIh3ZGxcpkh/lkCxco45lUlaY=;
+ b=kNoxvL5bI2Q+ApfKgPMVMmB1oNvgL+a/RdPZiDZIU4GP4g4+pV0y01FCWONfPfMrJZzSjOmKtqAcXpyA1344zfNes/9dVjlqZbUJGp9jUmbzQXinT8IW3/dfvwboi30mojVLZ/uF7Y9PrAjInN4lipuwe9yycBlI92rwq0Z5JyO7lnYd+w9UQxwLjezrKS9yNBjJv2DC+jx6fu/S3URe+gcWl5J7834dkSm5dt6zJIfb9qUo/StQsts9YKny/iQzQbLJolIcfd+6PFmHAM9aG1S4SLDLFclupsISmz3hmBlCFL68XuvsLwYqXFmXEi3LcmbfYT/BwzlVqUQm+CwupQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Rh4cBud/qiPnVX4I9XuIh3ZGxcpkh/lkCxco45lUlaY=;
+ b=izwbSmEcecAYIwC2OjVFTNPUHvtvhKoLg+IpRQu7HqNUMNY6nos++NyFWYaWM5gBOphuE6x2khWsge9AVGGuyRANrWbm2iV/MwcXHMdSgqM22oe2Tjudkz1dcTznB+FdekmVAWtjudzGVVqui5Fs1f4do5mHcGGdsLgroUiuN51WKvQ7JGG2t6FTJfmRvGKRvMPov6bBUDHWfOvqPB2vUEj0Cgk/XtvIXgwOi9OQ8+IY+ovbotvobFWBRbXCVNKULguPAXDHBbwlL/q5rGYj7iSKBNqjTBBBpNArvgaYhCmxbtmwOXDgqluv3sY1FygDDbKDNMgG/yu2ddWRdgYogA==
+Received: from SEZPR01MB7704.apcprd01.prod.exchangelabs.com
+ (2603:1096:101:29d::10) by TYZPR01MB4481.apcprd01.prod.exchangelabs.com
+ (2603:1096:400:1f6::5) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.292.19; Fri, 7 Aug
+ 2026 16:24:07 +0000
+Received: from SEZPR01MB7704.apcprd01.prod.exchangelabs.com
+ ([fe80::e9fa:af26:64cc:5b0e]) by SEZPR01MB7704.apcprd01.prod.exchangelabs.com
+ ([fe80::e9fa:af26:64cc:5b0e%6]) with mapi id 15.21.0292.019; Fri, 7 Aug 2026
+ 16:24:07 +0000
+From: Advance Research Ashish <AdvanceResearch.ashish@hotmail.com>
+To: "rydhamdangayach@gmail.com" <rydhamdangayach@gmail.com>
+Subject: Author profile
+Thread-Topic: Author profile
+Thread-Index: AQHdJokrcCPP29YG/kaoM7CrE6NtNw==
+Date: Fri, 7 Aug 2026 16:24:07 +0000
+Message-ID:
+ <SEZPR01MB770472886B1A6B36498C7E7C8AD12@SEZPR01MB7704.apcprd01.prod.exchangelabs.com>
+Accept-Language: en-IN, en-GB, en-US
+Content-Language: en-IN
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SEZPR01MB7704:EE_|TYZPR01MB4481:EE_
+x-ms-office365-filtering-correlation-id: 49166165-568a-4eed-4cbf-08def4a04de4
+x-microsoft-antispam:
+ BCL:0;ARA:14566002|19101099003|55001999006|8060799015|19110799012|8062599012|22091999003|24121999003|15030799006|51005399006|15080799012|31061999003|13031999006|25010399006|10035399007|40105399003|1602099012|30101999006|2607281247196008|102099032|440099028|3412199025|4302099013;
+x-microsoft-antispam-message-info:
+ =?Windows-1252?Q?aCS3pTxf2YvWRelsm+94PCjNz7krDnne7ZK9ze7qfPMlzcHLNWTq1iDE?=
+ =?Windows-1252?Q?2DimC3BYpPoTDWiJRMn3hLygmi6TE/LfuhhD/k4oQwtIsZ2x23WN6DW6?=
+ =?Windows-1252?Q?GKswYy4bW7AE1GUL7vWsULglOgRKvWrKfjMJgEH4tHwYEYLwz2UJ/4On?=
+ =?Windows-1252?Q?EQMMqMty9WkD5cMadubw05dqNxhqFwyRObHSTblIx7ZrionZhpbOwVn6?=
+ =?Windows-1252?Q?8zT5LazusRzWpq6G4k/mkeyGZ70Vw28gB3T/VnX6Ws8gu3vl4xkJM2UL?=
+ =?Windows-1252?Q?CXmuqzbalPOKfRajco/kYtFV+b2a+BQq4MVSjIkaIhIG2DXyIIk6ZxYi?=
+ =?Windows-1252?Q?TeUfQ++Gwp32dxrIjEq6ZATo6MuYszwe7B0YPXgY2CGSTW1CL9+wIEjI?=
+ =?Windows-1252?Q?gbedWQHypwFDnTv4UkwYihqE+/P/8EYwnDm25YrHF9ityqXOR1xqGPA5?=
+ =?Windows-1252?Q?2jU0duus2Zn8d1/7x0X5pCg+N8Nb09ODtFG/tFcpyIlIZnIAC0PcCsj8?=
+ =?Windows-1252?Q?R0yB8K1qBQl6kCOBOOHrC9LFJ8HGZQyFCAZ0L6/C6Rlw7oLQDdrbFJPB?=
+ =?Windows-1252?Q?xAoTAnBuAN1lr0yQW1OpvJGKrPLlmKJ4NrPI9dCUW0cy4Uy0Dsz7r4yQ?=
+ =?Windows-1252?Q?tyirWCeANV+/wcE6SANR/W4iyUfDz+Ky3Iyc+QdjhLby1myulHN8eIqK?=
+ =?Windows-1252?Q?2tkWyO1esVb03CA1SbuVyin1NMODZgkDl2yyU1sZhoA1W95sz1CZakUF?=
+ =?Windows-1252?Q?DYz8p3ImTmLPbYigPGW84e+FGea9GkPYffadQW227rBmfVTEK+8KVmRX?=
+ =?Windows-1252?Q?Zsn8zSbcccTKA/3FHSIkegrXwHlNrGBHKBThsUH5M4Ivw+/utfRDBhlI?=
+ =?Windows-1252?Q?GZJqQ4Lq3ZZ9WPLXK99eu00yNQryBCo91xS7wcboRDbsSTU7X0Ec4hof?=
+ =?Windows-1252?Q?8U2aDQ+uMnyrQwSF0G+87AkyBZL9ooZSPlIvNdGQWoUN+BIPfY1C74bw?=
+ =?Windows-1252?Q?lC9xCNL8cGvwjvNcKPkdMuH3bSVyl75wqIFYhOqsvEUPcbOT8LjTpbXv?=
+ =?Windows-1252?Q?C0hbCx4Zj3xWj5K4RaqabxjDH1GcONBKzTb74mdUJ1kjy7eWRMtCuOAm?=
+ =?Windows-1252?Q?j+9cJZDCCA/pai3goK0f0qJ231hxeFiOYH0cJgOz5BCla8eqR1tYmYGI?=
+ =?Windows-1252?Q?Dr5VAkhjXlFBslL4rz3gD/FRWB9MZXn0KN/QhA9aRHjN/xMEsFPlxUVT?=
+ =?Windows-1252?Q?hAVMa7tWlOeV7xt8+o0=3D?=
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?Co6Ok0h9I3uqWankIWVroHTbibq5Gy7v5W0V8h9gdDbYVFfCoJYW5eOY?=
+ =?Windows-1252?Q?tngKqMUG0TVMTwT7KepsQ93IrKcGhmcBZd2XQNHM5JgEmOwQjgFFPTRN?=
+ =?Windows-1252?Q?Z1p6iFCBTfCADawtQn8ECCC9W6OEXNa+9eeK12qkyn69KckcCyQKLzgq?=
+ =?Windows-1252?Q?WxQ6qCaYjSBgM3xH/JPJaMvLFSeZcu/Hp+h5e6idoUViuHAxC6U1EErq?=
+ =?Windows-1252?Q?CZlmVk3OCxKFfB8Jhp1ir/OO5er0p8c59po5YxWyGiVpWIK8Ge7y/+SK?=
+ =?Windows-1252?Q?uDvhPns4kJPegOvNeG020MkbNRv+PJtVzCgIphb1f2WHMmOMCdnTe/KF?=
+ =?Windows-1252?Q?W3ZyX0Z7BWxKQ6/ktqTvQCHd/A1wS4YHN7KQbh8NZfvv77Ge6zZDak+5?=
+ =?Windows-1252?Q?7ehKWmvf/Px+G0sqREpdg0VgUUN2mMeLOcUxh5wEV8WL6SY7ifJ9T0OL?=
+ =?Windows-1252?Q?X7MO4uEQQuVGLYHjsugg9Yu5FihF4Fz+0EBr5YI5UkbWfcBRHAKx0dRh?=
+ =?Windows-1252?Q?h/G08EhLWGDx/VdsC8UuBR6aFJIXfDCnsH5D386SYqpbitO25/dpjfYi?=
+ =?Windows-1252?Q?ep8UbDOaOOyj+HRxa7pRU5Oo5ijlFFCxtR07cWyPnDOgVzX2RJUhSSGo?=
+ =?Windows-1252?Q?uw5iEABVMOXuesIv7l9sRb7isXP/m9blS9eObUWvvL1qHChDbB0jsPQI?=
+ =?Windows-1252?Q?7zEwl+2tmlEskQSQGb5P5k+B2wh/BT4veoIUQ4wh8D/B9ERng+7k0Bh8?=
+ =?Windows-1252?Q?TbMMHQ+IYlg1Py8tGLnNMUWJ5KEytB3404El9cYCDHr6QH7Ztbpyenby?=
+ =?Windows-1252?Q?NRvGASgzM1OTgJDpI2t5tpQtJgTH66+Arl8hPMa7LpAX7ypY6CGQNze9?=
+ =?Windows-1252?Q?6vy92iBQ8yQQsdO9DvUZEII7NfyOUygYVG1Ty03pox9qn4fwVqmaXxRR?=
+ =?Windows-1252?Q?TbtkeQgBeq0ZAiW8pOQXKHShKrePtQIoBNTGNUG/DlChNZXFWoZXr8+G?=
+ =?Windows-1252?Q?cEMM1u48hNUX1iJunnEohPRP767i7moMOgo8S2zeSly3j7vWhfC3Xpsz?=
+ =?Windows-1252?Q?ci+WTH3MFJkFrJ3F4WCTxh0UcI6U4HSHd//hX6FqBAS/RPQH7k9MR3t5?=
+ =?Windows-1252?Q?I7BIi9odCPTlG48fq7PaWVdwpiJIckuwwaECiU1YD8iIsWcbmXnPupaM?=
+ =?Windows-1252?Q?e68/Lt8igYIwsG+6Z3ewWbKayE9ScM+X17EXDQBWLVJGNTfAZxkUt5Q3?=
+ =?Windows-1252?Q?tgCNiMsIqZj6eQGNVRIiiNHKVBFhfL34rOLLfLcFOzE5KZZoxNTns220?=
+ =?Windows-1252?Q?QpCai81kqhViZ9q6ZBj/gykXuAjdrwcDT9PW7/DPJNG5yj4Q8Jb50prI?=
+ =?Windows-1252?Q?1rxjP48qfi66mEo4BCd5cqlr/KdmWG0ZUE6/a8uE65Kx8Pja9JGcS8fP?=
+ =?Windows-1252?Q?sJmXtaQAFEOgjmKP/Qr0+4FtR4UhoTGOFcRwGt3Uigei12kaGmj4ewRn?=
+ =?Windows-1252?Q?EuqNQOzQwxWzve2bLRLxzc/SjWajd+ba09Ei5Y3RMdNBHjnpIZhGhqlC?=
+ =?Windows-1252?Q?AXpsR+gwksJQI3xujudsj2lcPQZneLtamvT2lw=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SEZPR01MB770472886B1A6B36498C7E7C8AD12SEZPR01MB7704apcp_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-9412-4-msonline-outlook-3e488.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SEZPR01MB7704.apcprd01.prod.exchangelabs.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 49166165-568a-4eed-4cbf-08def4a04de4
+X-MS-Exchange-CrossTenant-originalarrivaltime: 07 Aug 2026 16:24:07.1131
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: TYZPR01MB4481
+
+--_000_SEZPR01MB770472886B1A6B36498C7E7C8AD12SEZPR01MB7704apcp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+## Author Profile
+
+### Dr. Ashish Indani
+
+Dr. Ashish Indani is a physician, medical-device clinical and regulatory ex=
+pert, researcher, author, and innovation leader with more than two decades =
+of experience across the global life-sciences industry. His career brings t=
+ogether clinical affairs, regulatory strategy, research and innovation, pat=
+ient safety, and the responsible adoption of emerging healthcare technologi=
+es. [diaglobal](https://www.diaglobal.org/zh-cn/conference-listing/meetings=
+/2024/09/confluence-of-care-pharmacovigilance-clinical-innovation-regulator=
+y-sciences-and-medical-devices-elevating-patient-safety/speakers)
+
+He has held leadership and advisory responsibilities with prominent organis=
+ations including Stryker, Tata Consultancy Services, Meril Life Sciences, B=
+iosensors International, and Advanced MedTech Solutions. His professional p=
+ortfolio spans clinical investigation planning and execution, clinical eval=
+uation, post-market surveillance, materiovigilance, pharmacovigilance, medi=
+cal writing, risk management, and regulatory engagement across major intern=
+ational frameworks and standards, including US FDA requirements, EU MDR, IM=
+DRF, ICH-GCP, ISO 13485, ISO 14971, and ISO 14155. [thinki](https://thinki.=
+in/web/leadership-team/dr-ashish-indani)
+
+Dr. Indani=92s academic foundation in medicine, clinical-trial management, =
+and research methodology is complemented by a strong innovation portfolio. =
+His interests and contributions extend to artificial intelligence, machine =
+learning, data science, blockchain, biosensors, nanotechnology, and digital=
+ health. He has been associated with the development and deployment of AI-e=
+nabled pharmacovigilance solutions and has contributed to research and inno=
+vation initiatives focused on improving healthcare safety, efficiency, and =
+evidence generation. [diaglobal](https://www.diaglobal.org/zh-cn/conference=
+-listing/meetings/2024/09/confluence-of-care-pharmacovigilance-clinical-inn=
+ovation-regulatory-sciences-and-medical-devices-elevating-patient-safety/sp=
+eakers)
+
+As an author of *Essentials of Medical Device Clinical Research*, Dr. Indan=
+i transforms complex clinical, scientific, and regulatory knowledge into a =
+structured and practical resource for professionals, researchers, innovator=
+s, and students. He is also a conference and TEDx speaker, using his platfo=
+rm to advance dialogue on medical-device research, regulatory science, pati=
+ent safety, and the future of healthcare innovation. [youtube](https://www.=
+youtube.com/watch?v=3DZyhmdm7TSVg)
+
+### Short Version
+
+Dr. Ashish Indani is a physician, author, and global medical-device expert =
+with more than two decades of experience in clinical affairs, regulatory st=
+rategy, research, innovation, and patient safety. His expertise spans clini=
+cal investigations, clinical evaluation, post-market surveillance, pharmaco=
+vigilance, medical writing, risk management, and global regulatory framewor=
+ks. With a portfolio encompassing AI, machine learning, biosensors, nanotec=
+hnology, and digital health, he works at the intersection of evidence, regu=
+lation, and healthcare innovation. He is the author of *Essentials of Medic=
+al Device Clinical Research* and a recognised speaker on the future of medi=
+cal-device clinical research. [diaglobal](https://www.diaglobal.org/zh-cn/c=
+onference-listing/meetings/2024/09/confluence-of-care-pharmacovigilance-cli=
+nical-innovation-regulatory-sciences-and-medical-devices-elevating-patient-=
+safety/speakers)
+
+### Suggested Tagline
+
+**Bridging clinical evidence, regulatory science, and innovation to advance=
+ safer medical technologies.**
+
+--_000_SEZPR01MB770472886B1A6B36498C7E7C8AD12SEZPR01MB7704apcp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+## Author Profile</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### Dr. Ashish Indani</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Dr. Ashish Indani is a physician, medical-device clinical and regulatory ex=
+pert, researcher, author, and innovation leader with more than two decades =
+of experience across the global life-sciences industry. His career brings t=
+ogether clinical affairs, regulatory
+ strategy, research and innovation, patient safety, and the responsible ado=
+ption of emerging healthcare technologies. [diaglobal](https://www.diagloba=
+l.org/zh-cn/conference-listing/meetings/2024/09/confluence-of-care-pharmaco=
+vigilance-clinical-innovation-regulatory-sciences-and-medical-devices-eleva=
+ting-patient-safety/speakers)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+He has held leadership and advisory responsibilities with prominent organis=
+ations including Stryker, Tata Consultancy Services, Meril Life Sciences, B=
+iosensors International, and Advanced MedTech Solutions. His professional p=
+ortfolio spans clinical investigation
+ planning and execution, clinical evaluation, post-market surveillance, mat=
+eriovigilance, pharmacovigilance, medical writing, risk management, and reg=
+ulatory engagement across major international frameworks and standards, inc=
+luding US FDA requirements, EU MDR,
+ IMDRF, ICH-GCP, ISO 13485, ISO 14971, and ISO 14155. [thinki](https://thin=
+ki.in/web/leadership-team/dr-ashish-indani)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Dr. Indani=92s academic foundation in medicine, clinical-trial management, =
+and research methodology is complemented by a strong innovation portfolio. =
+His interests and contributions extend to artificial intelligence, machine =
+learning, data science, blockchain,
+ biosensors, nanotechnology, and digital health. He has been associated wit=
+h the development and deployment of AI-enabled pharmacovigilance solutions =
+and has contributed to research and innovation initiatives focused on impro=
+ving healthcare safety, efficiency,
+ and evidence generation. [diaglobal](https://www.diaglobal.org/zh-cn/confe=
+rence-listing/meetings/2024/09/confluence-of-care-pharmacovigilance-clinica=
+l-innovation-regulatory-sciences-and-medical-devices-elevating-patient-safe=
+ty/speakers)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+As an author of *Essentials of Medical Device Clinical Research*, Dr. Indan=
+i transforms complex clinical, scientific, and regulatory knowledge into a =
+structured and practical resource for professionals, researchers, innovator=
+s, and students. He is also a conference
+ and TEDx speaker, using his platform to advance dialogue on medical-device=
+ research, regulatory science, patient safety, and the future of healthcare=
+ innovation. [youtube](https://www.youtube.com/watch?v=3DZyhmdm7TSVg)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### Short Version</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Dr. Ashish Indani is a physician, author, and global medical-device expert =
+with more than two decades of experience in clinical affairs, regulatory st=
+rategy, research, innovation, and patient safety. His expertise spans clini=
+cal investigations, clinical evaluation,
+ post-market surveillance, pharmacovigilance, medical writing, risk managem=
+ent, and global regulatory frameworks. With a portfolio encompassing AI, ma=
+chine learning, biosensors, nanotechnology, and digital health, he works at=
+ the intersection of evidence, regulation,
+ and healthcare innovation. He is the author of *Essentials of Medical Devi=
+ce Clinical Research* and a recognised speaker on the future of medical-dev=
+ice clinical research. [diaglobal](https://www.diaglobal.org/zh-cn/conferen=
+ce-listing/meetings/2024/09/confluence-of-care-pharmacovigilance-clinical-i=
+nnovation-regulatory-sciences-and-medical-devices-elevating-patient-safety/=
+speakers)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### Suggested Tagline</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+**Bridging clinical evidence, regulatory science, and innovation to advance=
+ safer medical technologies.**</div>
+</body>
+</html>
+
+--_000_SEZPR01MB770472886B1A6B36498C7E7C8AD12SEZPR01MB7704apcp_--

@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Essentials of Medical Device Clinical Research | Dr. Ashish Indani</title>
+<meta name="description" content="The definitive 4-volume professional reference for medical device clinical research by Dr. Ashish Indani. Published by B Jain Publishers."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css?v=3.5"/>
+<style id="trust-marquee-styles">
+  /* ══════════════════════════════════════════════════════
+     CRITICAL INLINE: TRUST MARQUEE SINGLE HORIZONTAL LINE
+  ══════════════════════════════════════════════════════ */
+  .trust-strip {
+    background: #f7f5f0 !important;
+    padding: 2.25rem 0 !important;
+    border-top: 1px solid #eae5da !important;
+    border-bottom: 1px solid #eae5da !important;
+    position: relative !important;
+    z-index: 5 !important;
+    overflow: hidden !important;
+    width: 100% !important;
+  }
+  .trust-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    overflow: hidden !important;
+  }
+  .trust-title {
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.22em !important;
+    color: #8c8375 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 1.5rem !important;
+    padding: 0 1.5rem !important;
+    display: block !important;
+  }
+  .trust-marquee-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.9) 6%, #000000 12%, #000000 88%, rgba(0,0,0,0.9) 94%, transparent 100%) !important;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.9) 6%, #000000 12%, #000000 88%, rgba(0,0,0,0.9) 94%, transparent 100%) !important;
+  }
+  .trust-marquee-track {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: max-content !important;
+    align-items: center !important;
+    will-change: transform !important;
+    animation: trustMarqueeLoop 30s linear infinite !important;
+    pointer-events: auto !important;
+  }
+  .trust-marquee-group {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    padding-right: 2rem !important;
+    flex-shrink: 0 !important;
+  }
+  .trust-pill {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    padding: 0.65rem 1.4rem !important;
+    background: #ffffff !important;
+    border: 1px solid rgba(199, 154, 86, 0.3) !important;
+    border-radius: 999px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.25s ease !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    user-select: none !important;
+    cursor: default !important;
+  }
+  .trust-pill:hover {
+    border-color: rgba(199, 154, 86, 0.75) !important;
+    box-shadow: 0 6px 20px rgba(199, 154, 86, 0.22) !important;
+    transform: translateY(-2px) !important;
+  }
+  .trust-name {
+    font-family: 'Inter', system-ui, sans-serif !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    color: #121c24 !important;
+    letter-spacing: 0.02em !important;
+    white-space: nowrap !important;
+    display: inline-block !important;
+  }
+  .trust-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+  }
+  .logo-upppc .trust-name {
+    font-weight: 800 !important;
+    letter-spacing: 0.04em !important;
+    color: #0d2137 !important;
+  }
+  .upppc-badge {
+    color: #c79a56 !important;
+  }
+  .logo-aimed .trust-name {
+    font-weight: 800 !important;
+    letter-spacing: 0.08em !important;
+    color: #0b2c67 !important;
+  }
+  .aimed-dot {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background: #c79a56 !important;
+    display: inline-block !important;
+    box-shadow: 0 0 6px rgba(199, 154, 86, 0.6) !important;
+  }
+  .logo-mtai .trust-name {
+    font-weight: 800 !important;
+    letter-spacing: 0.06em !important;
+    color: #111e2e !important;
+  }
+  .mtai-sym {
+    color: #0b2c67 !important;
+    font-size: 0.8rem !important;
+  }
+  .logo-tenet .trust-name {
+    font-weight: 700 !important;
+    letter-spacing: 0.04em !important;
+    color: #083344 !important;
+  }
+  .tenet-pulse {
+    color: #0d9488 !important;
+  }
+  .logo-shrinks .trust-name {
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em !important;
+    color: #1a2332 !important;
+  }
+  .shrinks-mark {
+    color: #c79a56 !important;
+    font-size: 0.85rem !important;
+  }
+  .logo-visualboxx .trust-name {
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+    color: #18181b !important;
+  }
+  .boxx-mark {
+    color: #2563eb !important;
+  }
+
+  @keyframes trustMarqueeLoop {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .trust-strip {
+      padding: 1.75rem 0 !important;
+    }
+    .trust-title {
+      font-size: 0.58rem !important;
+      margin-bottom: 1.2rem !important;
+    }
+    .trust-pill {
+      padding: 0.5rem 1rem !important;
+      gap: 0.55rem !important;
+    }
+    .trust-name {
+      font-size: 0.82rem !important;
+    }
+    .logo-shrinks .trust-name {
+      font-size: 0.98rem !important;
+    }
+    .trust-marquee-group {
+      gap: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+    .trust-marquee-track {
+      animation-duration: 25s !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     HEADER / NAV
+══════════════════════════════════════ -->
+<header id="header" class="site-header" role="banner">
+  <div class="header-container">
+    <!-- Zone 1: Brand Area -->
+    <a href="index.html" class="header-brand" aria-label="Dr. Ashish Indani - Home">
+      <div class="brand-monogram">
+        <span class="monogram-text">AI</span>
+      </div>
+      <div class="brand-identity">
+        <span class="brand-name">DR. ASHISH INDANI</span>
+        <span class="brand-sub">Medical Device Clinical Research Expert</span>
+      </div>
+    </a>
+
+    <!-- Zone 2: Primary Navigation -->
+    <nav class="header-nav" id="headerNav" aria-label="Primary Navigation">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item nav-has-dropdown">
+          <a href="books.html" class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            <span>The Books</span>
+            <svg class="dropdown-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu" role="menu" aria-label="The Books Submenu">
+            <a href="books.html" class="dropdown-item" role="menuitem">
+              <div class="item-title">Complete Collection</div>
+              <div class="item-desc">The 4-Volume Master Reference</div>
+            </a>
+            <div class="dropdown-divider" role="separator"></div>
+            <a href="books.html#volumes" class="dropdown-item" role="menuitem">
+              <div class="item-title">Volume I</div>
+              <div class="item-desc">Fundamentals &amp; Regulatory Pathways</div>
+            </a>
+            <a href="books.html#volumes" class="dropdown-item" role="menuitem">
+              <div class="item-title">Volume II</div>
+              <div class="item-desc">Scientific Core &amp; Risk Management</div>
+            </a>
+            <a href="books.html#volumes" class="dropdown-item" role="menuitem">
+              <div class="item-title">Volume III</div>
+              <div class="item-desc">Data Management &amp; Biostatistics</div>
+            </a>
+            <a href="books.html#volumes" class="dropdown-item" role="menuitem">
+              <div class="item-title">Volume IV</div>
+              <div class="item-desc">Software, AI &amp; Post-Market Evidence</div>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="preview.html" class="nav-link">Preview &amp; Topics</a>
+        </li>
+        <li class="nav-item">
+          <a href="reviews.html" class="nav-link">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Speaking &amp; Advisory</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Zone 3: Commerce Actions -->
+    <div class="header-actions">
+      <!-- Cart Trigger -->
+      <button class="cart-trigger" id="openCartBtn" aria-label="View Shopping Cart">
+        <svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="cart-badge" id="cartCountBadge" aria-label="Cart items count">0</span>
+      </button>
+
+      <!-- Purchase CTA -->
+      <a href="#order" class="btn-buy-cta">
+        <span>Buy the Collection</span>
+        <svg class="cta-arrow" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 1L13 6M13 6L8 11M13 6H1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobDrawer">
+        <span class="hamburger-line top"></span>
+        <span class="hamburger-line middle"></span>
+        <span class="hamburger-line bottom"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+  <div class="mob-drawer-header">
+    <a href="index.html" class="header-brand" aria-label="Dr. Ashish Indani - Home">
+      <div class="brand-monogram">
+        <span class="monogram-text">AI</span>
+      </div>
+      <div class="brand-identity">
+        <span class="brand-name">DR. ASHISH INDANI</span>
+      </div>
+    </a>
+    <button class="mob-close" id="mobClose" aria-label="Close Navigation Menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="mob-drawer-body">
+    <nav class="mob-nav">
+      <a href="#hero" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link">About Author</a>
+      
+      <div class="mob-accordion">
+        <button class="mob-accordion-btn" aria-expanded="false">
+          <span>The Books</span>
+          <svg class="mob-accordion-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1L5 5L9 1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mob-accordion-content">
+          <a href="books.html" class="mob-sublink">Complete Collection</a>
+          <a href="books.html#volumes" class="mob-sublink">Volume I: Regulatory Pathways</a>
+          <a href="books.html#volumes" class="mob-sublink">Volume II: Scientific Core</a>
+          <a href="books.html#volumes" class="mob-sublink">Volume III: Biostatistics</a>
+          <a href="books.html#volumes" class="mob-sublink">Volume IV: SaMD &amp; AI</a>
+        </div>
+      </div>
+      
+      <a href="preview.html" class="mob-link">Preview &amp; Topics</a>
+      <a href="reviews.html" class="mob-link">Reviews</a>
+      <a href="#contact" class="mob-link">Speaking &amp; Advisory</a>
+    </nav>
+  </div>
+  
+  <div class="mob-drawer-footer">
+    <a href="#order" class="btn-buy-cta mob-cta-full">
+      <span>Buy the Collection</span>
+      <svg class="cta-arrow" width="14" height="12" viewBox="0 0 14 12" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M8 1L13 6M13 6L8 11M13 6H1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</div>
+<div class="mob-overlay" id="mobOverlay" aria-hidden="true"></div>
+
+
+<!-- ══════════════════════════════════════
+     HERO SECTION (EXACT REPLICA WITH FULL BG IMAGE)
+══════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <!-- Full high-res 3D scene image background -->
+  <img src="HERO SECTION/ChatGPT Image Aug 2, 2026, 12_10_54 AM.png" 
+       alt="Essentials of Medical Device Clinical Research 4-Volume Set Scene" 
+       class="hero-bg-img" />
+  
+  <div class="hero-overlay-gradient"></div>
+
+  <div class="hero-container">
+    <div class="hero-left">
+      <p class="hero-eyebrow">THE DEFINITIVE 4-VOLUME REFERENCE</p>
+      <h1 class="hero-title">
+        <span class="t-white">Mastering</span>
+        <span class="t-white">Medical Device</span>
+        <span class="t-gold">Clinical Research</span>
+      </h1>
+      <p class="hero-desc">
+        The most comprehensive resource for professionals driving innovation, safety, and excellence in medical devices.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#order" class="btn-hero-solid">ORDER COMPLETE SET →</a>
+        <a href="books.html" class="btn-hero-ghost">
+          <span class="play-icon">▶</span> EXPLORE THE BOOKS PAGE
+        </a>
+      </div>
+
+      <div class="hero-badges-row">
+        <div class="h-badge">
+          <svg class="h-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="3" width="12" height="18" rx="1.5" stroke-width="1.5"/><rect x="8" y="3" width="12" height="18" rx="1.5" stroke-width="1.5"/></svg>
+          <div class="hb-text">
+            <strong>4</strong>
+            <span>VOLUMES</span>
+          </div>
+        </div>
+        <div class="h-badge">
+          <svg class="h-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M4 10h16M4 14h10" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <div class="hb-text">
+            <strong>2500+</strong>
+            <span>PAGES</span>
+          </div>
+        </div>
+        <div class="h-badge">
+          <svg class="h-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9" stroke-width="1.5"/><path d="M12 3a9 9 0 010 18M3 12h18" stroke-width="1.5"/></svg>
+          <div class="hb-text">
+            <strong>REAL WORLD</strong>
+            <span>CASE STUDIES</span>
+          </div>
+        </div>
+        <div class="h-badge">
+          <svg class="h-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <div class="hb-text">
+            <strong>INTERNATIONAL</strong>
+            <span>STANDARDS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     TRUST STRIP (INFINITE MARQUEE LOOP)
+══════════════════════════════════════ -->
+<section class="trust-strip" aria-label="Trusted by leading organizations">
+  <div class="trust-container">
+    <p class="trust-title">TRUSTED BY LEADING ORGANISATIONS WORLDWIDE</p>
+    <div class="trust-marquee-wrapper" tabindex="0" role="region" aria-label="Partner Organizations Carousel">
+      <div class="trust-marquee-track">
+        
+        <!-- Marquee Group 1 -->
+        <div class="trust-marquee-group">
+          <div class="trust-pill logo-upppc">
+            <span class="trust-icon upppc-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg>
+            </span>
+            <span class="trust-name">UTTAR PRADESH PROMOTE PHARMA COUNCIL</span>
+          </div>
+
+          <div class="trust-pill logo-aimed">
+            <span class="trust-accent-dot aimed-dot"></span>
+            <span class="trust-name">AIMED</span>
+          </div>
+
+          <div class="trust-pill logo-mtai">
+            <span class="trust-symbol mtai-sym">◆</span>
+            <span class="trust-name">MTAI</span>
+          </div>
+
+          <div class="trust-pill logo-tenet">
+            <span class="trust-icon tenet-pulse">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
+            <span class="trust-name">TENET HEALTH EDUTECH</span>
+          </div>
+
+          <div class="trust-pill logo-shrinks">
+            <span class="trust-icon shrinks-mark">✦</span>
+            <span class="trust-name">Corporate Shrinks</span>
+          </div>
+
+          <div class="trust-pill logo-visualboxx">
+            <span class="trust-icon boxx-mark">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </span>
+            <span class="trust-name">Visual Boxx</span>
+          </div>
+
+          <!-- Secondary repeat in Group 1 for ultra-wide screen density -->
+          <div class="trust-pill logo-upppc">
+            <span class="trust-icon upppc-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg>
+            </span>
+            <span class="trust-name">UTTAR PRADESH PROMOTE PHARMA COUNCIL</span>
+          </div>
+
+          <div class="trust-pill logo-aimed">
+            <span class="trust-accent-dot aimed-dot"></span>
+            <span class="trust-name">AIMED</span>
+          </div>
+
+          <div class="trust-pill logo-mtai">
+            <span class="trust-symbol mtai-sym">◆</span>
+            <span class="trust-name">MTAI</span>
+          </div>
+
+          <div class="trust-pill logo-tenet">
+            <span class="trust-icon tenet-pulse">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
+            <span class="trust-name">TENET HEALTH EDUTECH</span>
+          </div>
+
+          <div class="trust-pill logo-shrinks">
+            <span class="trust-icon shrinks-mark">✦</span>
+            <span class="trust-name">Corporate Shrinks</span>
+          </div>
+
+          <div class="trust-pill logo-visualboxx">
+            <span class="trust-icon boxx-mark">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </span>
+            <span class="trust-name">Visual Boxx</span>
+          </div>
+        </div>
+
+        <!-- Marquee Group 2 (Exact Duplicate for Seamless Continuous Looping) -->
+        <div class="trust-marquee-group" aria-hidden="true">
+          <div class="trust-pill logo-upppc">
+            <span class="trust-icon upppc-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg>
+            </span>
+            <span class="trust-name">UTTAR PRADESH PROMOTE PHARMA COUNCIL</span>
+          </div>
+
+          <div class="trust-pill logo-aimed">
+            <span class="trust-accent-dot aimed-dot"></span>
+            <span class="trust-name">AIMED</span>
+          </div>
+
+          <div class="trust-pill logo-mtai">
+            <span class="trust-symbol mtai-sym">◆</span>
+            <span class="trust-name">MTAI</span>
+          </div>
+
+          <div class="trust-pill logo-tenet">
+            <span class="trust-icon tenet-pulse">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
+            <span class="trust-name">TENET HEALTH EDUTECH</span>
+          </div>
+
+          <div class="trust-pill logo-shrinks">
+            <span class="trust-icon shrinks-mark">✦</span>
+            <span class="trust-name">Corporate Shrinks</span>
+          </div>
+
+          <div class="trust-pill logo-visualboxx">
+            <span class="trust-icon boxx-mark">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </span>
+            <span class="trust-name">Visual Boxx</span>
+          </div>
+
+          <!-- Secondary repeat in Group 2 for ultra-wide screen density -->
+          <div class="trust-pill logo-upppc">
+            <span class="trust-icon upppc-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg>
+            </span>
+            <span class="trust-name">UTTAR PRADESH PROMOTE PHARMA COUNCIL</span>
+          </div>
+
+          <div class="trust-pill logo-aimed">
+            <span class="trust-accent-dot aimed-dot"></span>
+            <span class="trust-name">AIMED</span>
+          </div>
+
+          <div class="trust-pill logo-mtai">
+            <span class="trust-symbol mtai-sym">◆</span>
+            <span class="trust-name">MTAI</span>
+          </div>
+
+          <div class="trust-pill logo-tenet">
+            <span class="trust-icon tenet-pulse">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
+            <span class="trust-name">TENET HEALTH EDUTECH</span>
+          </div>
+
+          <div class="trust-pill logo-shrinks">
+            <span class="trust-icon shrinks-mark">✦</span>
+            <span class="trust-name">Corporate Shrinks</span>
+          </div>
+
+          <div class="trust-pill logo-visualboxx">
+            <span class="trust-icon boxx-mark">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </span>
+            <span class="trust-name">Visual Boxx</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     ABOUT THE AUTHOR
+══════════════════════════════════════ -->
+<!-- ══════════════════════════════════════
+     ABOUT THE AUTHOR
+══════════════════════════════════════ -->
+<section class="author-section" id="author-preview">
+  <div class="author-container">
+    
+    <!-- Photo Box -->
+    <div class="author-photo-box">
+      <div class="photo-card">
+        <img src="author_photo_hd.jpg" alt="Dr. Ashish Indani" class="author-portrait-img" />
+      </div>
+      <div class="author-signature">Ashish Indani</div>
+    </div>
+
+    <!-- Bio Box -->
+    <div class="author-bio-box">
+      <p class="section-eyebrow">ABOUT THE AUTHOR</p>
+      <h2 class="author-name">Dr. Ashish Indani</h2>
+      <p class="author-subtitle">One of India's most respected voices in Medical Device Clinical Research.</p>
+
+      <div class="author-metrics-grid">
+        <div class="am-item">
+          <svg class="am-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7" r="4" stroke-width="1.5"/><path d="M4 21v-2a4 4 0 014-4h8a4 4 0 014 4v2" stroke-width="1.5"/></svg>
+          <div class="am-val">20+</div>
+          <div class="am-lbl">Years of<br/>Experience</div>
+        </div>
+        <div class="am-item">
+          <svg class="am-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke-width="1.5"/></svg>
+          <div class="am-val">Global</div>
+          <div class="am-lbl">Speaker</div>
+        </div>
+        <div class="am-item">
+          <svg class="am-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-width="1.5"/></svg>
+          <div class="am-val">Research</div>
+          <div class="am-lbl">Mentor</div>
+        </div>
+        <div class="am-item">
+          <svg class="am-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 11l3 3L22 4" stroke-width="1.5"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke-width="1.5"/></svg>
+          <div class="am-val">Industry</div>
+          <div class="am-lbl">Advisor</div>
+        </div>
+        <div class="am-item">
+          <svg class="am-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke-width="1.5"/><circle cx="9" cy="7" r="4" stroke-width="1.5"/></svg>
+          <div class="am-val">Trainer to</div>
+          <div class="am-lbl">Thousands</div>
+        </div>
+      </div>
+
+      <p class="author-bio-text">
+        With over two decades of experience across Zydus MedTech, AMS, Stryker, and TCS, Dr. Indani has been at the forefront of advancing clinical research standards in the medical device industry.
+      </p>
+
+      <a href="about.html" class="btn-author-more">VISIT OFFICIAL ABOUT AUTHOR PAGE →</a>
+    </div>
+
+    <!-- Timeline Box -->
+    <div class="author-timeline-box">
+      <div class="timeline-list">
+        <div class="tl-row">
+          <div class="tl-dot"></div>
+          <div class="tl-info">
+            <span class="tl-year">2016 – 2021</span>
+            <span class="tl-desc">Principal Scientist &amp; Head R&amp;I, TCS</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-dot"></div>
+          <div class="tl-info">
+            <span class="tl-year">2021 – 2025</span>
+            <span class="tl-desc">Senior Manager Clinical Affairs, Stryker</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-dot"></div>
+          <div class="tl-info">
+            <span class="tl-year">2025</span>
+            <span class="tl-desc">GM Clinical &amp; Medical Affairs, AMS</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-dot"></div>
+          <div class="tl-info">
+            <span class="tl-year">PRESENT</span>
+            <span class="tl-desc">General Manager - MedTech, Zydus MedTech</span>
+          </div>
+        </div>
+        <div class="tl-row tl-highlight">
+          <div class="tl-dot tl-gold-dot"></div>
+          <div class="tl-info">
+            <span class="tl-year tl-gold-year">2026</span>
+            <span class="tl-desc tl-gold-desc">Author: Complete 4-Volume Reference Collection</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOUR VOLUMES SECTION
+══════════════════════════════════════ -->
+<section class="volumes-section" id="volumes">
+  <div class="volumes-container">
+    
+    <div class="volumes-header">
+      <div>
+        <p class="section-eyebrow">THE COMPLETE COLLECTION</p>
+        <h2 class="volumes-main-title">Four Volumes. Infinite Knowledge.</h2>
+      </div>
+      <a href="books.html" class="btn-comparison">EXPLORE FULL BOOKS PAGE →</a>
+    </div>
+
+    <div class="volumes-grid-4">
+      
+      <!-- Vol 1 -->
+      <div class="v-card">
+        <div class="v-card-num">01</div>
+        <div class="v-card-img-wrap">
+          <img src="v1_nobg.png" alt="Volume I Cover - Foundations" class="v-cover-img"/>
+        </div>
+        <div class="v-card-body">
+          <span class="v-label">VOLUME I</span>
+          <h3 class="v-title">Foundations &amp; Regulatory Pathways</h3>
+          <p class="v-text">Core principles, FDA 510(k)/PMA, EU MDR 2017/745, study design &amp; pre-clinical stages.</p>
+          <a href="books.html#volumes" class="v-link">EXPLORE VOLUME I DETAILS →</a>
+        </div>
+      </div>
+
+      <!-- Vol 2 -->
+      <div class="v-card">
+        <div class="v-card-num">02</div>
+        <div class="v-card-img-wrap">
+          <img src="v2_nobg.png" alt="Volume II Cover - Clinical Operations" class="v-cover-img"/>
+        </div>
+        <div class="v-card-body">
+          <span class="v-label">VOLUME II</span>
+          <h3 class="v-title">Scientific Core &amp; Risk Management</h3>
+          <p class="v-text">Medical writing, ISO 14971 risk management, ISO 14155 GCP &amp; CER compilation.</p>
+          <a href="books.html#volumes" class="v-link">EXPLORE VOLUME II DETAILS →</a>
+        </div>
+      </div>
+
+      <!-- Vol 3 -->
+      <div class="v-card">
+        <div class="v-card-num">03</div>
+        <div class="v-card-img-wrap">
+          <img src="v3_nobg.png" alt="Volume III Cover - Regulatory &amp; Compliance" class="v-cover-img"/>
+        </div>
+        <div class="v-card-body">
+          <span class="v-label">VOLUME III</span>
+          <h3 class="v-title">Data Management &amp; Biostatistics</h3>
+          <p class="v-text">Device EDC, MedDRA coding, FDA Device Problem Codes, materiovigilance &amp; statistics.</p>
+          <a href="books.html#volumes" class="v-link">EXPLORE VOLUME III DETAILS →</a>
+        </div>
+      </div>
+
+      <!-- Vol 4 -->
+      <div class="v-card">
+        <div class="v-card-num">04</div>
+        <div class="v-card-img-wrap">
+          <img src="v4_nobg.png" alt="Volume IV Cover - Advanced Topics" class="v-cover-img"/>
+        </div>
+        <div class="v-card-body">
+          <span class="v-label">VOLUME IV</span>
+          <h3 class="v-title">Software, AI &amp; Post-Market Evidence</h3>
+          <p class="v-text">SaMD, SiMD, ISO 62304 / 63204 SDLC, diagnostic devices, IVDR &amp; PMCF evidence.</p>
+          <a href="books.html#volumes" class="v-link">EXPLORE VOLUME IV DETAILS →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Prominent Dedicated Books Page CTA Banner -->
+    <div style="text-align: center; margin-top: 3rem; background: rgba(8,18,30,0.8); border: 1px solid rgba(199,154,86,0.3); border-radius: 14px; padding: 2rem;">
+      <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: #ffffff; margin-bottom: 0.5rem;">Want to Learn More About Each Volume?</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">Visit our dedicated Books Masterwork page for chapter-by-chapter topics, target audience guides, and direct discounts.</p>
+      <a href="books.html" class="btn-hero-solid" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+        <span>OPEN DEDICATED BOOKS PAGE</span>
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     STATS STRIP
+══════════════════════════════════════ -->
+<section class="stats-strip">
+  <div class="stats-container">
+    <div class="s-box">
+      <div class="s-number"><span data-count="20">0</span>+</div>
+      <div class="s-label">YEARS OF EXPERIENCE</div>
+    </div>
+    <div class="s-divider"></div>
+    <div class="s-box">
+      <div class="s-number"><span data-count="5000">0</span>+</div>
+      <div class="s-label">PROFESSIONALS TRAINED</div>
+    </div>
+    <div class="s-divider"></div>
+    <div class="s-box">
+      <div class="s-number">4</div>
+      <div class="s-label">COMPREHENSIVE VOLUMES</div>
+    </div>
+    <div class="s-divider"></div>
+    <div class="s-box">
+      <div class="s-number"><span data-count="100">0</span>+</div>
+      <div class="s-label">INDUSTRY TOPICS COVERED</div>
+    </div>
+    <div class="s-divider"></div>
+    <div class="s-box">
+      <div class="s-number"><span data-count="25">0</span>+</div>
+      <div class="s-label">COUNTRIES IMPACTED</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     CLINICAL INTELLIGENCE ECOSYSTEM SHOWCASE (3-COLUMN MASTERPIECE)
+══════════════════════════════════════ -->
+<section class="three-col-block showcase-master-sec" id="preview">
+  <div class="showcase-master-container">
+    
+    <!-- Grand Section Framing -->
+    <div class="showcase-sec-header">
+      <div class="showcase-eyebrow-pill">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        <span>EXECUTIVE KNOWLEDGE SUITE</span>
+      </div>
+      <h2 class="showcase-sec-title">
+        The Architecture of <span class="italic-gold">Medical Device Evidence</span>
+      </h2>
+      <p class="showcase-sec-subtitle">
+        Bridging the fundamental divide between pharmaceutical retrofitting and true device-centric clinical science across 100+ global regulatory jurisdictions.
+      </p>
+    </div>
+
+    <!-- 3-Column Luxury Matrix -->
+    <div class="showcase-grid-3">
+      
+      <!-- ─── COLUMN 1: 4 MASTERWORK PILLARS ─── -->
+      <div class="showcase-col showcase-pillars-col">
+        <div class="showcase-col-head">
+          <div class="showcase-col-title">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span>Curriculum Pillars</span>
+          </div>
+          <span class="showcase-col-badge">4 Volumes · 60+ Ch</span>
+        </div>
+
+        <div class="pillars-list">
+          <!-- Vol 1 -->
+          <a href="preview.html#explorer" class="pillar-card">
+            <div class="pillar-card-top">
+              <span class="pillar-vol-pill">Volume I</span>
+              <span class="pillar-arrow">→</span>
+            </div>
+            <div class="pillar-title">Global Regulatory Pathways</div>
+            <p class="pillar-desc">FDA 510(k), PMA, De Novo &amp; EU MDR 2017/745 classification matrices.</p>
+            <div class="pillar-chips">
+              <span class="p-chip">FDA 21 CFR</span>
+              <span class="p-chip">EU MDR Art 61</span>
+              <span class="p-chip">ISO 13485</span>
+            </div>
+          </a>
+
+          <!-- Vol 2 -->
+          <a href="preview.html#explorer" class="pillar-card">
+            <div class="pillar-card-top">
+              <span class="pillar-vol-pill">Volume II</span>
+              <span class="pillar-arrow">→</span>
+            </div>
+            <div class="pillar-title">Protocol Design &amp; ISO 14971 Risk</div>
+            <p class="pillar-desc">ISO 14155 CIP engineering, FMEA hazard control &amp; 4-stage CER architecture.</p>
+            <div class="pillar-chips">
+              <span class="p-chip">ISO 14155:2020</span>
+              <span class="p-chip">ISO 14971</span>
+              <span class="p-chip">MEDDEV 2.7/1</span>
+            </div>
+          </a>
+
+          <!-- Vol 3 -->
+          <a href="preview.html#explorer" class="pillar-card">
+            <div class="pillar-card-top">
+              <span class="pillar-vol-pill">Volume III</span>
+              <span class="pillar-arrow">→</span>
+            </div>
+            <div class="pillar-title">Clinical Operations &amp; Biostatistics</div>
+            <p class="pillar-desc">Device CDM, CDISC standards, non-inferiority trials &amp; materiovigilance.</p>
+            <div class="pillar-chips">
+              <span class="p-chip">CDISC SDTM</span>
+              <span class="p-chip">Non-Inferiority</span>
+              <span class="p-chip">FDA MedWatch</span>
+            </div>
+          </a>
+
+          <!-- Vol 4 -->
+          <a href="preview.html#explorer" class="pillar-card">
+            <div class="pillar-card-top">
+              <span class="pillar-vol-pill">Volume IV</span>
+              <span class="pillar-arrow">→</span>
+            </div>
+            <div class="pillar-title">SaMD, AI Validation &amp; Post-Market</div>
+            <p class="pillar-desc">IEC 62304 SDLC, Good Machine Learning Practice (GMLP) &amp; continuous PMCF.</p>
+            <div class="pillar-chips">
+              <span class="p-chip">IEC 62304</span>
+              <span class="p-chip">AI/ML GMLP</span>
+              <span class="p-chip">ISO 20916 IVD</span>
+            </div>
+          </a>
+        </div>
+
+        <a href="preview.html#explorer" class="btn-pillar-catalog">
+          <span>EXPLORE FULL 60+ CHAPTER CATALOG</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- ─── COLUMN 2: INTERACTIVE OPEN MANUSCRIPT SIMULATOR ─── -->
+      <div class="showcase-col showcase-manuscript-col">
+        <div class="showcase-col-head">
+          <div class="showcase-col-title">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span>Live Manuscript Specimen</span>
+          </div>
+          <span class="showcase-col-badge">Interactive Spread</span>
+        </div>
+
+        <div class="manuscript-box-wrapper">
+          <!-- Top Interactive Switcher Tabs -->
+          <div class="manuscript-tabs-nav" role="tablist">
+            <button class="m-tab-btn active" data-specimen="risk" role="tab" aria-selected="true">Risk Flow</button>
+            <button class="m-tab-btn" data-specimen="divergence" role="tab" aria-selected="false">Divergence</button>
+            <button class="m-tab-btn" data-specimen="samd" role="tab" aria-selected="false">SaMD &amp; AI</button>
+            <button class="m-tab-btn" data-specimen="cer" role="tab" aria-selected="false">CER Model</button>
+          </div>
+
+          <!-- Open Book Specimen Spread -->
+          <div class="manuscript-open-spread" id="landingManuscriptSpread">
+            <div class="manuscript-top-strip">
+              <span id="landingSpecimenHeaderLeft">VOL II · SECTION 4.1</span>
+              <span id="landingSpecimenHeaderRight">ISO 14971:2019 COMPLIANCE</span>
+            </div>
+
+            <div class="manuscript-body-content" id="landingManuscriptBody">
+              <div class="m-section-kicker" id="landingSpecimenKicker">Device Risk Integration Protocol</div>
+              <h3 class="m-page-h3" id="landingSpecimenTitle">ISO 14971 Risk-Benefit Determination in CIP Design</h3>
+              <p class="m-page-lead" id="landingSpecimenLead">
+                Clinical risk management cannot remain an isolated post-design activity. Pre-clinical FMEA failure modes must directly map to Clinical Investigation Plan safety endpoints.
+              </p>
+
+              <div class="m-visual-diagram-card" id="landingSpecimenDiagram">
+                <div class="m-diagram-title">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                  <span>Evidence Mitigation Pipeline</span>
+                </div>
+                <div class="m-flow-row">
+                  <div class="m-flow-step">
+                    <div class="m-step-num">Step 01</div>
+                    <div class="m-step-text">Hazard Analysis (FMEA)</div>
+                  </div>
+                  <div class="m-flow-step">
+                    <div class="m-step-num">Step 02</div>
+                    <div class="m-step-text">CIP Safety Endpoints</div>
+                  </div>
+                  <div class="m-flow-step">
+                    <div class="m-step-num">Step 03</div>
+                    <div class="m-step-text">Residual Benefit-Risk</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="m-takeaway-quote" id="landingSpecimenQuote">
+                <strong>Core Rule:</strong> Measurable Clinical Benefit must mathematically outweigh the combination of baseline physiological risk and device-specific failure probabilities.
+              </div>
+            </div>
+
+            <div class="manuscript-page-footer">
+              <span id="landingSpecimenFooterBook">Essentials of Medical Device Clinical Research</span>
+              <span id="landingSpecimenFooterPage">Page 148</span>
+            </div>
+          </div>
+
+          <a href="preview.html#reader" class="btn-manuscript-explore">
+            <span>OPEN EXPANDED SAMPLE READER</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ─── COLUMN 3: EXECUTIVE & GOVERNMENT ACCLAIM ─── -->
+      <div class="showcase-col showcase-acclaim-col">
+        <div class="showcase-col-head">
+          <div class="showcase-col-title">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l9-9l-9-9l2 5l-7 4z"/></svg>
+            <span>Authoritative Acclaim</span>
+          </div>
+          <span class="showcase-col-badge">State &amp; Industry Acclaim</span>
+        </div>
+
+        <div class="acclaim-stack">
+          <!-- Government Endorsement Card -->
+          <div class="govt-ias-card">
+            <div class="govt-seal-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Official Government Endorsement</span>
+            </div>
+            <p class="govt-quote-text">
+              "Dr. Indani’s work will substantially help manufacturers, regulators, and clinical researchers navigate medical device development and global regulatory compliance."
+            </p>
+            <div class="govt-sign-row">
+              <div class="govt-ias-avatar">IAS</div>
+              <div>
+                <div class="govt-name">Kritika Sharma, IAS</div>
+                <div class="govt-role">MD &amp; CEO, UP Promote Pharma Council (Govt of UP)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Executive Review 1: Sunil Pandita -->
+          <div class="exec-review-card">
+            <div class="exec-stars-row">
+              <div class="exec-stars">★★★★★</div>
+              <span class="exec-verified">Verified Endorsement</span>
+            </div>
+            <p class="exec-quote">
+              "Dr. Indani’s books are enduring resources that strengthen the foundation of medical device research, bridging operational strategy and global policy."
+            </p>
+            <div class="exec-author-row">
+              <div class="exec-avatar">SP</div>
+              <div>
+                <div class="exec-name">Sunil Pandita</div>
+                <div class="exec-role">MedTech Thought Leader &amp; Industry Pioneer</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Executive Review 2: Dr. Punit Srivastava -->
+          <div class="exec-review-card">
+            <div class="exec-stars-row">
+              <div class="exec-stars">★★★★★</div>
+              <span class="exec-verified">Clinical Authority</span>
+            </div>
+            <p class="exec-quote">
+              "Bridges theoretical concepts with practical applications, making complex subjects accessible... A must-read for every investigator."
+            </p>
+            <div class="exec-author-row">
+              <div class="exec-avatar">PS</div>
+              <div>
+                <div class="exec-name">Dr. Punit Srivastava</div>
+                <div class="exec-role">Director, Mediception Science Pvt. Ltd.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="preview.html#endorsements" class="btn-acclaim-all">
+          <span>VIEW ALL EXECUTIVE REVIEWS (6+)</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     DIRECT E-COMMERCE STORE SECTION
+══════════════════════════════════════ -->
+<section class="order-section" id="order" style="padding: 6.5rem 2rem; background: #03080e;">
+  <div class="store-main-container" style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 3rem;">
+    
+    <div class="b-sec-header">
+      <div class="eyebrow">OFFICIAL AUTHOR STOREFRONT</div>
+      <h2>Direct E-Commerce Store</h2>
+      <p>Buy directly from the official store. Choose the flagship 4-Volume Set or purchase individual volumes separately.</p>
+    </div>
+
+    <!-- Flagship Complete 4-Volume Box Set Card -->
+    <div class="flagship-store-card">
+      <div class="flagship-badge">FLAGSHIP SET · SAVE 13%</div>
+      
+      <div style="text-align: center;">
+        <img src="exact_master_books_showcase.png" alt="Essentials of Medical Device Clinical Research Complete 4-Volume Set" style="max-height: 280px; width: auto; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8));"/>
+      </div>
+
+      <div>
+        <div style="font-size: 0.78rem; font-weight: 800; color: var(--gold-main); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.5rem;">FLAGSHIP REFERENCE COLLECTION</div>
+        <h3 style="font-family: var(--font-serif); font-size: 2.2rem; color: #ffffff; margin-bottom: 0.75rem; line-height: 1.2;">Essentials of Medical Device Clinical Research (Complete 4-Volume Set)</h3>
+        <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1rem;">
+          The definitive multi-volume masterwork set covering Volumes I, II, III &amp; IV. Includes FDA 510(k)/PMA, EU MDR 2017/745, ISO 14155, ISO 14971, SaMD, AI algorithms &amp; biostatistics.
+        </p>
+
+        <div class="stock-in-indicator">
+          <span class="stock-dot"></span>
+          <span>In Stock — Ships Within 24 Hours (Free Express Shipping Across India)</span>
+        </div>
+
+        <div class="store-price-row">
+          <span class="store-price-current">₹12,999</span>
+          <span class="store-price-old">₹14,999</span>
+          <span class="store-save-badge">SAVE ₹2,000</span>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+          <button class="btn-buy-now" style="flex: 1.5; min-width: 220px; font-size: 0.95rem; padding: 1rem;" onclick="window.buyNowDirect('set')">
+            BUY COMPLETE SET NOW (₹12,999) →
+          </button>
+          <button class="btn-add-cart" style="flex: 1; min-width: 180px; font-size: 0.9rem; padding: 1rem;" onclick="window.addToCart('set')">
+            + ADD SET TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Individual Volumes Shop Section -->
+    <div style="margin-top: 5rem;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <div style="font-size: 0.78rem; font-weight: 800; color: var(--gold-main); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.4rem;">INDIVIDUAL VOLUMES</div>
+        <h3 style="font-family: var(--font-serif); font-size: 2.2rem; color: #ffffff;">Purchase Individual Volumes</h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem;">Select specific volumes tailored to your research focus area.</p>
+      </div>
+
+      <div class="store-grid-4">
+        
+        <!-- Vol 1 Product -->
+        <div class="store-prod-card">
+          <div class="store-prod-img-box">
+            <img src="v1_nobg.png" alt="Volume I" class="store-prod-img"/>
+          </div>
+          <span class="store-prod-vol">VOLUME I</span>
+          <h4 class="store-prod-title">Fundamentals &amp; Regulatory Pathways</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+            Device classification, intended purpose, US FDA 510(k)/PMA &amp; EU MDR 2017/745.
+          </p>
+          <div class="store-prod-price">₹3,499</div>
+          <button class="btn-buy-now" onclick="window.buyNowDirect('vol1')">BUY VOL I NOW →</button>
+          <button class="btn-add-cart" onclick="window.addToCart('vol1')">+ ADD TO CART</button>
+        </div>
+
+        <!-- Vol 2 Product -->
+        <div class="store-prod-card">
+          <div class="store-prod-img-box">
+            <img src="v2_nobg.png" alt="Volume II" class="store-prod-img"/>
+          </div>
+          <span class="store-prod-vol">VOLUME II</span>
+          <h4 class="store-prod-title">Scientific Core &amp; Risk Management</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+            CIP medical writing, ISO 14971 risk analysis, ISO 14155 GCP &amp; CER reports.
+          </p>
+          <div class="store-prod-price">₹3,499</div>
+          <button class="btn-buy-now" onclick="window.buyNowDirect('vol2')">BUY VOL II NOW →</button>
+          <button class="btn-add-cart" onclick="window.addToCart('vol2')">+ ADD TO CART</button>
+        </div>
+
+        <!-- Vol 3 Product -->
+        <div class="store-prod-card">
+          <div class="store-prod-img-box">
+            <img src="v3_nobg.png" alt="Volume III" class="store-prod-img"/>
+          </div>
+          <span class="store-prod-vol">VOLUME III</span>
+          <h4 class="store-prod-title">Data Management &amp; Biostatistics</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+            EDC systems, MedDRA &amp; FDA device problem coding, materiovigilance &amp; statistics.
+          </p>
+          <div class="store-prod-price">₹3,499</div>
+          <button class="btn-buy-now" onclick="window.buyNowDirect('vol3')">BUY VOL III NOW →</button>
+          <button class="btn-add-cart" onclick="window.addToCart('vol3')">+ ADD TO CART</button>
+        </div>
+
+        <!-- Vol 4 Product -->
+        <div class="store-prod-card">
+          <div class="store-prod-img-box">
+            <img src="v4_nobg.png" alt="Volume IV" class="store-prod-img"/>
+          </div>
+          <span class="store-prod-vol">VOLUME IV</span>
+          <h4 class="store-prod-title">Software, AI &amp; Post-Market Evidence</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+            SaMD, SiMD, ISO 62304 SDLC, diagnostic devices, IVDR &amp; PMCF evidence.
+          </p>
+          <div class="store-prod-price">₹3,499</div>
+          <button class="btn-buy-now" onclick="window.buyNowDirect('vol4')">BUY VOL IV NOW →</button>
+          <button class="btn-add-cart" onclick="window.addToCart('vol4')">+ ADD TO CART</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer class="footer-section" id="contact">
+  <div class="footer-container">
+    
+    <!-- Brand Col -->
+    <div class="f-col f-brand-col">
+      <div class="f-brand-head">
+        <div class="nav-mono">AI</div>
+        <div>
+          <span class="f-brand-name">Dr. Ashish Indani</span>
+          <div class="brand-sub">Medical Device Clinical Research Expert</div>
+        </div>
+      </div>
+      <p class="f-brand-text">
+        Advancing global standards in Medical Device Clinical Research through education, regulatory mentorship &amp; clinical innovation.
+      </p>
+      <div class="f-socials">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="f-soc-btn" aria-label="LinkedIn"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.7a1.63 1.63 0 100 3.26 1.63 1.63 0 000-3.26z"/></svg></a>
+        <a href="https://www.youtube.com/watch?v=Zyhmdm7TSVg" target="_blank" rel="noopener" class="f-soc-btn" aria-label="YouTube / Keynotes"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M21.58 7.19a2.7 2.7 0 00-1.9-1.9C18 4.8 12 4.8 12 4.8s-6 0-7.68.49a2.7 2.7 0 00-1.9 1.9A28.3 28.3 0 002 12a28.3 28.3 0 00.42 4.81 2.7 2.7 0 001.9 1.9c1.68.49 7.68.49 7.68.49s6 0 7.68-.49a2.7 2.7 0 001.9-1.9A28.3 28.3 0 0022 12a28.3 28.3 0 00-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+        <a href="mailto:ashish@advanceresearchteck.com" class="f-soc-btn" aria-label="Email Author"><svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-width="1.5"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="f-col">
+      <h4 class="f-title">QUICK LINKS</h4>
+      <a href="about.html" class="f-link">About the Author</a>
+      <a href="books.html" class="f-link">The Books Collection</a>
+      <a href="preview.html" class="f-link">Preview &amp; Topics</a>
+      <a href="reviews.html" class="f-link">Reviews &amp; Acclaim</a>
+      <a href="#contact" class="f-link">Speaking &amp; Advisory</a>
+    </div>
+
+    <!-- The 4 Volumes -->
+    <div class="f-col">
+      <h4 class="f-title">THE 4 VOLUMES</h4>
+      <a href="books.html#volumes" class="f-link">Vol I: Regulatory Pathways</a>
+      <a href="books.html#volumes" class="f-link">Vol II: Scientific Core &amp; Risk</a>
+      <a href="books.html#volumes" class="f-link">Vol III: Clinical Ops &amp; Biostats</a>
+      <a href="books.html#volumes" class="f-link">Vol IV: SaMD &amp; AI Evidence</a>
+      <a href="books.html#order" class="f-link">Order Complete Series</a>
+    </div>
+
+    <!-- Official Stores -->
+    <div class="f-col">
+      <h4 class="f-title">OFFICIAL STORES</h4>
+      <a href="http://www.booksbyashishindani.com" target="_blank" rel="noopener" class="f-link">Direct Publisher (10% Off)</a>
+      <a href="https://www.amazon.in" target="_blank" rel="noopener" class="f-link">Amazon India</a>
+      <a href="https://www.flipkart.com" target="_blank" rel="noopener" class="f-link">Flipkart</a>
+      <a href="https://retailmaharaj.com" target="_blank" rel="noopener" class="f-link">Retail Maharaj</a>
+      <a href="https://www.diaglobal.org" target="_blank" rel="noopener" class="f-link">DIA Global Profile</a>
+    </div>
+
+    <!-- Stay Updated -->
+    <div class="f-col f-subscribe-col">
+      <h4 class="f-title">STAY UPDATED</h4>
+      <p class="f-sub-text">Subscribe for updates on new publications, training programs &amp; industry insights.</p>
+      <form class="f-form" id="fForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing to updates!'); this.reset();">
+        <input type="email" placeholder="Enter your email" class="f-input" required aria-label="Enter email"/>
+        <button type="submit" class="f-btn">→</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Dr. Ashish Indani. All Rights Reserved. Published by B Jain Publishers.</p>
+  </div>
+</footer>
+
+<!-- Sticky Mobile Order Bar -->
+<div class="mob-sticky-bar" id="mobStickyBar">
+  <div class="msb-inner">
+    <div class="msb-info">
+      <span class="msb-lbl">4-Volume Set</span>
+      <span class="msb-price">₹12,999</span>
+    </div>
+    <button class="btn-gold-sm" onclick="window.buyNowDirect('set')">BUY NOW →</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     CART DRAWER & CHECKOUT MODALS
+══════════════════════════════════════ -->
+<div class="cart-drawer-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3 class="cart-title">Your Cart</h3>
+    <button class="cart-close" id="cartCloseBtn">✕</button>
+  </div>
+  <div class="cart-items-list" id="cartItemsList">
+    <!-- Dynamic items -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-subtotal-row">
+      <span style="color: var(--text-muted);">Subtotal:</span>
+      <span id="cartSubtotal" style="color: var(--gold-light);">₹0</span>
+    </div>
+    <button class="btn-buy-now" style="width: 100%; padding: 1rem; font-size: 0.95rem;" onclick="window.checkoutFromCart()">
+      PROCEED TO CHECKOUT →
+    </button>
+  </div>
+</div>
+
+<!-- Checkout Modal -->
+<div class="checkout-modal-overlay" id="checkoutOverlay"></div>
+<div class="checkout-modal-overlay" id="checkoutModal">
+  <div class="checkout-modal">
+    <button class="checkout-close" id="checkoutCloseBtn">✕</button>
+    <div style="font-family: var(--font-serif); font-size: 2rem; color: #ffffff; margin-bottom: 0.25rem;">Direct Store Checkout</div>
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Official Direct Publisher Purchase · Ships Within 24 Hours</div>
+
+    <div id="checkoutSummaryBox" style="background: rgba(3,8,14,0.8); border: 1px solid rgba(199,154,86,0.25); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem;"></div>
+
+    <form id="directCheckoutForm">
+      <div class="b-form-grid">
+        <div>
+          <label class="a-label">Full Name *</label>
+          <input type="text" id="custName" class="b-input" placeholder="e.g. Dr. Ashish Indani" required/>
+        </div>
+        <div>
+          <label class="a-label">Phone Number *</label>
+          <input type="tel" id="custPhone" class="b-input" placeholder="+91 98765 43210" required/>
+        </div>
+        <div class="full">
+          <label class="a-label">Email Address (for Invoice &amp; Tracking) *</label>
+          <input type="email" id="custEmail" class="b-input" placeholder="name@domain.com" required/>
+        </div>
+        <div class="full">
+          <label class="a-label">Full Shipping Address *</label>
+          <input type="text" id="custAddress" class="b-input" placeholder="House/Flat No., Building, Street Name" required/>
+        </div>
+        <div>
+          <label class="a-label">Pincode *</label>
+          <input type="text" id="custPin" class="b-input" placeholder="e.g. 400001" required/>
+        </div>
+        <div>
+          <label class="a-label">City &amp; State *</label>
+          <input type="text" id="custCity" class="b-input" placeholder="e.g. Mumbai, Maharashtra" required/>
+        </div>
+        <div class="full">
+          <label class="a-label">Payment Method *</label>
+          <select class="b-select" id="payMethod">
+            <option value="upi">UPI / GPay / PhonePe / QR Code (Fastest)</option>
+            <option value="card">Credit / Debit Card (Visa, MasterCard, Amex)</option>
+            <option value="netbanking">Net Banking (All Major Indian Banks)</option>
+            <option value="cod">Cash on Delivery (COD)</option>
+          </select>
+        </div>
+        <div class="full" style="margin-top: 1rem;">
+          <button type="submit" class="btn-buy-now" style="width: 100%; padding: 1.1rem; font-size: 1rem;">
+            CONFIRM &amp; PLACE ORDER NOW →
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Order Success Modal -->
+<div class="checkout-modal-overlay" id="orderSuccessModal">
+  <div class="checkout-modal" style="max-width: 520px; text-align: center; padding: 3rem 2rem;">
+    <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(46,204,113,0.15); border: 2px solid #2ecc71; display: inline-flex; align-items: center; justify-content: center; color: #2ecc71; margin-bottom: 1.25rem;">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    </div>
+    <div style="font-family: var(--font-serif); font-size: 2.2rem; color: #ffffff; margin-bottom: 0.5rem;">Order Placed!</div>
+    <div id="orderSuccessDetails"></div>
+    <button class="btn-buy-now" style="margin-top: 1.5rem;" onclick="window.closeOrderSuccessModal()">CLOSE &amp; RETURN TO STORE</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

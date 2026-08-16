@@ -1,8 +1,6 @@
-import { api } from '../lib/api';
-
-export { api };
-
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || (import.meta as any)?.env?.VITE_API_BASE_URL || 'http://localhost:8080/api/v1';
+const API_BASE_URL =
+  (import.meta as any)?.env?.VITE_API_BASE_URL ||
+  'https://book-publisher-backend-451315399249.asia-south1.run.app/api/v1';
 
 export const getAuthToken = (): string | null => {
   if (typeof window !== 'undefined') {

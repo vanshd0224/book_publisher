@@ -1,16 +1,15 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
+ARG VITE_API_BASE_URL="https://book-publisher-backend-451315399249.asia-south1.run.app/api/v1"
+ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm run build
 
-FROM node:20-alpine AS runner
+FROM node:20-alpine
 WORKDIR /app
-ENV NODE_ENV=production
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/.next ./.next
-
+RUN npm install -g serve
+COPY --from=builder /app/dist ./dist
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["serve", "-s", "dist", "-l", "3000"]

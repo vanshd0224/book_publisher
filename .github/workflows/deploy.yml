@@ -92,6 +92,8 @@ jobs:
         run: |
           cd frontend
           npm run build
+        env:
+          VITE_API_BASE_URL: "https://book-publisher-backend-451315399249.asia-south1.run.app/api/v1"
 
       - name: Google Auth
         uses: google-github-actions/auth@v2
@@ -104,11 +106,11 @@ jobs:
       - name: Configure GCP Project
         run: gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
 
-      - name: Build Frontend Docker Image
+      - name: Build Frontend Docker Image with Live Backend API URL
         run: |
           FRONTEND_IMAGE_URI="gcr.io/${{ secrets.GCP_PROJECT_ID }}/book-publisher-frontend:${{ github.sha }}"
           cd frontend
-          docker build -t $FRONTEND_IMAGE_URI .
+          docker build --build-arg VITE_API_BASE_URL="https://book-publisher-backend-451315399249.asia-south1.run.app/api/v1" -t $FRONTEND_IMAGE_URI .
           echo "FRONTEND_IMAGE_URI=$FRONTEND_IMAGE_URI" >> $GITHUB_ENV
 
       - name: Configure Docker for gcr.io

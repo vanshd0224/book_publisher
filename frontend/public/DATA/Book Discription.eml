@@ -1,0 +1,1103 @@
+Delivered-To: rydhamdangayach@gmail.com
+Received: by 2002:a05:7108:3d8c:b0:57f:b5c2:327d with SMTP id hh12csp786085gdb;
+        Fri, 7 Aug 2026 09:21:03 -0700 (PDT)
+X-Received: by 2002:a05:6a20:2d11:b0:3c3:6544:6083 with SMTP id adf61e73a8af0-3cbce2682ecmr1882009637.0.1786119663133;
+        Fri, 07 Aug 2026 09:21:03 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1786119663; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=Y64nybGFRT6u3sDuvESI/0Kq8aGWVOTnJYwF2SFAxmOebqeoLJOWGv2I4h+e2G08Vw
+         4IYhMznLHOfSnGVnvObbfy9cCGNwHys8m8mQdWflU5bf4Vv/eSzqHd/q3blWFF1IaxIF
+         iRb+TCv5LfLe4qYbdjJlSQFlWKnTqAYtDwwFQqvjZ59hRzYip+4rZtyDtn9lLJW8jCVD
+         vluSLKmNF2bYlZJPOYZ4hMunR3mD8umFFvbVLovAIolvNrbkh1uG42DxmG4M7nkEO5Pe
+         79nduGnH7tK0l5/qHEESvMRiZBziYRgbYGJN1PSuuJ2loLvQHd00efL44U5DXX1lJh+U
+         Iuyw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=mime-version:msip_labels:content-language:accept-language
+         :message-id:date:thread-index:thread-topic:subject:to:from
+         :dkim-signature;
+        bh=JbYvNKsE9wmBCPrdLBKnYUpFjL09ETgaMKnmGHlCajw=;
+        fh=kyyht5V+rY3/odivMErrfbouV+bF3uOZ8WwYGvD2+NI=;
+        b=Gk2W+ypanXEYpkA7g5+/ynPd7BzvxsGtJ9FYznhX3Sce1F1S0B8uZ+Ef27tXgt1BPm
+         o+0AjIDiABMukiPlRC+5ciGTC+i7Xvm97Ooz1dL0WOTshE5Q+li2DoF5HGTr/a4pfdW4
+         Tp6TLicuAOT7rd4TGjEERU/Ag/KnupVm9q4RqADEZw0USvseGb35HeHCpyxMMmixQxrN
+         xUiYtPKBlN6U1hkl/qjZriab3RupJLxs35wpbzfSco9k+SgpS730TUFzWjbJryUNYT6r
+         vuKM1D5Ybf7DZZWW+EXKaE0zZ9+KIxJVsdIXpyq6AFudAjHdEwnAn8NdIy8e+c7BPhVn
+         oM2w==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b=td5K3ugx;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of advanceresearch.ashish@hotmail.com designates 2a01:111:f403:d40f::3 as permitted sender) smtp.mailfrom=AdvanceResearch.ashish@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+Return-Path: <AdvanceResearch.ashish@hotmail.com>
+Received: from SEYPR02CU001.outbound.protection.outlook.com (mail-koreacentralazolkn190130003.outbound.protection.outlook.com. [2a01:111:f403:d40f::3])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-cbe8f41ca11si2968822a12.358.2026.08.07.09.21.02
+        for <rydhamdangayach@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 07 Aug 2026 09:21:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of advanceresearch.ashish@hotmail.com designates 2a01:111:f403:d40f::3 as permitted sender) client-ip=2a01:111:f403:d40f::3;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b=td5K3ugx;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of advanceresearch.ashish@hotmail.com designates 2a01:111:f403:d40f::3 as permitted sender) smtp.mailfrom=AdvanceResearch.ashish@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=zQroN3jWtTbce82Lj9E1OUC4EbamsgZ+xMurZPoiayU/vhB4/nF4aU7m9npur7rswAj4nkSRDsrGOC0VZFzAKA8mIo7Z62uaWrxtsfhcMZB0MsqdppiOUCkd+AEzebKdAV5BogEucbrbi1NyxJKPvI84u7fdjb9P8wOPsvDI2lKaol2vOIiXYjn0TrgHAdvC1Eeq+4X/17WaGolnFudNbgLxWl+VIb8CbKrRAJGmkaM+/4pRGRzcAb/7B7m1MSnWkTA8INoBF6tH3xV4Ea7/7ZabB1dcufn5bi3y3xdHZUL9+qN3k9hWDD6kKK5/Cd6CbjNtOpUC4LPMEBzA23vEaw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=JbYvNKsE9wmBCPrdLBKnYUpFjL09ETgaMKnmGHlCajw=;
+ b=RNtH/+oNZAsNoWW3TXwhLeA5N7Y1pGp9GprerqN3RaKSsur7XYwV7GbRlFxcIDxIf67hbg3v0LZImPDRVjRVXcmD692pIgy4dAm8lptBcX3EdNokZAn6Ec4h7PlAXIXUMoykKWv5c9jRqT+KK0rs6IM3Hmp356hrmFVIImN22/KtixW/GmaOeKJosVNvZjYWwxWgy4JYymHWxgO6NX7SP48+ZzKe+Zq4CGFOuNETWoVCMRF3a8sdKOnNYV2R3IwBC1jH4qA7B1moAPeAVOJfLmxM9lqttpYtJ/zkI9xl5rmnvWHaopp0uqGe4BfKJ2czGLrjvrNK//Taqw9s8gvSmg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=JbYvNKsE9wmBCPrdLBKnYUpFjL09ETgaMKnmGHlCajw=;
+ b=td5K3ugxARZzUdEjj9jtm/jN6eLOb3e9NLBdRy9CUqG367YExNhwYviwKXj7evkYubVPXCqcxogdOw1tkkozPi9kEtZorInnaLXN8Z06wrPokjfg0ENjkd6MONdCT8nBpKXcc8me+4dNI8hNlQ6PNJF5Gav9KnMaO0Bc9/8s6Rlkk1WxoUua9E8bPxNPQCgL7GW/MMX9sH1OCYEleoS/EnlojEF3hOYM+MvC5xTF8yUG6B3OEDWiNZKPi/8QQ3qYAfif083etVSDI9x5D6GbsBwbbUfAQHbtDys1MpiofKLqkKEq+MX4jsD9k0hix6IBknlqvuUX2hxSL0MiFhtglw==
+Received: from SEZPR01MB7704.apcprd01.prod.exchangelabs.com
+ (2603:1096:101:29d::10) by SG2PPFF2E785B4A.apcprd01.prod.exchangelabs.com
+ (2603:1096:f:fff6::45f) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.292.24; Fri, 7 Aug
+ 2026 16:20:59 +0000
+Received: from SEZPR01MB7704.apcprd01.prod.exchangelabs.com
+ ([fe80::e9fa:af26:64cc:5b0e]) by SEZPR01MB7704.apcprd01.prod.exchangelabs.com
+ ([fe80::e9fa:af26:64cc:5b0e%6]) with mapi id 15.21.0292.019; Fri, 7 Aug 2026
+ 16:20:58 +0000
+From: Advance Research Ashish <AdvanceResearch.ashish@hotmail.com>
+To: "rydhamdangayach@gmail.com" <rydhamdangayach@gmail.com>
+Subject: Book Discription
+Thread-Topic: Book Discription
+Thread-Index: AQHdJoh6CX4MdLPv4UWkSzJZJiKqSA==
+Date: Fri, 7 Aug 2026 16:20:58 +0000
+Message-ID:
+ <SEZPR01MB77043B475F6661CFC71085CE8AD12@SEZPR01MB7704.apcprd01.prod.exchangelabs.com>
+Accept-Language: en-IN, en-GB, en-US
+Content-Language: en-IN
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SEZPR01MB7704:EE_|SG2PPFF2E785B4A:EE_
+x-ms-office365-filtering-correlation-id: 303e7c49-c946-402e-4d1b-08def49fdd89
+x-microsoft-antispam:
+ BCL:0;ARA:14566002|19101099003|55001999006|41001999006|25010399006|31061999003|19110799012|8062599012|8060799015|51005399006|15030799006|15080799012|12121999013|24121999003|22091999003|56899033|440099028|3412199025|102099032|40105399003|30101999006|2607281247196008|10035399007;
+x-microsoft-antispam-message-info:
+ =?Windows-1252?Q?gtuxRimpvg1JDQxsIoLZvOfYBnRMGxNd3BgGaMnoJ3nXv62YnRVvqdRT?=
+ =?Windows-1252?Q?TDu2iG2d2Y2lDmRJs6qe+DuZyrZDrbOCuilXyP97cSF1KvJ6M785RjRN?=
+ =?Windows-1252?Q?wW3NGKjQfeK3JCSczA1s20lzKzQ4HeW9r2rIgRYwdc71XtY1NHgSANcv?=
+ =?Windows-1252?Q?hVqzwJ5yWIFmpRK7QBnczgTf6WyglpaFJd6XT/opwo9kVsrfQbBWo7VP?=
+ =?Windows-1252?Q?0PClJZ3lt1pUCCalricIk34zXl/7/3t7eHTfMP/RIeXn1l0gmwckkUf1?=
+ =?Windows-1252?Q?ELKYVB4hFDD50se37b5aYN43RNgDkCOVXslimKRqkDKaTRDVnRv0stEE?=
+ =?Windows-1252?Q?MZ18U+3JAeJVb1Xr3BvwiPingfTmSlgkg6jcpCbQS3I0ocONtto3pZxM?=
+ =?Windows-1252?Q?lMgVjzVb48ooK9xVhckhkwItfUZZoYnfltfUEJqHSg9tcXWjlQvqT/Yg?=
+ =?Windows-1252?Q?qYUatprTK0GofPV9YdbGNKD5t7Z35VFiBtueVbxWtvefTI/KKz4mLa4m?=
+ =?Windows-1252?Q?kmRbBe7e0lnwWvIZyF+sa24sWc/KWAaO4R4UGoAV+W8SfG0qhAWpU3dM?=
+ =?Windows-1252?Q?APzYFFA9gJxPDR0boOAdu8RT3dWHJ5952BuJhItso5En79EMrUcX/Vyj?=
+ =?Windows-1252?Q?6FyESwVJg4g0J6kqgyqQWEMAzG7kNJWlG/RUMv6AFkQ7o8q8U+ChUg0G?=
+ =?Windows-1252?Q?TRhhZLtOFxFq+zeugvIRQSYslZMT+myIFENsHBlvcS/beZWC1Dh2awni?=
+ =?Windows-1252?Q?/Olw6G/zA8xDKHXHwqyfqacROrF+FLZVFf78kfZvjOmS649+qjemlmc8?=
+ =?Windows-1252?Q?Hw239np7SgH/lD+ytYGxIq80SE5V2EZ7QzTuAM8xFHjiiKVv5bhTWIyE?=
+ =?Windows-1252?Q?CsrKxFebX5WwjDEdTVKPjasJk4hnGlZFBrWp1dGoNeojww8ZSoBCvb0y?=
+ =?Windows-1252?Q?hjvdTWmp1jiig0xLrH3Z0J6XiDiBIF3FKPDtLdyoYXhaXnKnKjQsAYbW?=
+ =?Windows-1252?Q?XWfyyW6+of8XWpf+c8T6RhT2CeS+J3GwsFeb4UqmqyCfgnoqjWODTyBL?=
+ =?Windows-1252?Q?TAx5o2reREk11eRf1X+qTZ+IbtJkzCBVg1IWFjChXdOYBkOmsaN3fPoS?=
+ =?Windows-1252?Q?zqha8E9a4WoJHk5QFnTnB5uQzQWppbyoyDSCx5JnRD4PEJ+gYajLJ8EF?=
+ =?Windows-1252?Q?AMA+WTs0zyx0nfrxe6EzXsS7fcIuQb45CdYm+c4cbx0Ru22tj1v6eg?=
+ =?Windows-1252?Q?=3D=3D?=
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?6Qcoa70fx8sLDSMa2CaAERuwKslqO+bhreKEXXZn3g8tzEM6/Y/sB1IC?=
+ =?Windows-1252?Q?xiacsGXfnWXVo+2wIv8pE/iXdszlExWoe6IZ3DtBCbOv553dmVfI16Lx?=
+ =?Windows-1252?Q?hL8Qpmeb12/rgodNr07KdYJnMyRz/zv+V9+pFiV5lxSsQV9cKaVzVTxo?=
+ =?Windows-1252?Q?w6bJH3GOQC8brUOVF6p77Qi+Q4s4uZ6lIuc4IquaABM4408wFuP4B7xs?=
+ =?Windows-1252?Q?A1CBgbBMFBlBSJ0Myrw0xKLYhxJX20a1Z+m2krkB4FENm7Zt0ID3l+p6?=
+ =?Windows-1252?Q?QpO0LHeKzvl7w4YzD2nGVGru3OVrJ0lw3y7erF4aVEjdKvZceMAzEulT?=
+ =?Windows-1252?Q?7/fca6d49oRYlQEOPgj9HBTz8IpmmQhuT8UYWG464FLaYp8kS1kWZ7uL?=
+ =?Windows-1252?Q?KBwxrItJfH2bCfGj1zXRkMfxkGJcv9vr8x0vNWP+0uFkniQNi1OksjZz?=
+ =?Windows-1252?Q?t77jRfLNU0Jv+yHLgA/9v0Q/nyCsZXvn9Rn6yRKwJ7qf2fFAYhH3jRaE?=
+ =?Windows-1252?Q?gE29M7xIQilrYWdKX05G9JOhLOeZTaxKVarrvJJ5YSLQIgCYZSn2t0dl?=
+ =?Windows-1252?Q?rk0Ee14m8Leo+J2tIgS1fXPmsVMN7Vz9sgb8gtiOjqG8Mn+1YqCaKzAm?=
+ =?Windows-1252?Q?9ZqZB0aRpteXbuyFPzomFDt4+m7n+itXSqz8Vnh4PC7ibTDjuEUE3+c0?=
+ =?Windows-1252?Q?QB6agfHZWFDKffMml/dXrflqc1LmnPFwnd6KjfVnpVurSgi4NT52HZq7?=
+ =?Windows-1252?Q?kk2Tp4tcUp3femkSrh5okK5yExM2WzrZtMa9JyUsK++z1KtxTwJPpWiu?=
+ =?Windows-1252?Q?lzAlFN+a5B4ZBCSNDoBcMxIE9wKmrMI8gSnf0mPC/pnR22Calu6yC0N2?=
+ =?Windows-1252?Q?i8pKLgHG1JEQm8TydC6xhml393ICrNTrpVagn+fPrHI4J3QZ+rvGFGua?=
+ =?Windows-1252?Q?ubBPJWjeXAJJzEadd3AUEUHf59HsYbbex/wu4QuRfwBPU3C8ptOH6go5?=
+ =?Windows-1252?Q?EWukba8o/L0CKxBGCARBOXJ3naUspms78v9AKXvYT7r0MSH2mh4juOtc?=
+ =?Windows-1252?Q?bAIrRmmsh+l33xXlflc/uf1hksNiqJa9XPgcCfeB7/QoA9PHOtj4THXj?=
+ =?Windows-1252?Q?oaTEqQ0hH/JQBMqdj2VoHbvT2C4xYuEd64S38WFq8NvCduXgSmsd1f1n?=
+ =?Windows-1252?Q?JFk6QFJk1uYKUTBFO8wXU2ONBVtosqt0aJhieb4xAnCLKHKXi7reIorG?=
+ =?Windows-1252?Q?68IP3WcjO7kGpDz/5j6U3ZppiPUFd/a5bV0C+LuZ3ThhBgK2QdIJnYvz?=
+ =?Windows-1252?Q?i8Y4lcOWeB3IfQLDFjrWG7ihGEi4TfqBe1JooiUaPco2SDeRG0YVkIys?=
+ =?Windows-1252?Q?ZTvWzyfNrFTAD7x+sKvXD239I1mdHDPTfeci/f4nsDeY74Ul20LOxq22?=
+ =?Windows-1252?Q?F+vxokEnNpwL2HxQsAoZD7Z+dIA3Agannc/CVwXZMOK5aXQcEpN3dqRF?=
+ =?Windows-1252?Q?vtLHARmIG+tFKmXtqV1dqVK2sJgwey0zpujh7yghQJuoCQmd023uPR6i?=
+ =?Windows-1252?Q?x5kHznmW0/RfSym31DG8bnzqODKYqIDtGRS2kA=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SEZPR01MB77043B475F6661CFC71085CE8AD12SEZPR01MB7704apcp_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-9412-4-msonline-outlook-3e488.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SEZPR01MB7704.apcprd01.prod.exchangelabs.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 303e7c49-c946-402e-4d1b-08def49fdd89
+X-MS-Exchange-CrossTenant-originalarrivaltime: 07 Aug 2026 16:20:58.6590
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SG2PPFF2E785B4A
+
+--_000_SEZPR01MB77043B475F6661CFC71085CE8AD12SEZPR01MB7704apcp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+## About the Book
+
+### *Essentials of Medical Device Clinical Research*
+
+*Essentials of Medical Device Clinical Research* by Dr. Ashish Indani is a =
+comprehensive, end-to-end reference for professionals involved in the clini=
+cal development, evaluation, regulation, and lifecycle management of medica=
+l devices. The work addresses an important gap in healthcare literature by =
+presenting medical-device clinical research as a specialised discipline=97w=
+ith scientific, operational, regulatory, and practical requirements that di=
+ffer significantly from pharmaceutical clinical trials. [academia](https://=
+www.academia.edu/94311181/Essential_of_Medical_Device_Clinical_Research)
+
+Organised across four interconnected parts, the book begins with the fundam=
+entals of medical devices, their classification, regulatory pathways, and t=
+he key similarities and differences between drug and device research. It th=
+en progresses to the core scientific and operational elements of clinical r=
+esearch, including medical writing, clinical operations, data management, s=
+afety reporting, medical coding, biostatistics, risk management, and the ge=
+neration of clinical evidence. [academia](https://www.academia.edu/94311181=
+/Essential_of_Medical_Device_Clinical_Research)
+
+The book also explores contemporary and evolving areas of medical-device de=
+velopment, including software as a medical device, software in a medical de=
+vice, diagnostic devices, ISO standards, materiovigilance, preclinical stud=
+ies, and global marketing authorisation. This makes it relevant not only to=
+ traditional device trials, but also to professionals working with connecte=
+d, digital, diagnostic, and technology-enabled medical products. [retailmah=
+araj](https://retailmaharaj.com/products/essentials-of-medical-device-clini=
+cal-research-vol-1-2-3)
+
+Written in a practical and structured manner, the book is intended for clin=
+ical-research professionals, medical-device manufacturers, clinical-affairs=
+ and regulatory teams, medical writers, data managers, investigators, healt=
+hcare innovators, researchers, and students. It can serve as both a foundat=
+ional textbook for newcomers and a working reference for experienced profes=
+sionals navigating the complexities of medical-device clinical research.
+
+### What Makes the Book Valuable
+
+- Provides an end-to-end view of medical-device clinical research.
+- Explains why device research requires approaches distinct from pharmaceut=
+ical trials.
+- Connects scientific principles with clinical operations and regulatory ex=
+pectations.
+- Covers the complete product lifecycle, from early development and preclin=
+ical work to clinical evidence and post-market activities.
+- Addresses emerging areas such as software-based and diagnostic medical de=
+vices.
+- Brings together concepts that are often distributed across separate regul=
+atory, scientific, and operational resources.
+
+### Website Short Description
+
+*Essentials of Medical Device Clinical Research* is a comprehensive multi-v=
+olume reference by Dr. Ashish Indani that presents the principles and pract=
+ice of clinical research for medical devices. Covering medical-device funda=
+mentals, regulatory pathways, clinical evidence, risk management, medical w=
+riting, data management, biostatistics, safety, clinical operations, and em=
+erging technologies, the book provides a practical guide for professionals,=
+ researchers, manufacturers, and students across the medical-device industr=
+y. [academia](https://www.academia.edu/94311181/Essential_of_Medical_Device=
+_Clinical_Research)
+
+### Suggested Promotional Line
+
+**A practical, end-to-end guide to the science, strategy, operations, and r=
+egulation of medical-device clinical research.**
+
+
+## About the Book
+
+### *Essentials of Medical Device Clinical Research*
+
+Medical devices do not simply move from an engineering concept to a patient=
+=92s bedside. Between innovation and adoption lies a demanding journey of s=
+cientific evaluation, clinical investigation, ethical oversight, regulatory=
+ scrutiny, risk assessment, and continuous post-market learning.
+
+*Essentials of Medical Device Clinical Research*, authored by Dr. Ashish In=
+dani, is written for professionals who navigate this journey. It is a compr=
+ehensive, multi-volume work that brings together the principles, processes,=
+ people, and practical realities involved in generating credible clinical e=
+vidence for medical devices. The book recognises that medical-device resear=
+ch is not a shortened version of pharmaceutical research; it is a specialis=
+ed field shaped by device classification, intended use, design evolution, h=
+uman factors, technological change, and the relationship between performanc=
+e, safety, and patient benefit. [academia](https://www.academia.edu/9431118=
+1/Essential_of_Medical_Device_Clinical_Research)
+
+## A Complete View of the Device Lifecycle
+
+The book follows the logic of medical-device development from early scienti=
+fic and preclinical considerations through clinical evaluation, investigati=
+on, regulatory submission, and post-market evidence generation. It explores=
+ the interconnected responsibilities of sponsors, investigators, clinical-r=
+esearch teams, medical writers, data managers, statisticians, regulatory pr=
+ofessionals, ethics committees, and other stakeholders who collectively det=
+ermine the quality of a device=92s evidence base.
+
+Its coverage includes:
+
+- Medical-device fundamentals, classification, and regulatory pathways.
+- Clinical investigation planning, protocol development, and study executio=
+n.
+- Clinical evaluation reports and the generation of clinical evidence.
+- Clinical operations, site and investigator management, and study oversigh=
+t.
+- Medical writing, data management, medical coding, and biostatistics.
+- Safety reporting, risk management, and patient protection.
+- Preclinical studies, standards, materiovigilance, and post-market activit=
+ies.
+- Software as a medical device, software in a medical device, and diagnosti=
+c technologies.
+- Global considerations related to clinical research and marketing authoris=
+ation. [academia](https://www.academia.edu/94311181/Essential_of_Medical_De=
+vice_Clinical_Research)
+
+## More Than a Reference Book
+
+The strength of this work lies in its integrated perspective. Rather than t=
+reating clinical research, regulation, operations, and technology as isolat=
+ed subjects, Dr. Indani presents them as parts of one evidence ecosystem. A=
+ protocol affects the data collected; the data influence the clinical evalu=
+ation; the clinical evidence informs regulatory decisions; and post-market =
+experience continues to shape the understanding of safety and performance.
+
+This perspective makes the book valuable to both newcomers and experienced =
+professionals. For students and early-career researchers, it provides a str=
+uctured foundation. For industry professionals, it offers a consolidated re=
+source for understanding the decisions, documentation, and cross-functional=
+ collaboration required to bring medical devices responsibly to market.
+
+## Advancing Responsible Innovation
+
+At its core, *Essentials of Medical Device Clinical Research* is about more=
+ than compliance. It is about ensuring that innovation is supported by evid=
+ence that is scientifically sound, ethically generated, clinically meaningf=
+ul, and relevant to the patients and healthcare systems it is intended to s=
+erve.
+
+By bringing together medical knowledge, clinical methodology, regulatory th=
+inking, and practical industry experience, the book encourages a more disci=
+plined approach to medical-device innovation. It is a guide for those who b=
+elieve that better evidence leads to better decisions=97and that better dec=
+isions ultimately lead to safer, more effective healthcare technologies.
+
+## Ideal For
+
+The book is particularly relevant to:
+
+- Medical-device clinical-research and clinical-affairs professionals.
+- Regulatory-affairs, quality, and medical-writing teams.
+- Medical-device manufacturers, start-ups, and technology innovators.
+- Clinical investigators, research coordinators, and ethics committees.
+- Healthcare professionals, academics, and postgraduate students.
+- Professionals working with digital health, diagnostic, and software-enabl=
+ed devices.
+
+### One-Line Description
+
+**A definitive practical guide to transforming medical-device innovation in=
+to reliable clinical evidence, regulatory confidence, and meaningful patien=
+t benefit.**
+
+Essentials of Medical Device Clinical Research
+Medical-device innovation is only as strong as the clinical evidence behind=
+ it.
+From the first clinical question to regulatory submission and post-market f=
+ollow-up, medical-device research demands specialised knowledge, careful pl=
+anning, scientific discipline, and close coordination across multiple funct=
+ions. Yet the principles and practical processes involved are often scatter=
+ed across regulatory documents, technical guidance, and fragmented professi=
+onal resources.
+Essentials of Medical Device Clinical Research by Dr. Ashish Indani brings =
+these elements together in one comprehensive, multi-volume reference. Desig=
+ned specifically for the medical-device sector, the book explains how to pl=
+an, conduct, document, evaluate, and manage clinical research throughout th=
+e device lifecycle. It also clarifies why medical-device studies differ fro=
+m pharmaceutical trials and how those differences influence clinical strate=
+gy, evidence generation, safety assessment, and regulatory decision-making.
+Inside, readers will find practical guidance on:
+
+  *
+Clinical investigation planning and protocol development.
+  *
+Clinical operations, data management, medical writing, and biostatistics.
+  *
+Clinical evaluation reports, risk management, and safety reporting.
+  *
+Preclinical research, regulatory pathways, standards, and post-market evide=
+nce.
+  *
+Materiovigilance, diagnostic devices, software as a medical device, and sof=
+tware in a medical device.
+  *
+The responsibilities of sponsors, investigators, clinical-research teams, r=
+egulators, and other stakeholders.
+
+Whether you are entering the field, managing clinical affairs, preparing re=
+gulatory evidence, developing a new device, or seeking a structured referen=
+ce for professional practice, this book offers a practical foundation for n=
+avigating the complexity of medical-device clinical research.
+Build stronger evidence. Make better regulatory decisions. Help bring safer=
+ and more effective medical technologies to patients.
+Why this version is stronger
+
+  *
+It begins with a clear problem and promise.
+  *
+It speaks directly to the book=92s professional audience.
+  *
+It explains what readers will learn and how they will benefit.
+  *
+It uses technical keywords without sounding like a catalogue.
+  *
+It presents the book as a solution to a real industry challenge.
+  *
+It ends with an emotionally meaningful, action-oriented message.
+
+Recommended website structure
+For the book website, use the description above alongside:
+
+  1.
+A prominent cover image and =93Buy Now=94 button.
+  2.
+A short author credibility section immediately below the opening descriptio=
+n.
+  3.
+A =93Who Should Read This Book?=94 section with audience-specific benefits.
+  4.
+A =93What You Will Learn=94 section using the topic bullets.
+  5.
+Testimonials, endorsements, or sample pages, if available.
+  6.
+Edition, volume, page-count, ISBN, and purchasing information.
+
+The most important improvement would be to add genuine endorsements or read=
+er testimonials. A strong description creates interest; independent proof g=
+ives a potential buyer confidence.
+Follow-ups
+How to build social proof for a technical bookStrategies for marketing a m
+
+
+--_000_SEZPR01MB77043B475F6661CFC71085CE8AD12SEZPR01MB7704apcp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+## About the Book</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### *Essentials of Medical Device Clinical Research*</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+*Essentials of Medical Device Clinical Research* by Dr. Ashish Indani is a =
+comprehensive, end-to-end reference for professionals involved in the clini=
+cal development, evaluation, regulation, and lifecycle management of medica=
+l devices. The work addresses an
+ important gap in healthcare literature by presenting medical-device clinic=
+al research as a specialised discipline=97with scientific, operational, reg=
+ulatory, and practical requirements that differ significantly from pharmace=
+utical clinical trials. [academia](https://www.academia.edu/94311181/Essent=
+ial_of_Medical_Device_Clinical_Research)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Organised across four interconnected parts, the book begins with the fundam=
+entals of medical devices, their classification, regulatory pathways, and t=
+he key similarities and differences between drug and device research. It th=
+en progresses to the core scientific
+ and operational elements of clinical research, including medical writing, =
+clinical operations, data management, safety reporting, medical coding, bio=
+statistics, risk management, and the generation of clinical evidence. [acad=
+emia](https://www.academia.edu/94311181/Essential_of_Medical_Device_Clinica=
+l_Research)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+The book also explores contemporary and evolving areas of medical-device de=
+velopment, including software as a medical device, software in a medical de=
+vice, diagnostic devices, ISO standards, materiovigilance, preclinical stud=
+ies, and global marketing authorisation.
+ This makes it relevant not only to traditional device trials, but also to =
+professionals working with connected, digital, diagnostic, and technology-e=
+nabled medical products. [retailmaharaj](https://retailmaharaj.com/products=
+/essentials-of-medical-device-clinical-research-vol-1-2-3)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Written in a practical and structured manner, the book is intended for clin=
+ical-research professionals, medical-device manufacturers, clinical-affairs=
+ and regulatory teams, medical writers, data managers, investigators, healt=
+hcare innovators, researchers, and
+ students. It can serve as both a foundational textbook for newcomers and a=
+ working reference for experienced professionals navigating the complexitie=
+s of medical-device clinical research.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### What Makes the Book Valuable</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Provides an end-to-end view of medical-device clinical research.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Explains why device research requires approaches distinct from pharmaceut=
+ical trials.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Connects scientific principles with clinical operations and regulatory ex=
+pectations.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Covers the complete product lifecycle, from early development and preclin=
+ical work to clinical evidence and post-market activities.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Addresses emerging areas such as software-based and diagnostic medical de=
+vices.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Brings together concepts that are often distributed across separate regul=
+atory, scientific, and operational resources.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### Website Short Description</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+*Essentials of Medical Device Clinical Research* is a comprehensive multi-v=
+olume reference by Dr. Ashish Indani that presents the principles and pract=
+ice of clinical research for medical devices. Covering medical-device funda=
+mentals, regulatory pathways, clinical
+ evidence, risk management, medical writing, data management, biostatistics=
+, safety, clinical operations, and emerging technologies, the book provides=
+ a practical guide for professionals, researchers, manufacturers, and stude=
+nts across the medical-device industry.
+ [academia](https://www.academia.edu/94311181/Essential_of_Medical_Device_C=
+linical_Research)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### Suggested Promotional Line</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+**A practical, end-to-end guide to the science, strategy, operations, and r=
+egulation of medical-device clinical research.**</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+## About the Book</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### *Essentials of Medical Device Clinical Research*</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Medical devices do not simply move from an engineering concept to a patient=
+=92s bedside. Between innovation and adoption lies a demanding journey of s=
+cientific evaluation, clinical investigation, ethical oversight, regulatory=
+ scrutiny, risk assessment, and continuous
+ post-market learning.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+*Essentials of Medical Device Clinical Research*, authored by Dr. Ashish In=
+dani, is written for professionals who navigate this journey. It is a compr=
+ehensive, multi-volume work that brings together the principles, processes,=
+ people, and practical realities
+ involved in generating credible clinical evidence for medical devices. The=
+ book recognises that medical-device research is not a shortened version of=
+ pharmaceutical research; it is a specialised field shaped by device classi=
+fication, intended use, design evolution,
+ human factors, technological change, and the relationship between performa=
+nce, safety, and patient benefit. [academia](https://www.academia.edu/94311=
+181/Essential_of_Medical_Device_Clinical_Research)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+## A Complete View of the Device Lifecycle</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+The book follows the logic of medical-device development from early scienti=
+fic and preclinical considerations through clinical evaluation, investigati=
+on, regulatory submission, and post-market evidence generation. It explores=
+ the interconnected responsibilities
+ of sponsors, investigators, clinical-research teams, medical writers, data=
+ managers, statisticians, regulatory professionals, ethics committees, and =
+other stakeholders who collectively determine the quality of a device=92s e=
+vidence base.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Its coverage includes:</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Medical-device fundamentals, classification, and regulatory pathways.</di=
+v>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Clinical investigation planning, protocol development, and study executio=
+n.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Clinical evaluation reports and the generation of clinical evidence.</div=
+>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Clinical operations, site and investigator management, and study oversigh=
+t.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Medical writing, data management, medical coding, and biostatistics.</div=
+>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Safety reporting, risk management, and patient protection.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Preclinical studies, standards, materiovigilance, and post-market activit=
+ies.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Software as a medical device, software in a medical device, and diagnosti=
+c technologies.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Global considerations related to clinical research and marketing authoris=
+ation. [academia](https://www.academia.edu/94311181/Essential_of_Medical_De=
+vice_Clinical_Research)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+## More Than a Reference Book</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+The strength of this work lies in its integrated perspective. Rather than t=
+reating clinical research, regulation, operations, and technology as isolat=
+ed subjects, Dr. Indani presents them as parts of one evidence ecosystem. A=
+ protocol affects the data collected;
+ the data influence the clinical evaluation; the clinical evidence informs =
+regulatory decisions; and post-market experience continues to shape the und=
+erstanding of safety and performance.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+This perspective makes the book valuable to both newcomers and experienced =
+professionals. For students and early-career researchers, it provides a str=
+uctured foundation. For industry professionals, it offers a consolidated re=
+source for understanding the decisions,
+ documentation, and cross-functional collaboration required to bring medica=
+l devices responsibly to market.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+## Advancing Responsible Innovation</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+At its core, *Essentials of Medical Device Clinical Research* is about more=
+ than compliance. It is about ensuring that innovation is supported by evid=
+ence that is scientifically sound, ethically generated, clinically meaningf=
+ul, and relevant to the patients
+ and healthcare systems it is intended to serve.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+By bringing together medical knowledge, clinical methodology, regulatory th=
+inking, and practical industry experience, the book encourages a more disci=
+plined approach to medical-device innovation. It is a guide for those who b=
+elieve that better evidence leads
+ to better decisions=97and that better decisions ultimately lead to safer, =
+more effective healthcare technologies.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+## Ideal For</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+The book is particularly relevant to:</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Medical-device clinical-research and clinical-affairs professionals.</div=
+>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Regulatory-affairs, quality, and medical-writing teams.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Medical-device manufacturers, start-ups, and technology innovators.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Clinical investigators, research coordinators, and ethics committees.</di=
+v>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Healthcare professionals, academics, and postgraduate students.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Professionals working with digital health, diagnostic, and software-enabl=
+ed devices.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### One-Line Description</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+**A definitive practical guide to transforming medical-device innovation in=
+to reliable clinical evidence, regulatory confidence, and meaningful patien=
+t benefit.**</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof">
+<div id=3D"essentials-of-medical-device-clinical-research" class=3D"element=
+ToProof" style=3D"text-align: left; text-indent: 0px; line-height: 1.25; ma=
+rgin: 1rem 0px 0.5rem; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFont=
+Service, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, =
+0);">
+<span style=3D"font-weight: 600;"><i>Essentials of Medical Device Clinical =
+Research</i></span></div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 0.5rem 0px; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontSer=
+vice, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);=
+">
+<span style=3D"font-weight: 715;">Medical-device innovation is only as stro=
+ng as the clinical evidence behind it.</span></div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 1rem 0px 0.5rem; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFo=
+ntService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0=
+, 0);">
+<span style=3D"font-weight: 370;">From the first clinical question to regul=
+atory submission and post-market follow-up, medical-device research demands=
+ specialised knowledge, careful planning, scientific discipline, and close =
+coordination across multiple functions.
+ Yet the principles and practical processes involved are often scattered ac=
+ross regulatory documents, technical guidance, and fragmented professional =
+resources.</span></div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 1rem 0px 0.5rem; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFo=
+ntService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0=
+, 0);">
+<span style=3D"font-weight: 370;"><i>Essentials of Medical Device Clinical =
+Research</i>&nbsp;by Dr. Ashish Indani brings these elements together in on=
+e comprehensive, multi-volume reference. Designed specifically for the medi=
+cal-device sector, the book explains how
+ to plan, conduct, document, evaluate, and manage clinical research through=
+out the device lifecycle. It also clarifies why medical-device studies diff=
+er from pharmaceutical trials and how those differences influence clinical =
+strategy, evidence generation, safety
+ assessment, and regulatory decision-making.</span></div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 1rem 0px 0.5rem; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFo=
+ntService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0=
+, 0);">
+<span style=3D"font-weight: 370;">Inside, readers will find practical guida=
+nce on:</span></div>
+<ul style=3D"text-align: left; margin: 0px; padding-left: 2rem; list-style-=
+position: initial; list-style-type: disc;">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; color: rg=
+b(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+Clinical investigation planning and protocol development.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+Clinical operations, data management, medical writing, and biostatistics.</=
+div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+Clinical evaluation reports, risk management, and safety reporting.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+Preclinical research, regulatory pathways, standards, and post-market evide=
+nce.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+Materiovigilance, diagnostic devices, software as a medical device, and sof=
+tware in a medical device.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+The responsibilities of sponsors, investigators, clinical-research teams, r=
+egulators, and other stakeholders.</div>
+</li></ul>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 0.5rem 0px; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontSer=
+vice, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);=
+">
+<span style=3D"font-weight: 370;">Whether you are entering the field, manag=
+ing clinical affairs, preparing regulatory evidence, developing a new devic=
+e, or seeking a structured reference for professional practice, this book o=
+ffers a practical foundation for navigating
+ the complexity of medical-device clinical research.</span></div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 1rem 0px 0.5rem; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFo=
+ntService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0=
+, 0);">
+<span style=3D"font-weight: 715;">Build stronger evidence. Make better regu=
+latory decisions. Help bring safer and more effective medical technologies =
+to patients.</span></div>
+<div id=3D"why-this-version-is-stronger" class=3D"elementToProof" style=3D"=
+text-align: left; text-indent: 0px; line-height: 1.75rem; margin: 1rem 0px =
+0.5rem; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibr=
+i, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 600;">Why this version is stronger</span></div>
+<ul style=3D"text-align: left; margin: 0px; padding-left: 2rem; list-style-=
+position: initial; list-style-type: disc;">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; color: rg=
+b(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+It begins with a clear&nbsp;<span style=3D"font-weight: 715;">problem and p=
+romise</span>.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+It speaks directly to the book=92s professional audience.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+It explains what readers will learn and how they will benefit.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+It uses technical keywords without sounding like a catalogue.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+It presents the book as a solution to a real industry challenge.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+It ends with an emotionally meaningful, action-oriented message.</div>
+</li></ul>
+<div id=3D"recommended-website-structure" class=3D"elementToProof" style=3D=
+"text-align: left; text-indent: 0px; line-height: 1.75rem; margin: 1rem 0px=
+ 0.5rem; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calib=
+ri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 600;">Recommended website structure</span></div=
+>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 0.5rem 0px; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontSer=
+vice, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);=
+">
+<span style=3D"font-weight: 370;">For the book website, use the description=
+ above alongside:</span></div>
+<ol start=3D"1" style=3D"text-align: left; margin: 0px; padding-left: 2rem;=
+ list-style-position: initial; list-style-type: decimal;">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; color: rg=
+b(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+<span style=3D"font-weight: 715;">A prominent cover image and =93Buy Now=94=
+ button.</span></div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+<span style=3D"font-weight: 715;">A short author credibility section</span>=
+&nbsp;immediately below the opening description.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+<span style=3D"font-weight: 715;">A =93Who Should Read This Book?=94 sectio=
+n</span>&nbsp;with audience-specific benefits.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+<span style=3D"font-weight: 715;">A =93What You Will Learn=94 section</span=
+>&nbsp;using the topic bullets.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+<span style=3D"font-weight: 715;">Testimonials, endorsements, or sample pag=
+es</span>, if available.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 370; colo=
+r: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"text-align: le=
+ft; text-indent: 0px; margin: 0px 0px 0.5rem;">
+<span style=3D"font-weight: 715;">Edition, volume, page-count, ISBN, and pu=
+rchasing information.</span></div>
+</li></ol>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 0.5rem 0px 0px; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFon=
+tService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0,=
+ 0);">
+<span style=3D"font-weight: 370;">The most important improvement would be t=
+o add genuine endorsements or reader testimonials. A strong description cre=
+ates interest; independent proof gives a potential buyer confidence.</span>=
+</div>
+</div>
+<div class=3D"elementToProof">
+<div id=3D"markdown-content-3" class=3D"elementToProof"></div>
+</div>
+<div class=3D"elementToProof"></div>
+<div class=3D"elementToProof" style=3D"margin-top: 1rem;">
+<div class=3D"elementToProof">
+<div class=3D"elementToProof" style=3D"margin-bottom: 1rem;">
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+line-height: 1.75rem; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontS=
+ervice, Calibri, Helvetica, sans-serif; font-size: 12pt; font-weight: 620; =
+color: rgb(0, 0, 0);">
+Follow-ups</div>
+</div>
+</div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+border-top: 1px solid rgba(214, 213, 212, 0.07); font-family: Aptos, Aptos_=
+EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-siz=
+e: 12pt; color: rgb(0, 0, 0);">
+How to build social proof for a technical bookStrategies for marketing a m<=
+/div>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+</body>
+</html>
+
+--_000_SEZPR01MB77043B475F6661CFC71085CE8AD12SEZPR01MB7704apcp_--

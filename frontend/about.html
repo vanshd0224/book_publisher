@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About Dr. Ashish Indani | Global Medical Device Clinical Research Expert</title>
+<meta name="description" content="Official profile of Dr. Ashish Indani — Physician, Global MedTech Visionary, Author of Essentials of Medical Device Clinical Research."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css?v=2.0"/>
+
+<style>
+/* ══════════════════════════════════════════════════════
+   ABOUT AUTHOR DEDICATED PAGE STYLING
+══════════════════════════════════════════════════════ */
+
+/* Global SVG Safety Rules to prevent SVG explosion */
+svg {
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.about-page-wrapper {
+  background-color: #03080e;
+  color: #ffffff;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.a-hero {
+  position: relative;
+  padding: 5rem 2rem 4rem 2rem;
+  background: radial-gradient(circle at 75% 30%, rgba(199, 154, 86, 0.12) 0%, rgba(3, 8, 14, 0.98) 70%), #03080e;
+  border-bottom: 1px solid rgba(199, 154, 86, 0.15);
+}
+
+.a-hero-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.a-portrait-card {
+  position: relative;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(145deg, rgba(199, 154, 86, 0.35), rgba(199, 154, 86, 0.08));
+  border: 1px solid rgba(199, 154, 86, 0.3);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(199, 154, 86, 0.15);
+  text-align: center;
+}
+
+.a-portrait-img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  object-fit: cover;
+}
+
+.a-portrait-sign {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--gold-main);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.a-hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--gold-main);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.a-eyebrow-icon {
+  width: 14px;
+  height: 14px;
+  fill: var(--gold-main);
+  flex-shrink: 0;
+}
+
+.a-main-title {
+  font-family: var(--font-serif);
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(135deg, #ffffff 40%, var(--gold-light) 75%, var(--gold-main) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.a-tagline {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--gold-light);
+  margin-bottom: 1.5rem;
+}
+
+.a-lead-bio {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 1.75rem;
+}
+
+.a-lead-bio strong {
+  color: #ffffff;
+}
+
+.a-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.a-chip {
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(199, 154, 86, 0.2);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.a-chip-icon {
+  width: 14px;
+  height: 14px;
+  stroke: var(--gold-main);
+  flex-shrink: 0;
+}
+
+.a-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* Monarch Metrics Bar */
+.a-metrics-section {
+  background: #060e18;
+  border-bottom: 1px solid rgba(199, 154, 86, 0.15);
+  padding: 2.5rem 2rem;
+}
+
+.a-metrics-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.a-metric-card {
+  padding: 1rem;
+  position: relative;
+}
+
+.a-metric-card:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 1px;
+  background: rgba(199, 154, 86, 0.2);
+}
+
+.a-metric-val {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.a-metric-lbl {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+
+/* Main Content Grid (Timeline + Endorsement) */
+.a-content-section {
+  padding: 5rem 2rem;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.a-sec-title {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.a-sec-title .eyebrow {
+  color: var(--gold-main);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.a-sec-title h2 {
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  color: #ffffff;
+}
+
+.a-two-col {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.a-card-box {
+  background: #08121e;
+  border: 1px solid rgba(199, 154, 86, 0.2);
+  border-radius: 16px;
+  padding: 2.25rem;
+}
+
+.a-box-h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--gold-main);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(199, 154, 86, 0.2);
+  padding-bottom: 0.75rem;
+}
+
+.a-tl-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.a-tl-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.a-tl-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--gold-main);
+  background: rgba(199, 154, 86, 0.12);
+  border: 1px solid rgba(199, 154, 86, 0.25);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.a-tl-badge.active {
+  background: var(--gold-main);
+  color: #03080e;
+}
+
+.a-tl-info strong {
+  font-size: 0.95rem;
+  color: #ffffff;
+  display: block;
+}
+
+.a-tl-info p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+/* Govt Endorsement Card */
+.a-govt-card {
+  background: linear-gradient(145deg, #0d1a2d, #08121e);
+  border: 1.5px solid rgba(199, 154, 86, 0.3);
+  border-radius: 16px;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a-govt-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.a-seal-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.a-govt-h4 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.a-govt-sub {
+  font-size: 0.72rem;
+  color: var(--gold-main);
+  margin-top: 2px;
+}
+
+.a-govt-quote {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.92);
+  font-style: italic;
+  border-left: 2.5px solid var(--gold-main);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.a-govt-sign strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.a-govt-sign span {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.a-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold-main);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.a-pdf-btn:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
+}
+
+/* Masterwork 4-Volume Section */
+.a-books-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.a-book-card {
+  background: #08121e;
+  border: 1px solid rgba(199, 154, 86, 0.2);
+  border-radius: 14px;
+  padding: 1.75rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.a-book-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(199, 154, 86, 0.45);
+}
+
+.a-book-vol {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--gold-main);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.a-book-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.a-book-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Keynote Booking Box */
+.a-keynote-box {
+  background: linear-gradient(135deg, #08121e, #0d1a2d);
+  border: 1px solid rgba(199, 154, 86, 0.25);
+  border-radius: 18px;
+  padding: 3rem;
+  max-width: 860px;
+  margin: 4rem auto 0 auto;
+}
+
+.a-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.a-form-grid .full {
+  grid-column: span 2;
+}
+
+.a-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.a-input, .a-select, .a-textarea {
+  width: 100%;
+  background: rgba(3, 8, 14, 0.8);
+  border: 1px solid rgba(199, 154, 86, 0.25);
+  border-radius: 6px;
+  padding: 0.75rem 0.9rem;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.a-input:focus, .a-select:focus, .a-textarea:focus {
+  outline: none;
+  border-color: var(--gold-main);
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .a-hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .a-portrait-card {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .a-chips-grid, .a-actions-row {
+    justify-content: center;
+  }
+  .a-metrics-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .a-metric-card:nth-child(2)::after {
+    display: none;
+  }
+  .a-two-col, .a-books-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .a-main-title {
+    font-size: 2.5rem;
+  }
+  .a-metrics-container {
+    grid-template-columns: 1fr;
+  }
+  .a-metric-card::after {
+    display: none !important;
+  }
+  .a-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .a-form-grid .full {
+    grid-column: span 1;
+  }
+  .a-keynote-box {
+    padding: 2rem 1.25rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-page-wrapper">
+
+  <!-- ══════════════════════════════════════
+       HEADER / NAV
+  ══════════════════════════════════════ -->
+  <header id="header" class="site-header" role="banner">
+    <div class="header-container">
+      <!-- Zone 1: Brand Area -->
+      <a href="index.html" class="header-brand" aria-label="Dr. Ashish Indani - Home">
+        <div class="brand-monogram">
+          <span class="monogram-text">AI</span>
+        </div>
+        <div class="brand-identity">
+          <span class="brand-name">DR. ASHISH INDANI</span>
+          <span class="brand-sub">Medical Device Clinical Research Expert</span>
+        </div>
+      </a>
+
+      <!-- Zone 2: Primary Navigation -->
+      <nav class="header-nav" id="headerNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active">About</a>
+          </li>
+          <li class="nav-item nav-has-dropdown">
+            <a href="books.html" class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              <span>The Books</span>
+              <svg class="dropdown-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu" aria-label="The Books Submenu">
+              <a href="books.html" class="dropdown-item" role="menuitem">
+                <div class="item-title">Complete Collection</div>
+                <div class="item-desc">The 4-Volume Master Reference</div>
+              </a>
+              <div class="dropdown-divider" role="separator"></div>
+              <a href="books.html#volumes" class="dropdown-item" role="menuitem">
+                <div class="item-title">Volume I</div>
+                <div class="item-desc">Fundamentals &amp; Regulatory Pathways</div>
+              </a>
+              <a href="books.html#volumes" class="dropdown-item" role="menuitem">
+                <div class="item-title">Volume II</div>
+                <div class="item-desc">Scientific Core &amp; Risk Management</div>
+              </a>
+              <a href="books.html#volumes" class="dropdown-item" role="menuitem">
+                <div class="item-title">Volume III</div>
+                <div class="item-desc">Data Management &amp; Biostatistics</div>
+              </a>
+              <a href="books.html#volumes" class="dropdown-item" role="menuitem">
+                <div class="item-title">Volume IV</div>
+                <div class="item-desc">Software, AI &amp; Post-Market Evidence</div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="preview.html" class="nav-link">Preview &amp; Topics</a>
+          </li>
+          <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="#keynote" class="nav-link">Speaking &amp; Advisory</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Zone 3: Commerce Actions -->
+      <div class="header-actions">
+        <!-- Cart Trigger -->
+        <button class="cart-trigger" id="openCartBtn" aria-label="View Shopping Cart">
+          <svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" id="cartCountBadge" aria-label="Cart items count">0</span>
+        </button>
+
+        <!-- Purchase CTA -->
+        <a href="index.html#order" class="btn-buy-cta">
+          <span>Buy the Collection</span>
+          <svg class="cta-arrow" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 1L13 6M13 6L8 11M13 6H1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburger" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobDrawer">
+          <span class="hamburger-line top"></span>
+          <span class="hamburger-line middle"></span>
+          <span class="hamburger-line bottom"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mob-drawer-header">
+      <a href="index.html" class="header-brand" aria-label="Dr. Ashish Indani - Home">
+        <div class="brand-monogram">
+          <span class="monogram-text">AI</span>
+        </div>
+        <div class="brand-identity">
+          <span class="brand-name">DR. ASHISH INDANI</span>
+        </div>
+      </a>
+      <button class="mob-close" id="mobClose" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="mob-drawer-body">
+      <nav class="mob-nav">
+        <a href="index.html" class="mob-link">Home</a>
+        <a href="about.html" class="mob-link">About Author</a>
+        
+        <div class="mob-accordion">
+          <button class="mob-accordion-btn" aria-expanded="false">
+            <span>The Books</span>
+            <svg class="mob-accordion-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M1 1L5 5L9 1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="mob-accordion-content">
+            <a href="books.html" class="mob-sublink">Complete Collection</a>
+            <a href="books.html#volumes" class="mob-sublink">Volume I: Regulatory Pathways</a>
+            <a href="books.html#volumes" class="mob-sublink">Volume II: Scientific Core</a>
+            <a href="books.html#volumes" class="mob-sublink">Volume III: Biostatistics</a>
+            <a href="books.html#volumes" class="mob-sublink">Volume IV: SaMD &amp; AI</a>
+          </div>
+        </div>
+        
+        <a href="preview.html" class="mob-link">Preview &amp; Topics</a>
+        <a href="reviews.html" class="mob-link">Reviews</a>
+        <a href="#keynote" class="mob-link">Speaking &amp; Advisory</a>
+      </nav>
+    </div>
+    
+    <div class="mob-drawer-footer">
+      <a href="index.html#order" class="btn-buy-cta mob-cta-full">
+        <span>Buy the Collection</span>
+        <svg class="cta-arrow" width="14" height="12" viewBox="0 0 14 12" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M8 1L13 6M13 6L8 11M13 6H1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="mob-overlay" id="mobOverlay" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════ -->
+  <section class="a-hero">
+    <div class="a-hero-container">
+      
+      <!-- Photo Card -->
+      <div class="a-portrait-card">
+        <img src="author_photo_hd.jpg" alt="Dr. Ashish Indani" class="a-portrait-img"/>
+        <div class="a-portrait-sign">Ashish Indani</div>
+      </div>
+
+      <!-- Hero Bio Content -->
+      <div class="a-hero-content">
+        <div class="a-eyebrow">
+          <svg class="a-eyebrow-icon" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z"/></svg>
+          GLOBAL MEDICAL &amp; REGULATORY VISIONARY
+        </div>
+        <h1 class="a-main-title">Dr. Ashish Indani</h1>
+        <div class="a-tagline">General Manager, Zydus MedTech · Regd. Independent Director · Author · TEDx Speaker</div>
+        
+        <p class="a-lead-bio">
+          For over <strong>25 years</strong>, Dr. Ashish Indani has stood at the paramount intersection of clinical medicine, regulatory science, and modern technology. Currently serving as <strong>General Manager - MedTech at Zydus MedTech</strong>, his career spans leadership roles as <strong>Managing Director at Krishnamugdha Advance ResearchTeck</strong>, <strong>GM of Clinical &amp; Medical Affairs at AMS</strong>, <strong>Senior Manager of Clinical Affairs at Stryker</strong> (where he built the department from scratch and grew the team by 1,700%), and <strong>Principal Scientist &amp; Head of Research &amp; Innovation at Tata Consultancy Services (TCS)</strong>.
+        </p>
+
+        <div class="a-chips-grid">
+          <div class="a-chip">
+            <svg class="a-chip-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            General Manager, Zydus MedTech
+          </div>
+          <div class="a-chip">
+            <svg class="a-chip-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            MD, Krishnamugdha Advance ResearchTeck
+          </div>
+          <div class="a-chip">
+            <svg class="a-chip-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Ex-Stryker Sr. Manager (1700% Team Growth)
+          </div>
+          <div class="a-chip">
+            <svg class="a-chip-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Ex-TCS Head of Research &amp; Innovation (5.5+ Yrs)
+          </div>
+        </div>
+
+        <div class="a-actions-row">
+          <a href="index.html#order" class="btn-hero-solid">ORDER THE 4-VOLUME SET →</a>
+          <a href="#keynote" class="btn-hero-ghost">BOOK KEYNOTE / ADVISORY</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       METRICS BAR
+  ══════════════════════════════════════ -->
+  <section class="a-metrics-section">
+    <div class="a-metrics-container">
+      <div class="a-metric-card">
+        <div class="a-metric-val">25+</div>
+        <div class="a-metric-lbl">Years Experience</div>
+      </div>
+      <div class="a-metric-card">
+        <div class="a-metric-val">1700%</div>
+        <div class="a-metric-lbl">Stryker Dept Growth</div>
+      </div>
+      <div class="a-metric-card">
+        <div class="a-metric-val">4 Vol</div>
+        <div class="a-metric-lbl">Masterwork Collection</div>
+      </div>
+      <div class="a-metric-card">
+        <div class="a-metric-val">30%</div>
+        <div class="a-metric-lbl">Revenue Savings Achieved</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       MAIN CONTENT: TIMELINE & GOVT ENDORSEMENT
+  ══════════════════════════════════════ -->
+  <section class="a-content-section" id="milestones">
+    <div class="a-sec-title">
+      <div class="eyebrow">EXECUTIVE LEADERSHIP &amp; GOVT RECOGNITION</div>
+      <h2>Distinguished Milestones &amp; Endorsement</h2>
+    </div>
+
+    <div class="a-two-col">
+      
+      <!-- Executive Timeline -->
+      <div class="a-card-box">
+        <h3 class="a-box-h3">Career Trajectory &amp; Leadership (Official LinkedIn Profile)</h3>
+        <div class="a-tl-list">
+          
+          <div class="a-tl-row">
+            <span class="a-tl-badge active">DEC 2025 – PRES</span>
+            <div class="a-tl-info">
+              <strong>General Manager - MedTech</strong>
+              <p>Zydus MedTech (Ahmedabad, Gujarat, India) — Leading medical technology strategy and operations.</p>
+            </div>
+          </div>
+
+          <div class="a-tl-row">
+            <span class="a-tl-badge">SEP 2025 – DEC 2025</span>
+            <div class="a-tl-info">
+              <strong>Managing Director</strong>
+              <p>Krishnamugdha Advance ResearchTeck Pvt. Ltd. — Executive strategic direction and research governance.</p>
+            </div>
+          </div>
+
+          <div class="a-tl-row">
+            <span class="a-tl-badge">JAN 2025 – SEP 2025</span>
+            <div class="a-tl-info">
+              <strong>General Manager Clinical and Medical Affairs</strong>
+              <p>Advanced MedTech Solutions (AMS) (Mumbai, India) — Directing global clinical trials, CERs &amp; regulatory submissions.</p>
+            </div>
+          </div>
+
+          <div class="a-tl-row">
+            <span class="a-tl-badge">AUG 2021 – JAN 2025</span>
+            <div class="a-tl-info">
+              <strong>Senior Manager Clinical Affairs</strong>
+              <p>Stryker (Gurugram, India) — Developed Clinical Research Dept from scratch, grew team to <strong>1700%</strong>, and achieved <strong>~30% revenue savings &amp; efficiency gains</strong>.</p>
+            </div>
+          </div>
+
+          <div class="a-tl-row">
+            <span class="a-tl-badge">FEB 2016 – AUG 2021</span>
+            <div class="a-tl-info">
+              <strong>Principal Scientist &amp; Head, Research &amp; Innovation</strong>
+              <p>Tata Consultancy Services (TCS) (5 yrs 7 mos) — ADD life sciences platforms, medical devices &amp; AI innovation.</p>
+            </div>
+          </div>
+
+          <div class="a-tl-row">
+            <span class="a-tl-badge active">JUL 2024</span>
+            <div class="a-tl-info">
+              <strong style="color: var(--gold-light);">Pioneer Researcher Awardee (BlackBuck Award)</strong>
+              <p style="color: rgba(255,255,255,0.9);">Honored at the Medical Research Summit for innovations in sensor diagnostics &amp; AI.</p>
+            </div>
+          </div>
+
+          <div class="a-tl-row">
+            <span class="a-tl-badge active">2026</span>
+            <div class="a-tl-info">
+              <strong style="color: var(--gold-light);">Author: Essentials of Medical Device Clinical Research</strong>
+              <p style="color: rgba(255,255,255,0.9);">Landmark 4-volume reference publication defining global MedTech clinical standards.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Govt Endorsement Card -->
+      <div class="a-govt-card">
+        <div>
+          <div class="a-govt-header">
+            <img src="seal_check.png" alt="Govt Seal" class="a-seal-img"/>
+            <div>
+              <div class="a-govt-h4">OFFICIAL LETTER OF RECOMMENDATION</div>
+              <div class="a-govt-sub">Uttar Pradesh Promote Pharma Council (Govt. of UP)</div>
+            </div>
+          </div>
+
+          <blockquote class="a-govt-quote">
+            "Dr. Ashish Indani has assembled a vast body of knowledge... filling a long-standing gap in the industry where medical device clinical research historically depended on retrofitted drug-oriented methodologies."
+          </blockquote>
+        </div>
+
+        <div class="a-govt-sign">
+          <strong>Kritika Sharma (IAS)</strong>
+          <span>Managing Director &amp; CEO, UP Promote Pharma Council</span>
+          <a href="DATA/Recommendation letter.pdf" target="_blank" class="a-pdf-btn">VIEW ORIGINAL PDF LETTER →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       THE MASTERWORK 4-VOLUME OVERVIEW
+  ══════════════════════════════════════ -->
+  <section class="a-content-section" id="masterwork" style="border-top: 1px solid rgba(199,154,86,0.15); background: #050b13;">
+    <div class="a-sec-title">
+      <div class="eyebrow">THE DEFINITIVE PUBLICATION</div>
+      <h2>Essentials of Medical Device Clinical Research</h2>
+      <p style="color: var(--text-muted); max-width: 720px; margin: 0.75rem auto 0 auto; font-size: 0.95rem;">
+        The landmark multi-volume reference set liberating medical device clinical research from conventional pharmaceutical drug trial retrofitting.
+      </p>
+    </div>
+
+    <div class="a-books-grid">
+      <div class="a-book-card">
+        <div class="a-book-vol">VOLUME I</div>
+        <h3 class="a-book-title">Fundamentals &amp; Regulatory Pathways</h3>
+        <p class="a-book-desc">
+          Device classification, intended use, US FDA 510(k)/PMA routes, EU MDR 2017/745, and fundamental divergences between drug and device trials.
+        </p>
+      </div>
+
+      <div class="a-book-card">
+        <div class="a-book-vol">VOLUME II</div>
+        <h3 class="a-book-title">Scientific &amp; Operational Core</h3>
+        <p class="a-book-desc">
+          Clinical investigation protocols, medical writing, CER generation, risk management (ISO 14971), and Good Clinical Practice for devices (ISO 14155).
+        </p>
+      </div>
+
+      <div class="a-book-card">
+        <div class="a-book-vol">VOLUME III</div>
+        <h3 class="a-book-title">Data Management &amp; Biostatistics</h3>
+        <p class="a-book-desc">
+          Device data management, MedDRA &amp; FDA Medical Device Problem Codes, safety reporting, materiovigilance, biostatistical analysis, and sample size design.
+        </p>
+      </div>
+
+      <div class="a-book-card">
+        <div class="a-book-vol">VOLUME IV</div>
+        <h3 class="a-book-title">Software, AI &amp; Post-Market Evidence</h3>
+        <p class="a-book-desc">
+          Software as a Medical Device (SaMD), Software in a Medical Device (SiMD), ISO 62304 / ISO 63204 SDLC standards, diagnostic devices, and post-market evidence (PMCF).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       KEYNOTE & ADVISORY
+  ══════════════════════════════════════ -->
+  <section class="a-content-section" id="keynote">
+    <div class="a-sec-title">
+      <div class="eyebrow">VIP ENGAGEMENT</div>
+      <h2>Keynote Speaking &amp; Executive Advisory</h2>
+      <p style="color: var(--text-muted); max-width: 680px; margin: 0.75rem auto 0 auto; font-size: 0.95rem;">
+        Inquire about international keynote speaking engagements, MedTech regulatory consulting, or institutional library orders.
+      </p>
+    </div>
+
+    <div class="a-keynote-box">
+      <form id="aKeynoteForm">
+        <div class="a-form-grid">
+          <div>
+            <label class="a-label">Full Name</label>
+            <input type="text" class="a-input" placeholder="e.g. Dr. Robert Vance" required/>
+          </div>
+          <div>
+            <label class="a-label">Organization / University</label>
+            <input type="text" class="a-input" placeholder="e.g. Stryker / Stanford" required/>
+          </div>
+          <div>
+            <label class="a-label">Email Address</label>
+            <input type="email" class="a-input" placeholder="name@organization.com" required/>
+          </div>
+          <div>
+            <label class="a-label">Inquiry Type</label>
+            <select class="a-select">
+              <option>Keynote Speaking Engagement</option>
+              <option>Corporate MedTech Advisory</option>
+              <option>Institutional Library Order</option>
+            </select>
+          </div>
+          <div class="full">
+            <label class="a-label">Event or Inquiry Details</label>
+            <textarea class="a-textarea" rows="4" placeholder="Please outline scope or event details..."></textarea>
+          </div>
+          <div class="full" style="text-align: center; margin-top: 1rem;">
+            <button type="submit" class="btn-hero-solid" style="width: 100%; max-width: 360px;">
+              SEND INQUIRY DIRECTLY →
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GLOBAL FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer-section" id="footer">
+    <div class="footer-container">
+      
+      <!-- Brand Col -->
+      <div class="f-col f-brand-col">
+        <div class="f-brand-head">
+          <div class="nav-mono">AI</div>
+          <div>
+            <span class="f-brand-name">Dr. Ashish Indani</span>
+            <div class="brand-sub">Medical Device Clinical Research Expert</div>
+          </div>
+        </div>
+        <p class="f-brand-text">
+          Advancing global standards in Medical Device Clinical Research through education, regulatory mentorship &amp; clinical innovation.
+        </p>
+        <div class="f-socials">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="f-soc-btn" aria-label="LinkedIn">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.7a1.63 1.63 0 100 3.26 1.63 1.63 0 000-3.26z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/watch?v=Zyhmdm7TSVg" target="_blank" rel="noopener" class="f-soc-btn" aria-label="YouTube / Keynotes">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M21.58 7.19a2.7 2.7 0 00-1.9-1.9C18 4.8 12 4.8 12 4.8s-6 0-7.68.49a2.7 2.7 0 00-1.9 1.9A28.3 28.3 0 002 12a28.3 28.3 0 00.42 4.81 2.7 2.7 0 001.9 1.9c1.68.49 7.68.49 7.68.49s6 0 7.68-.49a2.7 2.7 0 001.9-1.9A28.3 28.3 0 0022 12a28.3 28.3 0 00-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+          </a>
+          <a href="mailto:ashish@advanceresearchteck.com" class="f-soc-btn" aria-label="Email Author">
+            <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="f-col">
+        <h4 class="f-title">NAVIGATION</h4>
+        <a href="index.html" class="f-link">Home Portal</a>
+        <a href="about.html" class="f-link">About Author</a>
+        <a href="books.html" class="f-link">The Books Collection</a>
+        <a href="preview.html" class="f-link">Preview &amp; Topics</a>
+        <a href="reviews.html" class="f-link">Reviews &amp; Acclaim</a>
+        <a href="index.html#contact" class="f-link">Speaking &amp; Advisory</a>
+      </div>
+
+      <!-- The 4 Volumes -->
+      <div class="f-col">
+        <h4 class="f-title">THE 4 VOLUMES</h4>
+        <a href="books.html#volumes" class="f-link">Vol I: Regulatory Pathways</a>
+        <a href="books.html#volumes" class="f-link">Vol II: Scientific Core &amp; Risk</a>
+        <a href="books.html#volumes" class="f-link">Vol III: Clinical Ops &amp; Biostats</a>
+        <a href="books.html#volumes" class="f-link">Vol IV: SaMD &amp; AI Evidence</a>
+        <a href="books.html#order" class="f-link">Order Complete Series</a>
+      </div>
+
+      <!-- Official Stores -->
+      <div class="f-col">
+        <h4 class="f-title">OFFICIAL STORES</h4>
+        <a href="http://www.booksbyashishindani.com" target="_blank" rel="noopener" class="f-link">Direct Publisher (10% Off)</a>
+        <a href="https://www.amazon.in" target="_blank" rel="noopener" class="f-link">Amazon India</a>
+        <a href="https://www.flipkart.com" target="_blank" rel="noopener" class="f-link">Flipkart</a>
+        <a href="https://retailmaharaj.com" target="_blank" rel="noopener" class="f-link">Retail Maharaj</a>
+        <a href="https://www.diaglobal.org" target="_blank" rel="noopener" class="f-link">DIA Global Profile</a>
+      </div>
+
+      <!-- Stay Updated -->
+      <div class="f-col f-subscribe-col">
+        <h4 class="f-title">STAY UPDATED</h4>
+        <p class="f-sub-text">Subscribe for updates on clinical research methodologies, regulatory briefings, and university lectures.</p>
+        <form class="f-form" id="fForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing to updates!'); this.reset();">
+          <input type="email" placeholder="Enter your email" class="f-input" required aria-label="Enter email"/>
+          <button type="submit" class="f-btn">→</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Dr. Ashish Indani. All Rights Reserved. Published by B Jain Publishers.</p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Cart Drawer -->
+<div class="cart-drawer-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3 class="cart-title">Your Cart</h3>
+    <button class="cart-close" id="cartCloseBtn">✕</button>
+  </div>
+  <div class="cart-items-list" id="cartItemsList">
+    <!-- Dynamic items -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-subtotal-row">
+      <span style="color: var(--text-muted);">Subtotal:</span>
+      <span id="cartSubtotal" style="color: var(--gold-light);">₹0</span>
+    </div>
+    <button class="btn-buy-now" style="width: 100%; padding: 1rem; font-size: 0.95rem;" onclick="window.checkoutFromCart()">
+      PROCEED TO CHECKOUT →
+    </button>
+  </div>
+</div>
+
+<!-- Checkout Modal -->
+<div class="checkout-modal-overlay" id="checkoutOverlay"></div>
+<div class="checkout-modal-overlay" id="checkoutModal">
+  <div class="checkout-modal">
+    <button class="checkout-close" id="checkoutCloseBtn">✕</button>
+    <div style="font-family: var(--font-serif); font-size: 2rem; color: #ffffff; margin-bottom: 0.25rem;">Direct Store Checkout</div>
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Official Direct Publisher Purchase · Ships Within 24 Hours</div>
+
+    <div id="checkoutSummaryBox" style="background: rgba(3,8,14,0.8); border: 1px solid rgba(199,154,86,0.25); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem;"></div>
+
+    <form id="directCheckoutForm">
+      <div class="b-form-grid">
+        <div>
+          <label class="a-label">Full Name *</label>
+          <input type="text" id="custName" class="b-input" placeholder="e.g. Dr. Ashish Indani" required/>
+        </div>
+        <div>
+          <label class="a-label">Phone Number *</label>
+          <input type="tel" id="custPhone" class="b-input" placeholder="+91 98765 43210" required/>
+        </div>
+        <div class="full">
+          <label class="a-label">Email Address (for Invoice &amp; Tracking) *</label>
+          <input type="email" id="custEmail" class="b-input" placeholder="name@domain.com" required/>
+        </div>
+        <div class="full">
+          <label class="a-label">Full Shipping Address *</label>
+          <input type="text" id="custAddress" class="b-input" placeholder="House/Flat No., Building, Street Name" required/>
+        </div>
+        <div>
+          <label class="a-label">Pincode *</label>
+          <input type="text" id="custPin" class="b-input" placeholder="e.g. 400001" required/>
+        </div>
+        <div>
+          <label class="a-label">City &amp; State *</label>
+          <input type="text" id="custCity" class="b-input" placeholder="e.g. Mumbai, Maharashtra" required/>
+        </div>
+        <div class="full">
+          <label class="a-label">Payment Method *</label>
+          <select class="b-select" id="payMethod">
+            <option value="upi">UPI / GPay / PhonePe / QR Code (Fastest)</option>
+            <option value="card">Credit / Debit Card (Visa, MasterCard, Amex)</option>
+            <option value="netbanking">Net Banking (All Major Indian Banks)</option>
+            <option value="cod">Cash on Delivery (COD)</option>
+          </select>
+        </div>
+        <div class="full" style="margin-top: 1rem;">
+          <button type="submit" class="btn-buy-now" style="width: 100%; padding: 1.1rem; font-size: 1rem;">
+            CONFIRM &amp; PLACE ORDER NOW →
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Order Success Modal -->
+<div class="checkout-modal-overlay" id="orderSuccessModal">
+  <div class="checkout-modal" style="max-width: 520px; text-align: center; padding: 3rem 2rem;">
+    <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(46,204,113,0.15); border: 2px solid #2ecc71; display: inline-flex; align-items: center; justify-content: center; color: #2ecc71; margin-bottom: 1.25rem;">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    </div>
+    <div style="font-family: var(--font-serif); font-size: 2.2rem; color: #ffffff; margin-bottom: 0.5rem;">Order Placed!</div>
+    <div id="orderSuccessDetails"></div>
+    <button class="btn-buy-now" style="margin-top: 1.5rem;" onclick="window.closeOrderSuccessModal()">CLOSE &amp; RETURN TO STORE</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

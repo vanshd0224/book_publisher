@@ -1,0 +1,541 @@
+Delivered-To: rydhamdangayach@gmail.com
+Received: by 2002:a05:7108:3d8c:b0:57f:b5c2:327d with SMTP id hh12csp819692gdb;
+        Fri, 7 Aug 2026 09:48:24 -0700 (PDT)
+X-Received: by 2002:a17:902:ced1:b0:2d0:cc92:f7a9 with SMTP id d9443c01a7336-2d106a1a2d5mr119497905ad.4.1786121303898;
+        Fri, 07 Aug 2026 09:48:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1786121303; cv=none;
+        d=google.com; s=arc-20260327;
+        b=kzM8chycJpeF5EhGadrZg1fm8cO9kYAfHd0jVfSX80iKRr/rnriDJbubYgc54eDh5O
+         VJCfYMoVOhl1TCZkL+RonwO/q2RQNM/O3nubHwUAfY72IEmWAVQAPPk3r+cUoDbm99nq
+         9HPSFC4jD25TYwAl2j4fGvsJxCO+P5D7Ha1vWv8t/T/6Ri7DdbH2iGB8Fol/WB7ft35a
+         K1Bl2vK2lnM3NdkLtEBZupM7GvEyS5Rm+UW8pahs5Xk2OZv7rs5cbUVsPzD90qbxKcJu
+         TKVbn65R+UUD5F+x4UcExsIaQzt6GW9TvvoDQVTTruDV+1Q8t4xpwQWp8pt7AfhQpmaF
+         CMxw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=date:mime-version:msip_labels:content-language:accept-language
+         :message-id:thread-index:thread-topic:subject:to:from:dkim-signature;
+        bh=gb+oKzPtzIH7NZs8Gh8X+lMnSufkSFjzlx/0EVJMkOI=;
+        fh=kyyht5V+rY3/odivMErrfbouV+bF3uOZ8WwYGvD2+NI=;
+        b=lX1aCKKQ1/NuCmuI76AY7cEu20g15DFqOQT6zB00ROMs/8WmrLe7b/+rwOgcOsnncm
+         ge+jMbaz5ufCH29CtVQfFENzx9fD11lT/V7ANMO8eWsDE0nBztbzMmnnUB2gQJqy8lXw
+         gbkIhWbYdEo0vQLSn942GBSUXxPUJxsjUcITGi4uHNHqQGDETdgLEE9i06o/BHAY51eQ
+         4EXZfUgoHSgzxyYyBD8RkdpO5U1MAvH3o3LkHwOPAM701xJLRdie/yDLW/nTb5q4469W
+         v9d9UdzK/60ZivPJMz9xPFpPsnzl4j+t4WWYoo/V6cgIUkR9sp9aq4ZiBl/SSmCpO7gH
+         hCBw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@advanceresearchteck.com header.s=hostingermail-a header.b=XcGtASQz;
+       spf=pass (google.com: domain of ashish@advanceresearchteck.com designates 23.83.223.195 as permitted sender) smtp.mailfrom=ashish@advanceresearchteck.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=advanceresearchteck.com
+Return-Path: <ashish@advanceresearchteck.com>
+Received: from zebra.cherry.relay.mailchannels.net (zebra.cherry.relay.mailchannels.net. [23.83.223.195])
+        by mx.google.com with ESMTPS id d9443c01a7336-2d16c68af86si58545925ad.164.2026.08.07.09.48.23
+        for <rydhamdangayach@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 07 Aug 2026 09:48:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ashish@advanceresearchteck.com designates 23.83.223.195 as permitted sender) client-ip=23.83.223.195;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@advanceresearchteck.com header.s=hostingermail-a header.b=XcGtASQz;
+       spf=pass (google.com: domain of ashish@advanceresearchteck.com designates 23.83.223.195 as permitted sender) smtp.mailfrom=ashish@advanceresearchteck.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=advanceresearchteck.com
+X-Sender-Id: hostingeremail|x-authuser|ashish@advanceresearchteck.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id C952B940F26
+	for <rydhamdangayach@gmail.com>; Fri, 07 Aug 2026 16:48:21 +0000 (UTC)
+Received: from fr-int-smtpout29.hostinger.io (trex-green-4.trex.outbound.svc.cluster.local [100.111.252.109])
+	(Authenticated sender: hostingeremail)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 195EF942516
+	for <rydhamdangayach@gmail.com>; Fri, 07 Aug 2026 16:48:20 +0000 (UTC)
+X-Sender-Id: hostingeremail|x-authuser|ashish@advanceresearchteck.com
+X-MC-Relay: Neutral
+X-MailChannels-SenderId:
+ hostingeremail|x-authuser|ashish@advanceresearchteck.com
+X-MailChannels-Auth-Id: hostingeremail
+X-Average-Juvenile: 4b53fd9b205b02be_1786121301630_2428264885
+X-MC-Loop-Signature: 1786121301630:1979307541
+X-MC-Ingress-Time: 1786121301630
+Received: from fr-int-smtpout29.hostinger.io (fr-int-smtpout29.hostinger.io
+ [148.222.54.18])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.111.252.109 (trex/8.0.2);
+	Fri, 07 Aug 2026 16:48:21 +0000
+Received: from SEZPR01MB7584.apcprd01.prod.exchangelabs.com (unknown [IPv6:2603:1046:101:164::5])
+	(Authenticated sender: ashish@advanceresearchteck.com)
+	by smtp.hostinger.com (smtp.hostinger.com) with ESMTPSA id 4hGqpV6kvkz310c
+	for <rydhamdangayach@gmail.com>; Fri,  7 Aug 2026 16:48:18 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=advanceresearchteck.com;
+	s=hostingermail-a; t=1786121299;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=gb+oKzPtzIH7NZs8Gh8X+lMnSufkSFjzlx/0EVJMkOI=;
+	b=XcGtASQzhln1ETXTFVO8OY/Bs75hwYwgkd+8o12m+4Vwn3RsZDf7Tn346inTck+wxOGd2B
+	lmrby8P1bu17SzyFFlZUtEnsNPTUf4IFMbWyr1Iq55MevuY2snNtJvPvtCkJEZ2ofKfQDU
+	k96ziBQu8fiGMhkV8ZUJ9M9gCr1aAHPbNKtPMM/H516MN13rq3+oq1A5/WPFq47w+YVFOj
+	JmvUHLmmK/a3kSjqqFx+sySx5iQSQ1cb56XaU6qxKbKlhaMgAmbf+u3kxEoAkp9p3rgfEL
+	GeGEkZEPREGX/oBf1Oxp9hkuHdX5UPk+I6ZOGP76WEyPzRo835sZNkV2hAG15A==
+From: "ashish@advanceresearchteck.com" <ashish@advanceresearchteck.com>
+To: "rydhamdangayach@gmail.com" <rydhamdangayach@gmail.com>
+Subject: Letter draft
+Thread-Topic: Letter draft
+Thread-Index: AQHdJoyKIGHYc1iALkW7zvWdhzyhxg==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Message-ID:
+	<SEZPR01MB7584970D84077F449CEAED3BFED12@SEZPR01MB7584.apcprd01.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+Content-Type: multipart/alternative;
+	boundary="_000_SEZPR01MB7584970D84077F449CEAED3BFED12SEZPR01MB7584apcp_"
+MIME-Version: 1.0
+Date: Fri,  7 Aug 2026 16:48:18 +0000 (UTC)
+X-CM-Analysis: v=2.4 cv=BvrPwpX5 c=1 sm=1 tr=0 ts=6a760c53 a=rdnyTA78/5yyTb8wMow/iw==:617 a=xqWC_Br6kY4A:10 a=7j0FZ4iXMVMA:10 a=hvKlP1_UAAAA:8 a=-80wR0ryAAAA:8 a=Mzv8RazNKS8tfe_e6UwA:9 a=pILNOxqGKmIA:10 a=QmoMFosf1gte-wt3:21 a=frz4AuCg-hUA:10 a=_W_S_7VecoQA:10 a=zY0JdQc1-4EAyPf5TuXT:22 a=tlErRNmZLZXjTWRUQ-aY:22 a=8sbXeD6gWGb_zTQq2ipX:22 a=JFKcgusY4aBk2PPRijTl:22
+X-CM-Envelope: MS4xfOxUArlizpHnEXbfJ6sLvZkQjOGnL2DMgMdJoavcna81lcvTUat2MY4NMXw5lZy8iUboGu6E25zsvUOy4s0WX3tyVKLbLGtPjRqsBMk7Zs8r88fwrMrO NG1YAhwanoapgubN8ITL4eHdOsBV4PCXkXX41hNXremZ64ouc24ME6ETM52A7AP3Va5UIK+tn1fhgPOEKap91E++Sk6/I7vcr8kUmDceYu8JRutMJq31u8M+ F1SzodEHBZa+glkL6D6YVHZ7TtTL95gwO6GYBAkghe0=
+X-AuthUser: ashish@advanceresearchteck.com
+
+--_000_SEZPR01MB7584970D84077F449CEAED3BFED12SEZPR01MB7584apcp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+**Subject: Request to Include *Essentials of Medical Device Clinical Resear=
+ch* in Your Institutional Library and Training Resources**
+
+Dear **[Director/Dean/Head of Department/Procurement Officer]**,
+
+The medical-technology industry is entering a defining phase. MedTech has e=
+merged as a **sunrise sector**, driven by advances in medical devices, diag=
+nostics, digital health, artificial intelligence, robotics, connected techn=
+ologies, and indigenous innovation. India=92s opportunity is vast=97but rea=
+lising this potential will require more than technology alone. It will requ=
+ire a strong ecosystem of clinical evidence, regulatory capability, risk-ba=
+sed decision-making, and professionally trained human resources. [assets.kp=
+mg](https://assets.kpmg.com/content/dam/kpmgsites/in/pdf/2023/10/from-volum=
+e-to-value.pdf)
+
+One of the most pressing challenges facing the sector is the scarcity of sp=
+ecialised resources. Institutions and organisations need professionals who =
+can understand not only device design and engineering, but also clinical in=
+vestigation, regulatory pathways, quality systems, risk management, medical=
+ writing, data interpretation, safety reporting, and post-marketing surveil=
+lance. Industry and policy reports have identified gaps in the availability=
+ and quality of skilled personnel across biomedical engineering, quality as=
+surance, clinical research, regulatory affairs, and related technical funct=
+ions. [pharma-dept.gov](https://pharma-dept.gov.in/sites/default/files/Fina=
+l%20Boosting%20of%20Medical%20Devices%20Industry%20-%20Report%20-%202023.pd=
+f)
+
+In this context, we are pleased to present:
+
+## *Essentials of Medical Device Clinical Research*
+### By Dr. Ashish Indani
+
+This comprehensive multi-volume reference has been developed to address the=
+ growing knowledge and capability gap in the medical-device ecosystem. It b=
+rings together the essential scientific, clinical, regulatory, operational,=
+ and post-market aspects of medical-device clinical research in one structu=
+red resource.
+
+The book covers a wide range of subjects, including:
+
+- Medical-device clinical research principles and methodologies.
+- Global regulatory frameworks, pathways, standards, and submission require=
+ments.
+- Clinical investigation planning, protocol development, and study executio=
+n.
+- Clinical evaluation and clinical-evaluation reports.
+- Risk management, safety assessment, and benefit=96risk analysis.
+- Clinical operations, medical writing, data management, and biostatistics.
+- Ethics, patient protection, safety reporting, and quality oversight.
+- Preclinical research, diagnostic devices, and software-based medical devi=
+ces.
+- Materiovigilance and post-marketing clinical follow-up.
+- Post-market surveillance and the continuing generation of real-world evid=
+ence.
+- The roles and responsibilities of sponsors, investigators, research teams=
+, regulatory professionals, and other stakeholders.
+
+The book is designed to serve as a practical bridge between **academic lear=
+ning and industry application**. It can support medical-device, biomedical,=
+ pharmacy, biotechnology, and clinical-research programmes, while also serv=
+ing as a valuable reference for hospitals, research institutions, start-ups=
+, manufacturers, regulatory teams, clinical-affairs departments, and profes=
+sional training centres.
+
+For students, it provides a structured introduction to a specialised and ra=
+pidly expanding field. For faculty and researchers, it offers a consolidate=
+d teaching and reference resource. For industry professionals, it supports =
+the practical understanding required to plan better studies, prepare strong=
+er clinical evidence, manage regulatory expectations, and protect patient s=
+afety throughout the product lifecycle.
+
+We therefore request your institution to consider purchasing copies of *Ess=
+entials of Medical Device Clinical Research* for:
+
+- Institutional and departmental libraries.
+- Medical-device, biomedical, pharmacy, biotechnology, and clinical-researc=
+h programmes.
+- Clinical-affairs and regulatory-affairs teams.
+- Faculty development and professional training initiatives.
+- Research scholars, postgraduate students, and industry trainees.
+- Institutional innovation, incubation, and technology-transfer centres.
+
+Investing in this book is an investment in **knowledge infrastructure and w=
+orkforce readiness**. As MedTech continues to expand, institutions that dev=
+elop capable professionals will be better positioned to contribute to safe =
+innovation, indigenous product development, global regulatory compliance, a=
+nd improved patient outcomes.
+
+We would be pleased to share further details regarding the volumes, ISBNs, =
+pricing, institutional orders, and special arrangements for bulk purchase.
+
+Thank you for your consideration. We look forward to your support in streng=
+thening medical-device education, clinical research, and regulatory capabil=
+ity.
+
+Yours sincerely,
+
+**[Name]**
+**[Designation]**
+**[Organisation/Publisher]**
+**[Email Address]**
+**[Phone Number]**
+**[Website/Order Link]**
+
+### Suggested closing line
+
+**Let us equip the next generation of MedTech professionals with the knowle=
+dge required to transform promising innovation into safe, clinically meanin=
+gful, and globally acceptable medical technologies.**
+
+--_000_SEZPR01MB7584970D84077F449CEAED3BFED12SEZPR01MB7584apcp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+**Subject: Request to Include *Essentials of Medical Device Clinical Resear=
+ch* in Your Institutional Library and Training Resources**</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Dear **[Director/Dean/Head of Department/Procurement Officer]**,</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+The medical-technology industry is entering a defining phase. MedTech has e=
+merged as a **sunrise sector**, driven by advances in medical devices, diag=
+nostics, digital health, artificial intelligence, robotics, connected techn=
+ologies, and indigenous innovation.
+ India=92s opportunity is vast=97but realising this potential will require =
+more than technology alone. It will require a strong ecosystem of clinical =
+evidence, regulatory capability, risk-based decision-making, and profession=
+ally trained human resources. [assets.kpmg](https://assets.kpmg.com/content=
+/dam/kpmgsites/in/pdf/2023/10/from-volume-to-value.pdf)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+One of the most pressing challenges facing the sector is the scarcity of sp=
+ecialised resources. Institutions and organisations need professionals who =
+can understand not only device design and engineering, but also clinical in=
+vestigation, regulatory pathways,
+ quality systems, risk management, medical writing, data interpretation, sa=
+fety reporting, and post-marketing surveillance. Industry and policy report=
+s have identified gaps in the availability and quality of skilled personnel=
+ across biomedical engineering,
+ quality assurance, clinical research, regulatory affairs, and related tech=
+nical functions. [pharma-dept.gov](https://pharma-dept.gov.in/sites/default=
+/files/Final%20Boosting%20of%20Medical%20Devices%20Industry%20-%20Report%20=
+-%202023.pdf)</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+In this context, we are pleased to present:</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+## *Essentials of Medical Device Clinical Research* &nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### By Dr. Ashish Indani</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+This comprehensive multi-volume reference has been developed to address the=
+ growing knowledge and capability gap in the medical-device ecosystem. It b=
+rings together the essential scientific, clinical, regulatory, operational,=
+ and post-market aspects of medical-device
+ clinical research in one structured resource.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+The book covers a wide range of subjects, including:</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Medical-device clinical research principles and methodologies.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Global regulatory frameworks, pathways, standards, and submission require=
+ments.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Clinical investigation planning, protocol development, and study executio=
+n.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Clinical evaluation and clinical-evaluation reports.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Risk management, safety assessment, and benefit=96risk analysis.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Clinical operations, medical writing, data management, and biostatistics.=
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Ethics, patient protection, safety reporting, and quality oversight.</div=
+>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Preclinical research, diagnostic devices, and software-based medical devi=
+ces.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Materiovigilance and post-marketing clinical follow-up.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Post-market surveillance and the continuing generation of real-world evid=
+ence.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- The roles and responsibilities of sponsors, investigators, research teams=
+, regulatory professionals, and other stakeholders.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+The book is designed to serve as a practical bridge between **academic lear=
+ning and industry application**. It can support medical-device, biomedical,=
+ pharmacy, biotechnology, and clinical-research programmes, while also serv=
+ing as a valuable reference for
+ hospitals, research institutions, start-ups, manufacturers, regulatory tea=
+ms, clinical-affairs departments, and professional training centres.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+For students, it provides a structured introduction to a specialised and ra=
+pidly expanding field. For faculty and researchers, it offers a consolidate=
+d teaching and reference resource. For industry professionals, it supports =
+the practical understanding required
+ to plan better studies, prepare stronger clinical evidence, manage regulat=
+ory expectations, and protect patient safety throughout the product lifecyc=
+le.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+We therefore request your institution to consider purchasing copies of *Ess=
+entials of Medical Device Clinical Research* for:</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Institutional and departmental libraries.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Medical-device, biomedical, pharmacy, biotechnology, and clinical-researc=
+h programmes.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Clinical-affairs and regulatory-affairs teams.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Faculty development and professional training initiatives.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Research scholars, postgraduate students, and industry trainees.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+- Institutional innovation, incubation, and technology-transfer centres.</d=
+iv>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Investing in this book is an investment in **knowledge infrastructure and w=
+orkforce readiness**. As MedTech continues to expand, institutions that dev=
+elop capable professionals will be better positioned to contribute to safe =
+innovation, indigenous product development,
+ global regulatory compliance, and improved patient outcomes.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+We would be pleased to share further details regarding the volumes, ISBNs, =
+pricing, institutional orders, and special arrangements for bulk purchase.<=
+/div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Thank you for your consideration. We look forward to your support in streng=
+thening medical-device education, clinical research, and regulatory capabil=
+ity.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Yours sincerely, &nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+**[Name]** &nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+**[Designation]** &nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+**[Organisation/Publisher]** &nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+**[Email Address]** &nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+**[Phone Number]** &nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+**[Website/Order Link]**</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+### Suggested closing line</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+**Let us equip the next generation of MedTech professionals with the knowle=
+dge required to transform promising innovation into safe, clinically meanin=
+gful, and globally acceptable medical technologies.**</div>
+</body>
+</html>
+
+--_000_SEZPR01MB7584970D84077F449CEAED3BFED12SEZPR01MB7584apcp_--
