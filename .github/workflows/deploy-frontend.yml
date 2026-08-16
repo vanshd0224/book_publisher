@@ -1,16 +1,14 @@
-name: Deploy Frontend to Vercel / Firebase Hosting
+name: Deploy Frontend Website
 
 on:
   push:
     branches:
       - main
-    paths:
-      - 'frontend/**'
-      - '.github/workflows/deploy-frontend.yml'
+  workflow_dispatch:
 
 jobs:
   build-and-test-frontend:
-    name: Build & Lint Frontend
+    name: Build & Verify Frontend
     runs-on: ubuntu-latest
 
     steps:
@@ -29,10 +27,10 @@ jobs:
           cd frontend
           npm ci || npm install
 
-      - name: Build Next.js Application
+      - name: Build Vite Application
         run: |
           cd frontend
           npm run build
         env:
-          NEXT_PUBLIC_API_BASE_URL: ${{ secrets.NEXT_PUBLIC_API_BASE_URL }}
-          NEXT_PUBLIC_RAZORPAY_KEY_ID: ${{ secrets.NEXT_PUBLIC_RAZORPAY_KEY_ID }}
+          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
+          VITE_RAZORPAY_KEY_ID: ${{ secrets.VITE_RAZORPAY_KEY_ID }}

@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'backend/**'
-      - '.github/workflows/deploy-backend.yml'
   workflow_dispatch:
 
 env:
@@ -54,6 +51,9 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
 
+      - name: Configure GCP Project ID
+        run: gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
+
       - name: Create Artifact Registry Repository if not exists
         run: |
           gcloud artifacts repositories create ${{ env.REPO_NAME }} \
@@ -66,7 +66,7 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          IMAGE_TAG="${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPO_NAME }}/${{ env.SERVICE_NAME }}:${{ github.sha }}"
+          IMAGE_TAG="${{ env.REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ env.REPO_NAME }}/${{ env.SERVICE_NAME }}:${{ github.sha }}"
           cd backend
           docker build -t $IMAGE_TAG .
           docker push $IMAGE_TAG
