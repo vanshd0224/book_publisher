@@ -9,7 +9,6 @@ export const api = axios.create({
   },
 });
 
-// Interceptor to inject JWT Auth Bearer token from localStorage
 api.interceptors.request.use((config) => {
   if (typeof window !== 'undefined') {
     const token = localStorage.getItem('accessToken');
@@ -20,7 +19,6 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// Interceptor to unpack standardized NestJS response { success: true, data, message }
 api.interceptors.response.use(
   (response) => {
     if (response.data && response.data.success !== undefined) {

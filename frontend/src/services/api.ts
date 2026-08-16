@@ -1,11 +1,20 @@
-const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:8080/api/v1';
+import { api } from '../lib/api';
+
+export { api };
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || (import.meta as any)?.env?.VITE_API_BASE_URL || 'http://localhost:8080/api/v1';
 
 export const getAuthToken = (): string | null => {
-  return localStorage.getItem('accessToken');
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem('accessToken');
+  }
+  return null;
 };
 
 export const setAuthToken = (token: string) => {
-  localStorage.setItem('accessToken', token);
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('accessToken', token);
+  }
 };
 
 export const apiFetch = async (endpoint: string, options: RequestInit = {}) => {
@@ -33,7 +42,6 @@ export const apiFetch = async (endpoint: string, options: RequestInit = {}) => {
   return json.data !== undefined ? json.data : json;
 };
 
-// API Services matching backend routes
 export const productService = {
   getProducts: (volumeNumber?: number) =>
     apiFetch(`/products${volumeNumber !== undefined ? `?volumeNumber=${volumeNumber}` : ''}`),
