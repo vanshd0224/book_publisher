@@ -59,7 +59,8 @@ async function bootstrap() {
   SwaggerModule.setup('api/docs', app, document);
 
   const port = process.env.PORT || 8080;
-  await app.listen(port);
+  // Bind to 0.0.0.0 for GCP Cloud Run health checks
+  await app.listen(port, '0.0.0.0');
   logger.log(`Book Publisher Backend is running on port ${port}`);
   logger.log(`OpenAPI Swagger documentation available at http://localhost:${port}/api/docs`);
 }
